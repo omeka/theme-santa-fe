@@ -29,11 +29,16 @@
 
 				<div id="primary-nav">
 					<ul class="navigation">
-					    <?php echo nav(array('Items' => uri('items'), 'Exhibits' => uri('exhibits'), 'Collections'=>uri('collections'))); ?>
+					<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
 					</ul>
-				</div><!-- end primary-nav -->
+				</div><!-- end primary-nav -->		
+				
+			    <div id="search">
+    				<?php echo simple_search(); ?>
+    				<?php echo link_to_advanced_search(); ?>
+    			</div>
 		
-				<h1><a href="<?php echo uri(''); ?>"><?php echo settings('site_title'); ?></a></h1>
+				<div id="site-title"><?php echo link_to_home_page(); ?></div>
 		
 			</div>
 		</div><!-- end header -->
