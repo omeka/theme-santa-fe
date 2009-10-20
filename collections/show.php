@@ -1,4 +1,4 @@
-<?php head(array('title'=>h($collection->name),'bodyid'=>'collections','bodyclass' => 'show')); ?>
+<?php head(array('title' => collection('Name'),'bodyid'=>'collections','bodyclass' => 'show')); ?>
 
 <div id="primary" class="show">
     <h1><?php echo collection('Name'); ?></h1>

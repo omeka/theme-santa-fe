@@ -140,8 +140,8 @@ body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B
 #header {border-bottom:2px solid #FFF;border-top:2px solid #FFF;background:#444;}
 #header .center-div {background-color:#333;overflow:hidden;}
 
-div#search {float:right;padding:0 .55em 0 0;}
-div#search a {margin-top:.5em;float:right;}
+div#search-wrap {float:right;padding:0 .55em 0 0;}
+div#search-wrap a {margin-top:.5em;float:right;}
 
 /* == Content == */
 
@@ -265,7 +265,7 @@ div#search a {margin-top:.5em;float:right;}
     .radioinputs label {display:block; float:left; width: 48%; clear:none;}
     input#description {width: 378px; height: 312px;}
     .search-entry select {margin-bottom:.5em;}
-    #primary #submit_search {margin:.5em 0 1em 455px;}
+    #submit_search_advanced {margin:.5em 0 1em 455px;}
     .advanced-search h1{margin-left:13px;}
 	
 	.no-results {margin:10px;}

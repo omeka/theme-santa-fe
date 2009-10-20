@@ -11,8 +11,8 @@
 <?php echo auto_discovery_link_tag(); ?>
 
 <!-- Stylesheets -->
-<link rel="stylesheet" media="screen" href="<?php echo css('screen'); ?>" />
-<link rel="stylesheet" media="print" href="<?php echo css('print'); ?>" />
+<link rel="stylesheet" media="screen" href="<?php echo html_escape(css('screen')); ?>" />
+<link rel="stylesheet" media="print" href="<?php echo html_escape(css('print')); ?>" />
 
 <!-- JavaScripts -->
 <?php echo js('default'); ?>
@@ -33,7 +33,7 @@
 					</ul>
 				</div><!-- end primary-nav -->		
 				
-			    <div id="search">
+			    <div id="search-wrap">
     				<?php echo simple_search(); ?>
     				<?php echo link_to_advanced_search(); ?>
     			</div>
