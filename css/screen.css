@@ -248,21 +248,19 @@ div#search-wrap a {margin-top:.5em;float:right;}
 	#previous-item {}
 	
 	/* Advanced Search */
-    textarea {width:378px; height:312px;float:right;}
     legend {display:none;}
     fieldset {display:block; clear:both;}
     label {font-size:1.2em;}
     .label {font-size:1.2em;}
     .inputs {overflow:hidden;zoom:1;}
-    .field {border-bottom:1px solid #d3d6bc; padding:0.75em 0; overflow:hidden; width:512px;}
+    .field { padding:0.75em 0; overflow:hidden; width:512px;}
+	#advanced-search-page .field {border-bottom:1px solid #d3d6bc;}
     .field label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field .textinput, .field select {float:right; width: 378px;background:#fff;}
     .field select {width: 382px;}
     .field input {margin:0;margin-left:16px;}
     input.submitinput {margin-top:1em;}
-    .radioinputs {display:block; margin-bottom:0.5em; overflow:hidden;}
-    .radioinputs label {display:block; float:left; width: 48%; clear:none;}
     input#description {width: 378px; height: 312px;}
     .search-entry select {margin-bottom:.5em;}
     #submit_search_advanced {margin:.5em 0 1em 455px;}
