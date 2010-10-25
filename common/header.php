@@ -2,7 +2,8 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title><?php echo settings('site_title'); echo $title ? ' | ' . $title : ''; ?></title>
+
+<title><?php echo settings('site_title'); echo isset($title) ? ' | ' . $title : ''; ?></title>
 
 <!-- Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -29,7 +30,7 @@
 
 				<div id="primary-nav">
 					<ul class="navigation">
-					<?php echo public_nav_main(array('Browse Items' => uri('items'), 'Browse Collections'=>uri('collections'))); ?>
+					<?php echo santa_fe_public_nav_header(); ?>
 					</ul>
 				</div><!-- end primary-nav -->		
 				
@@ -37,8 +38,8 @@
     				<?php echo simple_search(); ?>
     				<?php echo link_to_advanced_search(); ?>
     			</div>
-		
-				<div id="site-title"><?php echo link_to_home_page(); ?></div>
+		<?php echo santa_fe_header_image(); ?>
+<div id="site-title"><?php echo link_to_home_page(santa_fe_display_logo()); ?></div>
 		
 			</div>
 		</div><!-- end header -->
