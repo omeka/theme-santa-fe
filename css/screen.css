@@ -248,7 +248,7 @@ div#search-wrap a {margin-top:.5em;float:right;}
 	#previous-item {}
 	
 	/* Advanced Search */
-    legend {display:none;}
+    #advanced-search-page legend {display:none;}
     fieldset {display:block; clear:both;}
     label {font-size:1.2em;}
     .label {font-size:1.2em;}
