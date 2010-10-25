@@ -19,7 +19,6 @@
     	<!-- Featured Exhibit -->
     	<?php echo exhibit_builder_display_random_featured_exhibit(); ?>
 		<?php endif; ?>
-	</div>
 	</div><!-- end primary -->
 <div id="secondary">
     
