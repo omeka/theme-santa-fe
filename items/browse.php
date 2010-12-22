@@ -5,7 +5,7 @@
 	<h1>Browse Items (<?php echo total_results(); ?> total)</h1>
 	
 	<ul class="navigation" id="secondary-nav">
-				<?php echo santa_fe_nav_items(); ?>
+				<?php echo custom_nav_items(); ?>
 			</ul>
 	
 	

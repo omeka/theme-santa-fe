@@ -5,7 +5,7 @@
 	<h2>Browse Items</h2>
 	
 	<ul class="navigation item-tags" id="secondary-nav">
-	<?php echo santa_fe_nav_items(); ?>
+	<?php echo custom_nav_items(); ?>
 	</ul>
 
 	<?php echo tag_cloud($tags, uri('items/browse')); ?>

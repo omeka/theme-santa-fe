@@ -1,0 +1,297 @@
+@media screen {
+    
+    /* == Imports == */
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, font, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td {
+    	margin: 0;
+    	padding: 0;
+    	border: 0;
+    	outline: 0;
+    	font-weight: inherit;
+    	font-style: inherit;
+    	font-family: inherit;
+    	vertical-align: baseline;
+    }
+    /* remember to define focus styles! */
+    :focus, :active {
+    	outline: 0;
+    }
+    body {
+    	line-height: 1;
+    	color: black;
+    	background: white;
+    }
+    ol, ul {
+    	list-style: none;
+    }
+    /* tables still need 'cellspacing="0"' in the markup */
+    table {
+    	border-collapse: separate;
+    	border-spacing: 0;
+    }
+    caption, th, td {
+    	text-align: left;
+    	font-weight: normal;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+    	content: "";
+    }
+    blockquote, q {
+    	quotes: "" "";
+    }
+    /* == Generic == */
+    body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B8;border-top:40px solid #868D4A;}
+
+    	/* -- Headings -- */
+    	#site-title {color:#fafafa;font-size:3em;clear:both;}
+    		#site-title a {color:#fafafa;text-decoration:none;float:left;padding:.5em 0 10px 10px;}
+    		#site-title a:hover {text-decoration:none;}
+    	h1 {font-size:2.3em;color:#868D4A;margin-bottom:10px;}
+    	h2 {font-size:2em;padding:0;}
+    	h3 {font-size:1.6em;}
+
+    	/* -- Misc Block elements -- */
+    	p, ul, ol {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
+    	    ol {list-style:decimal inside;}
+    	    
+    	/* -- Misc Inline elements -- */
+    	input {margin-top:5px;}
+	
+    	em {font-style:italic;}
+    	strong {font-weight:bold;}
+
+    	/* -- Links -- */
+    	a {color:#868D4A;text-decoration:none;}
+    	a:visited {}
+    	a:hover {text-decoration:underline;}
+    	a:active {}
+
+    	/* -- Misc Classes */
+    	.view-items-link {float:right;margin-top:.5em;}
+	
+    	.exhibit-thumbnail {float:left;padding:0 10px 0 0;}
+    	.odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
+    	.even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
+
+    	.image {} /* items/browse  */
+
+    	.center-div {width:800px;margin:auto;border-left:2px solid #FFF;border-right:2px solid #FFF;}
+	
+    		/* Navigation Classes*/
+    		ul.navigation, ul.pagination_list {font-size:1.3em;}
+		
+    		/* Pagination Classes */
+    		 .pagination {margin:0;float:left;clear:both;border-bottom:1px #d3d6bc solid;width:100%;}
+    		 .pagination li {padding:.5em 0 .5em .5em;float:left;}
+    		 .pagination a {color:#686C42;}
+    		 .pagination a:hover {color:#868D4A;text-decoration:none;}
+    		 .pagination li.current a {font-weight:bold;}
+    		 .pagination a.current {font-weight:bold;}
+
+    		/* Items Classes*/
+    		.item-file img {float:left;padding-right:10px;}
+		
+    		.element {overflow:hidden;clear:both;padding:5px 0;}
+    		.element-text {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
+    		.element-text p, .element-text li, .element-text ul, .element-text ol {font-size:1em;}
+		
+    		.title-list {clear:both;}
+	
+    		/* Collections Classes */
+    		.collection {padding:10px 20px 10px 20px;overflow:hidden;border-bottom:1px #d3d6bc solid;clear:both;}
+
+    		/* Tag Clouds */
+    		.hTagcloud ul {list-style:none;padding:10px 20px 10px 20px;}
+    			.hTagcloud li {display:inline;}
+
+    			.popular a {font-size:120%;}
+    			.v-popular a {font-size:140%;}
+    			.vv-popular a {font-size:180%;}
+    			.vvv-popular a {font-size:220%;}
+    			.vvvv-popular a {font-size:260%;}
+    			.vvvvv-popular a {font-size:300%;}
+    			.vvvvvv-popular a {font-size:320%;}
+    			.vvvvvvv-popular a {font-size:340%;}
+    			.vvvvvvvv-popular a {font-size:360%;}
+
+    /* == Header == */
+    #header {border-bottom:2px solid #FFF;border-top:2px solid #FFF;background:#444;}
+    #header .center-div {background-color:#333;overflow:hidden;}
+
+    div#search-container {float:right;padding:0 .55em 0 0;}
+    div#search-container a {margin-top:.5em;float:right;}
+
+    /* == Content == */
+
+    	/* Structure */
+    	#content {background:#fff;padding:15px 0 15px 0;overflow:hidden;}
+    		#primary {width:774px;margin:auto;float:none;padding:0;clear:right;}
+    		#secondary {float:left;margin-left:15px;width:220px;margin-top:.5em;background:#D3D6BD;padding:5px;}
+    		#tertiary {width:784px;margin:auto;float:none;padding:0;clear:both;}
+    		#tertiary img {display:block;margin:auto;padding:10px 0;}
+		
+    	/* General */
+    	#login-status {float:right;color:#D5D2B8;padding:10px .55em 0 0;}
+	
+    	#featured-item {margin-bottom:20px;overflow:hidden;}
+    	#featured-item h3 {margin-bottom:5px;}
+    	#featured-item .image {float:left;padding-right:10px;}
+	
+    	#featured-collection {clear:both;overflow:hidden;}
+
+    	/* Navigation */
+    	#primary-nav {padding-top:5px;overflow:hidden;float:left;}
+    	#primary-nav ul {margin:0;font-size:1.3em; line-height:1em;}
+    	#primary-nav li { display:block; float:left; }
+    	#primary-nav a {color:#868D4A; display:block; float:left;padding:1px .55em .2em .5em;}
+    	#primary-nav li.current a {}
+    	#primary-nav li.nav-about a {}
+
+    	 #secondary-nav {border-top:1px #d3d6bc solid;width:100%;}
+    	 ul#secondary-nav {margin:0;float:left;}
+    	 #secondary-nav li {padding:.5em 0 .5em .5em;float:left;}
+    	 #secondary-nav a {color:#686C42;}
+    	 #secondary-nav a:hover {color:#868D4A;text-decoration:none;}
+    	 #secondary-nav li.current a {font-weight:bold;}
+    	 #secondary-nav a.current {font-weight:bold;}
+
+    	/* Home Page */
+    	#home #primary {width:520px;padding:0 15px 0 15px;float:right;}
+	
+    	#recent-items {padding:10px;overflow:hidden;}
+    	#recent-items .item {margin-bottom:10px;}
+    	#recent-items .item-description {font-size:1.2em;line-height:1.35em;}
+    	#recent-items .item-description p {font-size:1em;}
+    	#recent-items .item-description a.show {margin-left:5px;}
+	
+    	/* Forum Page */
+    	#forum #primary {float:none;}
+
+    	/* Items Pages */	
+    	#items.browse .item {padding:10px;overflow:hidden;border-bottom:1px #d3d6bc solid;clear:both;}
+    	#items.browse .item-description {margin-top:3px;font-size:1.2em;line-height:1.35em;}
+    	#items.browse .item-description p, #items.browse .item-description li {font-size:1em;}
+	
+    	#items.show h2 {display:none;}
+	
+    	ul h3 {font-size:1.6em;}
+	
+    	#items.browse .tags {margin-top:3px;}
+	
+    	#backlink {float:right;font-size:1.5em;display:block;padding-right:8px;}
+	
+    	/* Advanced Search */
+        #advanced-search-page legend {display:none;}
+        fieldset {display:block; clear:both;}
+        label {font-size:1.2em;}
+        .label {font-size:1.2em;}
+        .inputs {overflow:hidden;zoom:1;}
+        .field { padding:0.75em 0; overflow:hidden; width:512px;}
+    	#advanced-search-page .field {border-bottom:1px solid #d3d6bc;}
+        .field label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+        .field .textinput, .field select {float:right; width: 378px;background:#fff;}
+        .field select {width: 382px;}
+        .field input {margin:0;margin-left:16px;}
+        input.submitinput {margin-top:1em;}
+        input#description {width: 378px; height: 312px;}
+        .search-entry select {margin-bottom:.5em;}
+        #submit_search_advanced {margin:.5em 0 1em 455px;}
+        .advanced-search h1{margin-left:13px;}
+	
+    	.no-results {margin:10px;}
+
+    	/* Exhibits Pages */
+	
+    	.exhibit-section-nav {width:100%;}
+    	ul.exhibit-section-nav {margin-bottom:10px;;font-size:1.3em; line-height:1em;float:left;}
+    	.exhibit-section-nav li {padding:.5em 0 .5em .5em;float:left;}
+    	.exhibit-section-nav a {color:#686C42;}
+    	.exhibit-section-nav a:hover {color:#868D4A;text-decoration:none;}
+    	.exhibit-section-nav li.current a,
+    	.exhibit-section-nav a.current {font-weight:bold;}
+	
+    	.exhibit-page-nav {width:100%;}
+    	ul.exhibit-page-nav {margin-bottom:10px;;font-size:1.3em; line-height:1em;float:left;}
+    	.exhibit-page-nav li {padding:.5em 0 .5em .5em;float:left;}
+    	.exhibit-page-nav a {color:#686C42;}
+    	.exhibit-page-nav a:hover {color:#868D4A;text-decoration:none;}
+    	.exhibit-page-nav li.current a {font-weight:bold;}
+    	.exhibit-page-nav a.current {font-weight:bold;}
+	
+    	/* Collections Pages */	
+    	#collection-description {}
+
+    /* == Footer == */
+    #footer {clear:both;}
+    #footer .center-div {border-bottom:2px solid #FFF;background:#686C42;overflow:hidden;}
+    #footer ul {float:right;padding:5px;font-size:1.3em; line-height:1em;}
+    #footer li {display:block;float:left;padding-left:1.25em;}
+    #footer a {color:#D5D2B8;}
+    #footer p {color:#222;clear:both;float:right;padding:0 5px 5px;}
+}
+
+/* Print Styles */
+@media print {
+    body{
+        font-family: "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif;
+    }
+    
+    #content{
+        width:100%;
+        margin:0;
+        float:none;
+    }
+    
+    h1,
+    #site-title{
+        font-size:16pt;
+        font-weight:bold;
+    }
+    
+    h2{
+        font-size:14pt;
+        font-style:italic;
+    }
+    
+    h3 {
+        font-size:14pt;
+    }
+    h4 {
+        font-weight:bold;
+    }
+    
+    h5 {
+        font-weight:bold;
+        font-style:italic;
+        text-transform:uppercase;
+    }
+    
+    a:link:after {
+        content: " (" attr(href) ") ";
+        font-size:80%;
+    }
+    
+    #search-container,
+    #primary-nav,
+    #header-image,
+    .navigation,
+    .pagination,
+    #exhibit-page-navigation,
+    .exhibit-section-nav,
+    .exhibit-page-nav {
+        display:none;
+    }
+    
+    blockquote {
+        margin:10pt 0 0 0;
+        font-style:italic;
+    }
+}
