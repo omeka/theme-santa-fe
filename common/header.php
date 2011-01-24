@@ -29,17 +29,19 @@
 		<div id="header">
 			<div class="center-div">
 
-				<div id="primary-nav">
-					<ul class="navigation">
-					<?php echo custom_public_nav_header(); ?>
-					</ul>
-				</div><!-- end primary-nav -->		
+			
+				
 				
 			    <div id="search-container">
     				<?php echo simple_search(); ?>
     				<?php echo link_to_advanced_search(); ?>
     			</div>
 		<?php echo custom_header_image(); ?>
+			<div id="primary-nav">
+				<ul class="navigation">
+				<?php echo custom_public_nav_header(); ?>
+				</ul>
+				</div><!-- end primary-nav -->		
         <div id="site-title"><?php echo link_to_home_page(custom_display_logo()); ?></div>
 		
 			</div>
