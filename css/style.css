@@ -225,6 +225,8 @@
     	.exhibit-page-nav a:hover {color:#868D4A;text-decoration:none;}
     	.exhibit-page-nav li.current a {font-weight:bold;}
     	.exhibit-page-nav a.current {font-weight:bold;}
+
+        .exhibit-text ul, ol {list-style: disc; margin: 1em 4em; padding:0; }
 	
     	/* Collections Pages */	
     	#collection-description {}
