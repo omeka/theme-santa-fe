@@ -232,8 +232,7 @@
     	#collection-description {}
 
     /* == Footer == */
-    #footer {clear:both;}
-    #footer .center-div {border-bottom:2px solid #FFF;background:#686C42;overflow:hidden;}
+    #footer {clear:both;border-bottom:2px solid #FFF;background:#686C42;overflow:hidden;}
     #footer ul {float:right;padding:5px;font-size:1.3em; line-height:1em;}
     #footer li {display:block;float:left;padding-left:1.25em;}
     #footer a {color:#D5D2B8;}
