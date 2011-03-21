@@ -54,7 +54,7 @@
     		#site-title a {color:#fafafa;text-decoration:none;float:left;padding:.5em 0 10px 10px;}
     		#site-title a:hover {text-decoration:none;}
     	h1 {font-size:2.3em;color:#868D4A;margin-bottom:10px;}
-    	h2 {font-size:2em;padding:0;}
+    	h2 {font-size:2em;}
     	h3 {font-size:1.6em;}
 
     	/* -- Misc Block elements -- */
@@ -131,7 +131,7 @@
     /* == Content == */
 
     	/* Structure */
-    	#content {background:#fff;padding:15px 0 15px 0;overflow:hidden;}
+        #content {background:#fff;padding-top:15px;margin-bottom:15px;overflow:hidden;}
     		#primary {width:774px;margin:auto;float:none;padding:0;clear:right;}
     		#secondary {float:left;margin-left:15px;width:220px;margin-top:.5em;background:#D3D6BD;padding:5px;}
     		#tertiary {width:784px;margin:auto;float:none;padding:0;clear:both;}
@@ -204,14 +204,12 @@
         input#description {width: 378px; height: 312px;}
         .search-entry select {margin-bottom:.5em;}
         #submit_search_advanced {margin:.5em 0 1em 455px;}
-        .advanced-search h1{margin-left:13px;}
-	
-    	.no-results {margin:10px;}
+        .no-results {margin:10px;}
 
     	/* Exhibits Pages */
 	
     	.exhibit-section-nav {width:100%;}
-    	ul.exhibit-section-nav {margin-bottom:10px;;font-size:1.3em; line-height:1em;float:left;}
+    	ul.exhibit-section-nav {margin-bottom:10px;font-size:1.3em;line-height:1em;float:left;}
     	.exhibit-section-nav li {padding:.5em 0 .5em .5em;float:left;}
     	.exhibit-section-nav a {color:#686C42;}
     	.exhibit-section-nav a:hover {color:#868D4A;text-decoration:none;}
@@ -219,7 +217,7 @@
     	.exhibit-section-nav a.current {font-weight:bold;}
 	
     	.exhibit-page-nav {width:100%;}
-    	ul.exhibit-page-nav {margin-bottom:10px;;font-size:1.3em; line-height:1em;float:left;}
+    	ul.exhibit-page-nav {margin-bottom:10px;font-size:1.3em;line-height:1em;float:left;}
     	.exhibit-page-nav li {padding:.5em 0 .5em .5em;float:left;}
     	.exhibit-page-nav a {color:#686C42;}
     	.exhibit-page-nav a:hover {color:#868D4A;text-decoration:none;}
