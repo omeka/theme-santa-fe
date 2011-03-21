@@ -25,13 +25,8 @@
 </head>
 <body<?php echo isset($bodyid) ? ' id="'.$bodyid.'"' : ''; ?><?php echo isset($bodyclass) ? ' class="'.$bodyclass.'"' : ''; ?>>
 	<div id="wrap">
-
 		<div id="header">
 			<div class="center-div">
-
-			
-				
-				
 			    <div id="search-container">
     				<?php echo simple_search(); ?>
     				<?php echo link_to_advanced_search(); ?>
