@@ -147,8 +147,8 @@
     	#featured-collection {clear:both;overflow:hidden;}
 
     	/* Navigation */
-    	#primary-nav {padding-top:5px;overflow:hidden;float:left;}
-    	#primary-nav ul {margin:0;font-size:1.3em; line-height:1em;}
+    	#primary-nav {padding-top:5px;overflow:hidden;line-height:1.2}
+    	#primary-nav ul {margin:0;font-size:1.3em;}
     	#primary-nav li { display:block; float:left; }
     	#primary-nav a {color:#868D4A; display:block; float:left;padding:1px .55em .2em .5em;}
     	#primary-nav li.current a {}
