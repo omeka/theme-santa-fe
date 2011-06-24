@@ -232,6 +232,7 @@
     /* == Footer == */
     #footer {clear:both;border-bottom:2px solid #FFF;background:#686C42;overflow:hidden;padding: 18px;}
     #footer li {display:inline;}
+    #footer .navigation li {margin-right:.5em}
     #footer a {color:#D5D2B8;}
     #footer p {color:#D5D2B8;}
 }
