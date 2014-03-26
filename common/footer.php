@@ -1,25 +1,34 @@
-<div id="footer">
-    
-    <ul class="navigation">
-		<?php echo public_nav_main(array('Home' => uri(''), 'Browse Items' => uri('items'), 'Browse Collections'=>uri('collections')));
-    	?>
-    </ul>
+</div><!-- end content -->
 
-    <div id="footer-text">
-        <?php echo get_theme_option('Footer Text'); ?>
-        <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = settings('copyright')): ?>
+<div id="footer">
+
+
+    <div id="custom-footer-text">
+        <?php if ( $footerText = get_theme_option('Footer Text') ): ?>
+        <p><?php echo $footerText; ?></p>
+        <?php endif; ?>
+        <?php if ((get_theme_option('Display Footer Copyright') == 1) && $copyright = option('copyright')): ?>
             <p><?php echo $copyright; ?></p>
         <?php endif; ?>
-        <p>Proudly powered by <a href="http://omeka.org">Omeka</a>.</p>
     </div>
 
-	<?php plugin_footer(); ?>
+    <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
+        
+    <?php fire_plugin_hook('public_footer'); ?>
+    
 	
 </div><!-- end footer -->
 
-</div><!-- end content -->
+
 
 </div><!--end wrap-->
+
+<script type="text/javascript">
+jQuery(document).ready(function () {
+    SantaFe.showAdvancedForm();
+    SantaFe.mobileSelectNav();
+});
+</script>
 
 </body>
 
