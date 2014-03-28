@@ -981,8 +981,10 @@ table {
   }
 
   /* line 286, sass/_screen.scss */
-  #home #recent-items {
+  #home #content #recent-items {
     background: #D3D6BD;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 
   /* line 288, sass/_screen.scss */
