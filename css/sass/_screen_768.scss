@@ -94,4 +94,16 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 #home #featured-item h3 {margin-bottom:5px;}
 #home #featured-item .image {float:left;padding-right:10px;}
 
+/* Advanced Search */
+	.field {width:512px}
+    .field label {float:left; width: 114px;font-weight:normal;clear:left; }
+    .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
+    .field input, .field select {float:right; width: 378px;background:#fff;}
+    .field select {width: 382px;}
+    .field input {margin:0;margin-left:16px;}
+    input.submitinput {margin-top:1em;}
+    input#description {width: 378px; height: 312px;}
+
+    #submit_search_advanced {margin:.5em 0 1em 440px;}
+
 

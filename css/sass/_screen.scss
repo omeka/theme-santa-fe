@@ -96,7 +96,7 @@ body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B
 		 .pagination li, #sort-links-list li, .sort-label {float:left; padding-left:0.5em}
 		 li.pagination_next, li.pagination_previous {padding-top :0.6em}
 		 .pagination a, #sort-links-list a {color:#686C42;}
-		 .pagination a:hover, #sort-links-list a:hover {color:#868D4A;text-decwidth:800px/968px * 100%;oration:none;}
+		 .pagination a:hover, #sort-links-list a:hover {color:#868D4A;width:800px/968px * 100%;oration:none;}
 		 .pagination li.current a, #sort-links-list li.current a {font-weight:bold;}
 		 .pagination a.current, , #sort-links-list li.sorting {font-weight:bold;}
 		 .pagination input {width:1.5em; text-align:center;}
@@ -309,22 +309,19 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
 	#backlink {float:right;font-size:1.5em;display:block;padding-right:8px;}
 
 	/* Advanced Search */
-    #advanced-search-page legend {display:none;}
+	.advanced-search {
+		input, label, select {width:90%}
+	}
     fieldset {display:block; clear:both;}
     label {font-size:1.2em;}
     .label {font-size:1.2em;}
     .inputs {overflow:hidden;zoom:1;}
-    .field { padding:0.75em 0; overflow:hidden; width:512px;}
-	#advanced-search-page .field {border-bottom:1px solid #d3d6bc;}
-    .field label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field .textinput, .field select {float:right; width: 378px;background:#fff;}
-    .field select {width: 382px;}
-    .field input {margin:0;margin-left:16px;}
-    input.submitinput {margin-top:1em;}
-    input#description {width: 378px; height: 312px;}
+    .field { padding:0.75em 0.5em; overflow:hidden;}
+	.advanced-search .field {background: #d3d6bc;margin-bottom:1em}
+
+
     .search-entry select {margin-bottom:.5em;}
-    #submit_search_advanced {margin:.5em 0 1em 455px;}
+    #submit_search_advanced {width:10%;margin:.5em 0 1em 80%;}
     .no-results {margin:10px;}
 
     /* Search Results */
