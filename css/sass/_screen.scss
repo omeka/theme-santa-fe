@@ -222,7 +222,7 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
 	/* Items Pages */
 	.item h2 {font-weight:bold; padding-bottom:.25em}	
 	.item {padding:10px;overflow:hidden;border-bottom:1px #d3d6bc solid;clear:both;}
-	.item-description {margin-top:3px;font-size:1.2em;line-height:1.35em;word-break:break-all}
+	.item-description {margin-top:3px;font-size:1.2em;line-height:1.35em;clear:left}
 	.item-description p, #items.browse .item-description li {font-size:1em;}
 
 	// .items.show h2 {display:none;}

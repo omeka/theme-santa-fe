@@ -878,7 +878,7 @@ table {
     margin-top: 3px;
     font-size: 1.2em;
     line-height: 1.35em;
-    word-break: break-all;
+    clear: left;
   }
 
   /* line 226, sass/_screen.scss */
@@ -1535,25 +1535,31 @@ table {
     margin: .5em 0 1em 440px;
   }
 
+  /* Items */
+  /* line 114, sass/_screen_768.scss */
+  .item-description {
+    clear: none;
+  }
+
   /* Exhibits */
-  /* line 115, sass/_screen_768.scss */
+  /* line 119, sass/_screen_768.scss */
   .exhibits.summary #primary {
     width: 66%;
     float: left;
   }
-  /* line 117, sass/_screen_768.scss */
+  /* line 121, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages {
     width: 30%;
     float: right;
   }
-  /* line 119, sass/_screen_768.scss */
+  /* line 123, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages {
     border: none;
     border-left: 1px #d3d6bc solid;
     padding: 0;
     padding-left: 5px;
   }
-  /* line 125, sass/_screen_768.scss */
+  /* line 129, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages a {
     display: block;
     margin: 2px 0;
