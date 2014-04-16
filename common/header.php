@@ -9,7 +9,7 @@
     <?php
     if (isset($title)) {
         $titleParts[] = strip_formatting($title);
-    } 
+    }
     $titleParts[] = option('site_title');
     ?>
     <title><?php echo implode(' &middot; ', $titleParts); ?></title>
@@ -55,3 +55,4 @@
             </div>
         </div><!-- end header -->
         <div id="content" class="center-div">
+            <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
