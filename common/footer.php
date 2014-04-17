@@ -13,10 +13,10 @@
     </div>
 
     <p><?php echo __('Proudly powered by <a href="http://omeka.org">Omeka</a>.'); ?></p>
-        
-    <?php fire_plugin_hook('public_footer'); ?>
-    
-	
+
+    <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
+
+
 </div><!-- end footer -->
 
 
