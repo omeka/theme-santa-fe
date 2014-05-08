@@ -34,15 +34,17 @@ body {
     }
 
     h1 {
-        font-size: 2 * $base-font-size;
+        font-size: 2.25 * $base-font-size;
         line-height: 2 * $base-line-height;
         color: #868D4A;
-        @include trailer(1, 2 * $base-font-size);
+        @include trailer(1, 2.25 * $base-font-size);
+        font-weight: normal;
     }
 
     h2 {
         font-size: 1.75 * $base-font-size;
         line-height: 2 * $base-line-height;
+        font-weight: normal;
         @include trailer(1, 1.75 * $base-font-size);
     }
 
@@ -92,6 +94,12 @@ body {
         line-height: rhythm(1.5);
     }
     
+    input[type="text"],
+    input[type="password"] {
+        border-color: $sand;
+        @include rhythm-borders(1px, 0, $base-font-size, solid);
+    }
+    
     fieldset {
         border: 0;
         margin: 0;
@@ -103,31 +111,121 @@ body {
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
 
-    .image {} /* items/browse  */
-
-        /* Navigation Classes*/
-        ul.navigation, ul.pagination, #sort-links ul, #sort-links span {
-            padding: 0;
-            list-style-type: none;
-        }
-
-        #sort-links span {line-height:1.35em}
+    /* Navigation Classes*/
+    ul.navigation, 
+    ul.pagination, 
+    #sort-links ul, 
+    #sort-links span {
+        padding: 0;
+        list-style-type: none;
+    }
     
-        /* Pagination Classes */
-          .pagination, #sort-links {clear:both;}
-          .pagination {border-bottom:1px #d3d6bc solid;padding-bottom:.5em}
-          #sort-links {padding-top:.5em}
-          #sort-links-list {margin:0;float:left;margin-bottom:.5em}
-         .pagination li, #sort-links-list li, .sort-label {float:left; padding-left:0.5em}
-         li.pagination_next, li.pagination_previous {padding-top :0.6em}
-         .pagination a, #sort-links-list a {color:#686C42;}
-         .pagination a:hover, #sort-links-list a:hover {color:#868D4A;width:800px/968px * 100%;oration:none;}
-         .pagination li.current a, #sort-links-list li.current a {font-weight:bold;}
-         .pagination a.current, , #sort-links-list li.sorting {font-weight:bold;}
-         .pagination input {width:1.5em; text-align:center;}
+    /* Pagination Classes */
+
+    ul.pagination {
+        overflow: hidden;
+        clear:both;
+    }
+    
+    .pagination li {
+        display: block;
+        float: left;
+        
+        &:last-of-type {
+            border-right: 1px solid $sand;
+        }
+    }
+    
+    .page-input,
+    .pagination_next a,
+    .pagination_previous a {
+        display: block;
+        height: rhythm(2.5);
+    }
+    
+    .pagination_next a,
+    .pagination_previous a {
+        background-color: $sand;
+        text-decoration: none;
+        text-indent: -9999px;
+        position: relative;
+        width: rhythm(2.5);
+        
+        &:after {
+            font-family: "FontAwesome";
+            text-indent: 0;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: rhythm(2.5);
+            text-align: center;
+            line-height: rhythm(2.75);
+        }
+            
+    }
+    
+    .pagination_next a:after {
+        content: "\f054";
+    }
+
+    .pagination_previous a:after {
+        content: "\f053";
+    }
+    
+    .page-input {
+        border-color: $sand;
+        @include rhythm-borders(1px, .5, $base-font-size, solid);
+        
+        input[type=text] {
+            width: 3em;
+        }
+    }
+
+    #sort-links {
+        border-color: $sand;
+        @include trailing-border(1px, 0, $base-font-size, solid);
+        @include trailer();
+        
+        span, ul, li, a {
+            display: block;
+            float: left;
+            margin: 0;
+        }
+        
+        span, a {
+            margin-right: 1em;
+            padding: rhythm(.5) 0;
+        }
+    }
+
+    .asc a:after,
+    .desc a:after {
+        font-family: "FontAwesome";
+    }
+    
+    .asc a:after {
+        content: "\20\f0d8";
+    }
+    
+    .desc a:after {
+        content: "\20\f0d7";
+    }
+
+        
+    .current,
+    .active {
+        font-weight: bold;
+    }
+    
+    #outputs {
+        clear: both;
+    }
 
         /* Items Classes*/
-        .item {
+        .item,
+        .collection,
+        .exhibit {
             border-color: $sand;
             @include trailing-border(1px, 1, $base-font-size, solid);
             @include trailer();
@@ -135,6 +233,10 @@ body {
             
             p:last-child {
                 @include trailer(0);
+            }
+            
+            & + .pagination-nav {
+                @include leader(-.5);
             }
         }
     
@@ -152,7 +254,7 @@ body {
             margin: 0;
             border: 0;
         }
-    
+            
         .element {overflow:hidden;clear:both;padding:5px 0;}
         .element-text {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
         .element-text p, .element-text li, .element-text ul, .element-text ol {font-size:1em;}
@@ -196,6 +298,10 @@ body {
 
 #search-form {
     @include trailer();
+    
+    input[type="text"] {
+        border-color: #fff;
+    }
     
     #advanced-search,
     button {
@@ -308,9 +414,18 @@ body {
 
 
 
-     .secondary-nav {border-top:1px #d3d6bc solid;width:100%;}
-     .secondary-nav ul {margin:0;float:left;}
-     .secondary-nav li {padding:.5em 0 .5em .5em;float:left;}
+    .secondary-nav {
+        border-color: $sand;
+        @include trailing-border(1px, .5, $base-font-size, solid);
+        width:100%;
+        margin: rhythm(-.5) 0 rhythm(.5);
+        
+        li {
+            display: block;
+            float: left;
+            margin-right: 1em;
+        }
+    }
      .secondary-nav a {color:#686C42;}
      .secondary-nav a:hover {color:#868D4A;text-decoration:none;}
      .secondary-nav li.active a {font-weight:bold;}

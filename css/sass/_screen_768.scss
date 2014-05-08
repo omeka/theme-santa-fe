@@ -8,7 +8,6 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 }
 
 #primary-nav {
-    line-height:1.2;
 
     ul {
         margin:0;
@@ -77,10 +76,9 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
     }
 }
 
-/* Pagination Classes */
-.pagination {margin:0;float:left;width:100%;clear:both;margin-bottom:.5em}
-#sort-links {padding:0;float:right; margin-top:-63px;padding-right:.5em}
-
+.pagination {
+    margin: 0 0 rhythm(.5);
+}
 /*Search Results */
 
 #search-filters ul ul {float:right;margin-left:.5em}
@@ -115,6 +113,24 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
     input.submitinput {margin-top:1em;}
     input#description {width: 378px; height: 312px;}
 
+.pagination-nav {
+    float: left;
+}
+
+#sort-links {
+    text-align: right;
+
+    span, ul {
+        display: inline-block;
+        float: none;
+        vertical-align: top;
+    }
+    
+    span, a {
+        padding: rhythm(.75) 0;
+        margin: 0 0 0 1em;
+    }
+}
 /* Items */
 
 .item-description {clear:none}
