@@ -48,9 +48,7 @@
                 </div>
 
                 <div id="primary-nav">
-                    <ul class="navigation">
-                        <?php echo public_nav_main(); ?>
-                    </ul>
+                    <?php echo public_nav_main(); ?>
                 </div><!-- end primary-nav -->
 
             </div>
