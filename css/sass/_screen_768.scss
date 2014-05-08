@@ -1,19 +1,36 @@
-#site-title {width:50%}
-#site-title a {float:left}
+#site-title {
+    width:50%;
+    float: left;
+    text-align: left;
+}
 
-div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75em .55em 0 0;clear:none}
+div#search-container {
+    @include span-columns(3 omega, 12);
+    clear: none;
+    @include leader(1.25);
+}
 
-#search-form{
-    text-align: right;
+.center-div {
+    margin: 0 gutter(2);
+}
+
+#header .center-div {
+    position: relative;
+    @include padding-leader(2);
 }
 
 #primary-nav {
-
     ul {
         margin:0;
         display:block;
-        position: relative;
+        position: absolute;
         z-index: 1000;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-color: #fff;
+        @include trailing-border(2px, 0, $base-font-size, solid);
+        background-color: #000;
     }
 
     li {
@@ -29,38 +46,42 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
         }
 
         &:hover {
-            background-color:rgba(0,0,0,.25);
-                & > ul { display: block; }
+            background-color:rgba(255,255,255,.15);
+            & > ul { display: block; }
             }
 
         ul {
-                min-width: 200px;
-                display: none;
-                padding: 0;
-                position: absolute;
-                left: 0px;
-                margin-top:40px;
-                background:#333;
+            min-width: 200px;
+            display: none;
+            padding: 0;
+            position: absolute;
+            top: -2px;
+            left: 0px;
+            margin-top:40px;
+            background: lighten(#000000, 15%);
+            
+            li {
+                width: 100%;
+                clear: both;
                 
-                li {
-                    width: 100%;
-                    clear: both;
-                    
-                    @include box-sizing(border-box);
-                    
-                    ul {
-                    position: absolute;
-                    left: 100%;
-                    margin-top: 0;
-                    }
+                @include box-sizing(border-box);
+                
+                ul {
+                position: absolute;
+                left: 100%;
+                margin-top: 0;
                 }
-              }
+            }
+          }
     }
     .mobile {
         display:none;
     }
 }
 
+#footer {
+    margin: 0 gutter(2);
+}
 
 #home #content {
     & > div {
@@ -104,14 +125,29 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 #intro {width:800px/968px * 100%;}
 
 /* Advanced Search */
-    .field {width:512px}
-    .field label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
-    .field input, .field select {float:right; width: 378px;background:#fff;}
-    .field select {width: 382px;}
-    .field input {margin:0;margin-left:16px;}
-    input.submitinput {margin-top:1em;}
-    input#description {width: 378px; height: 312px;}
+.field {
+    @include span-columns(8 alpha);
+    @include trailer();
+
+    label,
+    .label {
+        @include span-columns(2 alpha, 8);
+        @include trailer();
+    }
+    
+    .inputs {
+        @include span-columns(6 omega, 8);
+        vertical-align: top;
+        
+        *:only-child {
+            width: 100%;
+        }
+    }
+}
+
+.search-entry {
+    @include trailer();
+}
 
 .pagination-nav {
     float: left;
