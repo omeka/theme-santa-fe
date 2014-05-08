@@ -368,127 +368,61 @@ table {
 }
 
 @media screen {
-  /* == Imports == */
-  html, body, div, span, applet, object, iframe,
-  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-  a, abbr, acronym, address, big, cite, code,
-  del, dfn, em, font, img, ins, kbd, q, s, samp,
-  small, strike, strong, sub, sup, tt, var,
-  dl, dt, dd, ol, ul, li,
-  fieldset, form, label, legend,
-  table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    vertical-align: baseline;
-  }
-
-  /* remember to define focus styles! */
-  :focus, :active {
-    outline: 0;
-  }
-
-  body {
-    line-height: 1;
-    color: black;
-    background: white;
-  }
-
-  ol, ul {
-    list-style: none;
-  }
-
-  /* tables still need 'cellspacing="0"' in the markup center*/
-  caption, th, td {
-    text-align: left;
-    font-weight: normal;
-  }
-
-  blockquote:before, blockquote:after,
-  q:before, q:after {
-    content: "";
-  }
-
-  blockquote, q {
-    quotes: "" "";
-  }
-
   /* == Generic == */
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
   body {
-    font: 62.5% Verdana, Arial, sans-serif;
+    font: 12px Verdana, Arial, sans-serif;
+    line-height: 18px;
     color: #222;
     background-color: #D5D2B8;
   }
 
   #wrap {
-    border-top: 40px solid #868D4A;
+    border-top: 3em solid #868d4a;
   }
 
   /* -- Headings -- */
   #site-title {
     width: 100%;
     color: #fafafa;
-    font-size: 3em;
-    float: left;
+    font-size: 24px;
+    line-height: 36px;
     text-align: center;
+    padding: 0.75em 0;
   }
-
   #site-title a {
     color: #fafafa;
-    text-decoration: none;
-    padding: .5em 0 10px 10px;
-  }
-
-  #site-title a:hover {
     text-decoration: none;
   }
 
   h1 {
-    font-size: 2.3em;
+    font-size: 24px;
+    line-height: 36px;
     color: #868D4A;
-    margin-bottom: 10px;
+    margin-bottom: 0.75em;
   }
 
   h2 {
-    font-size: 2em;
+    font-size: 21px;
+    line-height: 36px;
+    margin-bottom: 0.85714em;
   }
 
   h3 {
-    font-size: 1.6em;
+    font-size: 18px;
+    margin-bottom: 1em;
   }
 
-  /* -- Misc Block elements -- */
-  p, #content ul, #content table {
-    font-size: 1.2em;
-    line-height: 1.35em;
-  }
-
-  p {
-    padding-bottom: 5px;
-  }
-
-  #content ul ul {
-    font-size: 1em;
-  }
-
-  ol {
-    list-style: decimal inside;
-  }
-
-  /* -- Misc Inline elements -- */
-  input {
-    margin-top: 5px;
-  }
-
-  em {
+  i, em {
     font-style: italic;
   }
 
-  strong {
+  b, strong {
     font-weight: bold;
   }
 
@@ -502,11 +436,35 @@ table {
     text-decoration: underline;
   }
 
-  /* -- Misc Classes */
-  .view-items-link {
-    margin-top: .5em;
+  /* -- Form Elements -- */
+  input,
+  textarea,
+  button {
+    font-family: "Verdana", "Arial", sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0;
+    border: 0;
+    min-height: 2.25em;
+    padding: 0.375em;
   }
 
+  input[type="submit"],
+  .button,
+  button {
+    background-color: #868d4a;
+    color: #fff;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    line-height: 2.25em;
+  }
+
+  fieldset {
+    border: 0;
+    margin: 0;
+  }
+
+  /* -- Misc Classes */
   .exhibit-thumbnail {
     float: left;
     padding: 0 10px 0 0;
@@ -525,7 +483,8 @@ table {
   /* items/browse  */
   /* Navigation Classes*/
   ul.navigation, ul.pagination, #sort-links ul, #sort-links span {
-    font-size: 1.3em;
+    padding: 0;
+    list-style-type: none;
   }
 
   #sort-links span {
@@ -585,7 +544,7 @@ table {
   }
 
   /* Items Classes*/
-  .item-file img, .item-img {
+  .item img, .item-img {
     float: left;
     padding-right: 10px;
   }
@@ -683,42 +642,52 @@ table {
     clear: both;
   }
 
-  #search-container {
+  #search-container,
+  #search-form {
     width: 100%;
     clear: both;
-  }
-  #search-container:after {
-    content: "";
-    display: block;
-    height: 0;
-    clear: both;
-  }
-
-  div#search-container a {
-    margin-top: .6em;
-    float: right;
-    clear: both;
+    position: relative;
   }
 
   #search-form {
+    margin-bottom: 1.5em;
+  }
+  #search-form #advanced-search,
+  #search-form button {
+    display: block;
+    width: 2.25em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    text-indent: -9999px;
+  }
+  #search-form #advanced-search:after,
+  #search-form button:after {
+    font-family: "FontAwesome";
+    text-indent: 0;
+    position: absolute;
+    width: 2.25em;
+    height: 2.25em;
+    left: 0;
+    top: 0;
     text-align: center;
-    position: relative;
-    overflow: visible;
+  }
+  #search-form.with-advanced button {
+    right: 2.25em;
   }
 
-  #advanced-search {
-    clear: both;
-    float: right;
-    display: block;
-    padding: 0;
+  #query {
     width: 100%;
-    font-weight: bold;
+    padding-right: 2.25em;
   }
-  #advanced-search:focus {
-    outline: -webkit-focus-ring-color auto 5px;
+
+  #advanced-search:after {
+    content: "\2026";
   }
-  #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
-    color: #fff;
+
+  #search-form button:after {
+    content: "\f002";
   }
 
   #advanced-form {
@@ -728,8 +697,8 @@ table {
     z-index: 1001;
     position: absolute;
     left: 0;
-    margin-top: 20px;
     border: 1px solid #e7e7e7;
+    margin: 0;
     width: 100%;
     text-align: left;
   }
@@ -741,7 +710,7 @@ table {
     padding: 0;
   }
   #advanced-form p {
-    margin: 1.2em 0;
+    margin: 0.75em 0;
   }
   #advanced-form p:last-of-type {
     margin-bottom: 0em;
@@ -839,9 +808,9 @@ table {
     display: none;
   }
   #primary-nav select {
+    width: 100%;
     display: block;
-    width: 80%;
-    margin: auto;
+    margin-bottom: 1.5em;
   }
 
   .secondary-nav {
@@ -928,38 +897,6 @@ table {
   }
 
   /* Advanced Search */
-  .advanced-search input, .advanced-search label, .advanced-search select {
-    width: 90%;
-  }
-
-  fieldset {
-    display: block;
-    clear: both;
-  }
-
-  label {
-    font-size: 1.2em;
-  }
-
-  .label {
-    font-size: 1.2em;
-  }
-
-  .inputs {
-    overflow: hidden;
-    zoom: 1;
-  }
-
-  .field {
-    padding: 0.75em 0.5em;
-    overflow: hidden;
-  }
-
-  .advanced-search .field {
-    background: #d3d6bc;
-    margin-bottom: 1em;
-  }
-
   .search-entry select {
     margin-bottom: .5em;
   }

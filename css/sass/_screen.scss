@@ -1,82 +1,99 @@
-/* == Imports == */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-weight: inherit;
-    font-style: inherit;
-    font-family: inherit;
-    vertical-align: baseline;
-}
-/* remember to define focus styles! */
-:focus, :active {
-    outline: 0;
-}
-body {
-    line-height: 1;
-    color: black;
-    background: white;
-}
-ol, ul {
-    list-style: none;
-}
-/* tables still need 'cellspacing="0"' in the markup center*/
-// table {.center
-//     border-collapse: separate;
-//     border-spacing: 0;
-// }
-caption, th, td {
-    text-align: left;
-    font-weight: normal;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: "";
-}
-blockquote, q {
-    quotes: "" "";
-}
 /* == Generic == */
-body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B8;}
+* {
+    @include box-sizing(border-box);
+}
 
-#wrap {border-top:40px solid #868D4A;}
+body {
+    font: $base-font-size Verdana, Arial, sans-serif; 
+    line-height: $base-line-height;
+    color:#222; 
+    background-color:#D5D2B8;
+}
+
+#wrap {
+    border-top: rhythm(2) solid $olive;
+}
 
     /* -- Headings -- */
-    #site-title {width:100%;color:#fafafa;font-size:3em;float:left;text-align:center}
-        #site-title a {color:#fafafa;text-decoration:none;padding:.5em 0 10px 10px;}
-        #site-title a:hover {text-decoration:none;}
-    h1 {font-size:2.3em;color:#868D4A;margin-bottom:10px;}
-    h2 {font-size:2em;}
-    h3 {font-size:1.6em;}
-
-    /* -- Misc Block elements -- */
-    p, #content ul, #content table {font-size:1.2em;line-height:1.35em;}
-        p{padding-bottom:5px;}
-         #content ul ul {font-size:1em}
-        ol {list-style:decimal inside;}
+    #site-title {
+        width: 100%;
+        color: #fafafa;
+        font-size: 2 * $base-font-size;
+        line-height: 2 * $base-line-height;
+        text-align: center;
+        padding: rhythm(1, 2 * $base-font-size) 0;
         
-    /* -- Misc Inline elements -- */
-    input {margin-top:5px;}
+        a {
+            color: #fafafa;
+            text-decoration: none;
+        }
+    }
 
-    em {font-style:italic;}
-    strong {font-weight:bold;}
+    h1 {
+        font-size: 2 * $base-font-size;
+        line-height: 2 * $base-line-height;
+        color: #868D4A;
+        @include trailer(1, 2 * $base-font-size);
+    }
+
+    h2 {
+        font-size: 1.75 * $base-font-size;
+        line-height: 2 * $base-line-height;
+        @include trailer(1, 1.75 * $base-font-size);
+    }
+
+    h3 {
+        font-size: 1.5 * $base-font-size;
+        @include trailer(1, 1.5 * $base-font-size);
+    }
+
+    i, em {
+        font-style:italic;
+    }
+    
+    b, strong {
+        font-weight:bold;
+    }
 
     /* -- Links -- */
-    a {color:#868D4A;text-decoration:none;}
-    a:visited {}
-    a:hover {text-decoration:underline;}
-    a:active {}
+    a {
+        color:#868D4A;
+        text-decoration:none;
+    }
+
+    a:hover {
+        text-decoration:underline;
+    }
+    
+    /* -- Form Elements -- */
+    
+    input,
+    textarea,
+    button {
+        font-family: "Verdana", "Arial", sans-serif;
+        font-size: $base-font-size;
+        line-height: $base-line-height;
+        padding: 0;
+        border: 0;
+        min-height: rhythm(1.5);
+        padding: rhythm(.25);
+    }
+    
+    input[type="submit"],
+    .button,
+    button {
+        background-color: $olive;
+        color: #fff;
+        @include appearance(none);
+        line-height: rhythm(1.5);
+    }
+    
+    fieldset {
+        border: 0;
+        margin: 0;
+    }
 
     /* -- Misc Classes */
-    .view-items-link {margin-top:.5em;}
 
     .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
@@ -85,7 +102,11 @@ body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B
     .image {} /* items/browse  */
 
         /* Navigation Classes*/
-        ul.navigation, ul.pagination, #sort-links ul, #sort-links span {font-size:1.3em;}
+        ul.navigation, ul.pagination, #sort-links ul, #sort-links span {
+            padding: 0;
+            list-style-type: none;
+        }
+
         #sort-links span {line-height:1.35em}
     
         /* Pagination Classes */
@@ -102,7 +123,7 @@ body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B
          .pagination input {width:1.5em; text-align:center;}
 
         /* Items Classes*/
-        .item-file img, .item-img {float:left;padding-right:10px;}
+        .item img, .item-img {float:left;padding-right:10px;}
     
         .element {overflow:hidden;clear:both;padding:5px 0;}
         .element-text {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
@@ -138,54 +159,54 @@ body {font:62.5% Verdana, Arial, sans-serif; color:#222; background-color:#D5D2B
     }
 }
 
-#search-container {
+#search-container,
+#search-form {
     width:100%;
     clear:both;
-    &:after {
-        content: "";
+    position: relative;
+}
+
+#search-form {
+    @include trailer();
+    
+    #advanced-search,
+    button {
         display: block;
-        height: 0;
-        clear: both;
+        width: rhythm(1.5);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        text-indent: -9999px;
+        
+        &:after {
+            font-family: "FontAwesome";
+            text-indent: 0;
+            position: absolute;
+            width: rhythm(1.5);
+            height: rhythm(1.5);
+            left: 0;
+            top: 0;
+            text-align: center;
+        }
+    }
+    
+    &.with-advanced button {
+        right: rhythm(1.5);
     }
 }
-div#search-container a {margin-top:.6em;float:right;clear:both}
 
-#search-form{
-    text-align: center;
-    position: relative;
-    overflow: visible;
-    }
+#query {
+    width: 100%;
+    padding-right: rhythm(1.5);
+}
 
-#advanced-search {
-    clear:both;
-    float:right;
-    // width: 8%;
-    // height: 17px;
-    // text-indent: -9999px;
-    display: block;
-    //position: absolute;
-    padding: 0;
-    // top: 2em;
-    // left: 50%;
-    width:100%;
-    font-weight: bold;
-    // line-height: 30px;
-    // background-color: #868D4A;
+#advanced-search:after {
+    content: "\2026";
+}
 
-    
-    &:focus {
-        outline: -webkit-focus-ring-color auto 5px;
-    }
-
-    &:link, &:hover, &:active, &:visited { color: #fff; }
-
-    &:after {
-        // content: "+";
-        // display: block;
-        // text-indent: 0;
-        // text-align: center;
-        // margin-top: -1.15em;
-    }
+#search-form button:after {
+    content: "\f002";
 }
 
 #advanced-form {
@@ -195,8 +216,8 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
     z-index: 1001;
     position: absolute;
     left: 0;
-    margin-top:20px;
     border: 1px solid #e7e7e7;
+    margin: 0;
     width: 100%;
     text-align: left;
     
@@ -250,11 +271,6 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
     /* General */
     #login-status {float:right;color:#D5D2B8;padding:10px .55em 0 0;}
 
-
-
-
-
-
     /* Navigation */
     #primary-nav {
         clear:both;
@@ -264,9 +280,9 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
             display:none
         }
         select {
+            width: 100%;
             display:block;
-            width:80%;
-            margin:auto;
+            @include trailer();
         }
     }
 
@@ -315,16 +331,6 @@ div#search-container a {margin-top:.6em;float:right;clear:both}
 
 
     /* Advanced Search */
-    .advanced-search {
-        input, label, select {width:90%}
-    }
-    fieldset {display:block; clear:both;}
-    label {font-size:1.2em;}
-    .label {font-size:1.2em;}
-    .inputs {overflow:hidden;zoom:1;}
-    .field { padding:0.75em 0.5em; overflow:hidden;}
-    .advanced-search .field {background: #d3d6bc;margin-bottom:1em}
-
 
     .search-entry select {margin-bottom:.5em;}
     #submit_search_advanced {width:10%;margin:.5em 0 1em 80%;}
