@@ -92,8 +92,16 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
     min-height:30px;
 }
 
-#home #featured-item h3 {margin-bottom:5px;}
-#home #featured-item .image {float:left;padding-right:10px;}
+#featured-item,
+#featured-exhibit,
+#featured-collection {
+    @include span-columns(8 omega, 12);
+    clear: right;
+}
+
+#recent-items {
+    width: columns(4);
+}
 
 #intro {width:800px/968px * 100%;}
 
@@ -106,8 +114,6 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
     .field input {margin:0;margin-left:16px;}
     input.submitinput {margin-top:1em;}
     input#description {width: 378px; height: 312px;}
-
-    #submit_search_advanced {margin:.5em 0 1em 440px;}
 
 /* Items */
 

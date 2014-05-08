@@ -28,6 +28,10 @@ body {
             text-decoration: none;
         }
     }
+    
+    h1, h2, h3, h4 {
+        margin: 0;
+    }
 
     h1 {
         font-size: 2 * $base-font-size;
@@ -123,7 +127,31 @@ body {
          .pagination input {width:1.5em; text-align:center;}
 
         /* Items Classes*/
-        .item img, .item-img {float:left;padding-right:10px;}
+        .item {
+            border-color: $sand;
+            @include trailing-border(1px, 1, $base-font-size, solid);
+            @include trailer();
+            overflow: hidden;
+            
+            p:last-child {
+                @include trailer(0);
+            }
+        }
+    
+        .item img, .item-img {
+            float:left;
+            height: rhythm(3.5);
+            width: auto;
+            margin: 0 rhythm(.5) rhythm(.5) 0;
+            border-color: rgba(0,0,0,.2);
+            @include rhythm-borders(1px, 0, $base-font-size, solid);
+            overflow: hidden;
+        }
+        
+        .item-img img {
+            margin: 0;
+            border: 0;
+        }
     
         .element {overflow:hidden;clear:both;padding:5px 0;}
         .element-text {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
@@ -240,14 +268,6 @@ body {
 
 /* == Content == */
 
-    /* Items Pages */
-    .item h2 {font-weight:bold; padding-bottom:.25em}    
-    .item {padding:10px;overflow:hidden;border-bottom:1px #d3d6bc solid;clear:both;}
-    .item-description {margin-top:3px;font-size:1.2em;line-height:1.35em;clear:left}
-    .item-description p, #items.browse .item-description li {font-size:1em;}
-
-    // .items.show h2 {display:none;}
-
     ul h3 {font-size:1.6em;}
 
     .tags {margin-top:3px;}
@@ -297,33 +317,39 @@ body {
 
     /* Home Page */
 
-    #home #content {
-    & > div {
-        border-top:1px #d3d6bc solid;
-        padding:1em 0 .5em;
+    #featured-item,
+    #featured-collection,
+    #featured-exhibit {
+        border-color: $sand;
+        @include trailing-border(1px, 1, $base-font-size, solid);
+        @include trailer();
+        
+        *:last-child {
+            @include trailer(0);
         }
+    }
+    
+    #featured-item .item,
+    #featured-collection .collection,
+    #featured-exhibit .exhibit {
+        @include trailing-border(0px, 0, $base-font-size, solid);
+        padding: 0;
     }
 
     #recent-items {
         border:none;
+        background-color: $sand;
+        padding: rhythm(1) gutter();
+        
+        .item, .item img {
+            border-color: $olive;
+        }
     }
-
-    #featured-exhibit {
-        border-bottom:1px #d3d6bc solid;
-    }    
 
     #intro {
         width:100%;
         padding:10px 0;
     }
-
-        #home #content #recent-items {background:#D3D6BD;padding-left:1em;padding-right:1em;}
-       
-    #recent-items .item {padding:0;border:none;margin-bottom:10px; border-top: 1px solid #555A2F;padding-top:1em}
-    #recent-items .item-description {font-size:1.2em;line-height:1.35em;}
-    #recent-items .item-description p {font-size:1em;}
-    #recent-items .item a {color:#555A2F}
-    #recent-items .item-description a.show {margin-left:5px;}
 
     /* Forum Page */
     #forum #primary {float:none;}
