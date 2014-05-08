@@ -8,33 +8,33 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 }
 
 #primary-nav {
-	line-height:1.2;
+    line-height:1.2;
 
-	ul {
-		margin:0;
-		display:block;
-		position: relative;
+    ul {
+        margin:0;
+        display:block;
+        position: relative;
         z-index: 1000;
-	}
+    }
 
-	li {
-		display:block;
-		float:left;
-		position:relative;
+    li {
+        display:block;
+        float:left;
+        position:relative;
 
-		a {
-			color:#868D4A;
-			display:block;
-			float:left;
-			padding:10px;
-		}
+        a {
+            color:#868D4A;
+            display:block;
+            float:left;
+            padding:10px;
+        }
 
-		&:hover {
-			background-color:rgba(0,0,0,.25);
+        &:hover {
+            background-color:rgba(0,0,0,.25);
                 & > ul { display: block; }
             }
 
-		ul {
+        ul {
                 min-width: 200px;
                 display: none;
                 padding: 0;
@@ -56,25 +56,25 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
                     }
                 }
               }
-	}
-	.mobile {
-		display:none;
-	}
+    }
+    .mobile {
+        display:none;
+    }
 }
 
 
 #home #content {
-	& > div {
-		@include span-columns(8 omega, 12);
-	}
+    & > div {
+        @include span-columns(8 omega, 12);
+    }
 
-	#recent-items {
-		float:left;
-		overflow:hidden;
-		padding:.5em 0;
-		@include span-columns(4 alpha, 12, 1em);
-		background:#D3D6BD;
-	}
+    #recent-items {
+        float:left;
+        overflow:hidden;
+        padding:.5em 0;
+        @include span-columns(4 alpha, 12, 1em);
+        background:#D3D6BD;
+    }
 }
 
 /* Pagination Classes */
@@ -89,7 +89,7 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 #search-filters > ul > li {margin-right:1em}
 
 #footer {
-	min-height:30px;
+    min-height:30px;
 }
 
 #home #featured-item h3 {margin-bottom:5px;}
@@ -98,7 +98,7 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 #intro {width:800px/968px * 100%;}
 
 /* Advanced Search */
-	.field {width:512px}
+    .field {width:512px}
     .field label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field .label {float:left; width: 114px;font-weight:normal;clear:left; }
     .field input, .field select {float:right; width: 378px;background:#fff;}
@@ -116,20 +116,20 @@ div#search-container {@include span-columns(3 omega, 12);float:right;padding:.75
 
 /* Exhibits */
 .exhibits.summary {
-	#primary {width:66%;float:left}
+    #primary {width:66%;float:left}
 
-	#exhibit-pages {width:30%;float:right}
+    #exhibit-pages {width:30%;float:right}
 
-	#exhibit-pages {
-		border:none;
-		border-left:1px #d3d6bc solid;
-		padding:0;
-		padding-left:5px;
+    #exhibit-pages {
+        border:none;
+        border-left:1px #d3d6bc solid;
+        padding:0;
+        padding-left:5px;
 
-		& a {
-			display:block;
-			margin:2px 0;
-		}
-	}
+        & a {
+            display:block;
+            margin:2px 0;
+        }
+    }
 
-	}
+    }

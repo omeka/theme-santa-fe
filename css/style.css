@@ -5,7 +5,6 @@
 /**
  * Correct `block` display not defined in IE 8/9.
  */
-/* line 11, sass/_normalize.scss */
 article,
 aside,
 details,
@@ -24,7 +23,6 @@ summary {
 /**
  * Correct `inline-block` display not defined in IE 8/9.
  */
-/* line 30, sass/_normalize.scss */
 audio,
 canvas,
 video {
@@ -35,7 +33,6 @@ video {
  * Prevent modern browsers from displaying `audio` without controls.
  * Remove excess height in iOS 5 devices.
  */
-/* line 41, sass/_normalize.scss */
 audio:not([controls]) {
   display: none;
   height: 0;
@@ -44,7 +41,6 @@ audio:not([controls]) {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 50, sass/_normalize.scss */
 [hidden] {
   display: none;
 }
@@ -57,7 +53,6 @@ audio:not([controls]) {
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
-/* line 64, sass/_normalize.scss */
 html {
   font-family: sans-serif;
   /* 1 */
@@ -70,7 +65,6 @@ html {
 /**
  * Remove default margin.
  */
-/* line 74, sass/_normalize.scss */
 body {
   margin: 0;
 }
@@ -81,7 +75,6 @@ body {
 /**
  * Address `outline` inconsistency between Chrome and other browsers.
  */
-/* line 86, sass/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
@@ -89,7 +82,6 @@ a:focus {
 /**
  * Improve readability when focused and also mouse hovered in all browsers.
  */
-/* line 94, sass/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
@@ -102,7 +94,6 @@ a:hover {
  * Address variable `h1` font-size and margin within `section` and `article`
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 108, sass/_normalize.scss */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
@@ -111,7 +102,6 @@ h1 {
 /**
  * Address styling not present in IE 8/9, Safari 5, and Chrome.
  */
-/* line 117, sass/_normalize.scss */
 abbr[title] {
   border-bottom: 1px dotted;
 }
@@ -119,7 +109,6 @@ abbr[title] {
 /**
  * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 125, sass/_normalize.scss */
 b,
 strong {
   font-weight: bold;
@@ -128,7 +117,6 @@ strong {
 /**
  * Address styling not present in Safari 5 and Chrome.
  */
-/* line 134, sass/_normalize.scss */
 dfn {
   font-style: italic;
 }
@@ -136,7 +124,6 @@ dfn {
 /**
  * Address differences between Firefox and other browsers.
  */
-/* line 142, sass/_normalize.scss */
 hr {
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -146,7 +133,6 @@ hr {
 /**
  * Address styling not present in IE 8/9.
  */
-/* line 152, sass/_normalize.scss */
 mark {
   background: #ff0;
   color: #000;
@@ -155,7 +141,6 @@ mark {
 /**
  * Correct font family set oddly in Safari 5 and Chrome.
  */
-/* line 161, sass/_normalize.scss */
 code,
 kbd,
 pre,
@@ -167,7 +152,6 @@ samp {
 /**
  * Improve readability of pre-formatted text in all browsers.
  */
-/* line 173, sass/_normalize.scss */
 pre {
   white-space: pre-wrap;
 }
@@ -175,7 +159,6 @@ pre {
 /**
  * Set consistent quote types.
  */
-/* line 181, sass/_normalize.scss */
 q {
   quotes: "\201C" "\201D" "\2018" "\2019";
 }
@@ -183,7 +166,6 @@ q {
 /**
  * Address inconsistent and variable font size in all browsers.
  */
-/* line 189, sass/_normalize.scss */
 small {
   font-size: 80%;
 }
@@ -191,7 +173,6 @@ small {
 /**
  * Prevent `sub` and `sup` affecting `line-height` in all browsers.
  */
-/* line 197, sass/_normalize.scss */
 sub,
 sup {
   font-size: 75%;
@@ -200,12 +181,10 @@ sup {
   vertical-align: baseline;
 }
 
-/* line 205, sass/_normalize.scss */
 sup {
   top: -0.5em;
 }
 
-/* line 209, sass/_normalize.scss */
 sub {
   bottom: -0.25em;
 }
@@ -216,7 +195,6 @@ sub {
 /**
  * Remove border when inside `a` element in IE 8/9.
  */
-/* line 221, sass/_normalize.scss */
 img {
   border: 0;
 }
@@ -224,7 +202,6 @@ img {
 /**
  * Correct overflow displayed oddly in IE 9.
  */
-/* line 229, sass/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
@@ -235,7 +212,6 @@ svg:not(:root) {
 /**
  * Address margin not present in IE 8/9 and Safari 5.
  */
-/* line 241, sass/_normalize.scss */
 figure {
   margin: 0;
 }
@@ -246,7 +222,6 @@ figure {
 /**
  * Define consistent border, margin, and padding.
  */
-/* line 253, sass/_normalize.scss */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -257,7 +232,6 @@ fieldset {
  * 1. Correct `color` not being inherited in IE 8/9.
  * 2. Remove padding so people aren't caught out if they zero out fieldsets.
  */
-/* line 264, sass/_normalize.scss */
 legend {
   border: 0;
   /* 1 */
@@ -270,7 +244,6 @@ legend {
  * 2. Correct font size not being inherited in all browsers.
  * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
  */
-/* line 275, sass/_normalize.scss */
 button,
 input,
 select,
@@ -287,7 +260,6 @@ textarea {
  * Address Firefox 4+ setting `line-height` on `input` using `!important` in
  * the UA stylesheet.
  */
-/* line 289, sass/_normalize.scss */
 button,
 input {
   line-height: normal;
@@ -299,7 +271,6 @@ input {
  * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
  * Correct `select` style inheritance in Firefox 4+ and Opera.
  */
-/* line 301, sass/_normalize.scss */
 button,
 select {
   text-transform: none;
@@ -312,7 +283,6 @@ select {
  * 3. Improve usability and consistency of cursor style between image-type
  *    `input` and others.
  */
-/* line 314, sass/_normalize.scss */
 button,
 html input[type="button"],
 input[type="reset"],
@@ -326,7 +296,6 @@ input[type="submit"] {
 /**
  * Re-set default cursor for disabled elements.
  */
-/* line 326, sass/_normalize.scss */
 button[disabled],
 html input[disabled] {
   cursor: default;
@@ -336,7 +305,6 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-/* line 336, sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
   box-sizing: border-box;
@@ -350,7 +318,6 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 348, sass/_normalize.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -364,7 +331,6 @@ input[type="search"] {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 360, sass/_normalize.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -373,7 +339,6 @@ input[type="search"]::-webkit-search-decoration {
 /**
  * Remove inner padding and border in Firefox 4+.
  */
-/* line 369, sass/_normalize.scss */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -384,7 +349,6 @@ input::-moz-focus-inner {
  * 1. Remove default vertical scrollbar in IE 8/9.
  * 2. Improve readability and alignment in all browsers.
  */
-/* line 380, sass/_normalize.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -398,7 +362,6 @@ textarea {
 /**
  * Remove most spacing between table cells.
  */
-/* line 393, sass/_normalize.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -406,7 +369,6 @@ table {
 
 @media screen {
   /* == Imports == */
-  /* line 2, sass/_screen.scss */
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -426,56 +388,47 @@ table {
   }
 
   /* remember to define focus styles! */
-  /* line 20, sass/_screen.scss */
   :focus, :active {
     outline: 0;
   }
 
-  /* line 23, sass/_screen.scss */
   body {
     line-height: 1;
     color: black;
     background: white;
   }
 
-  /* line 28, sass/_screen.scss */
   ol, ul {
     list-style: none;
   }
 
   /* tables still need 'cellspacing="0"' in the markup center*/
-  /* line 36, sass/_screen.scss */
   caption, th, td {
     text-align: left;
     font-weight: normal;
   }
 
-  /* line 40, sass/_screen.scss */
   blockquote:before, blockquote:after,
   q:before, q:after {
     content: "";
   }
 
-  /* line 44, sass/_screen.scss */
   blockquote, q {
     quotes: "" "";
   }
 
   /* == Generic == */
-  /* line 48, sass/_screen.scss */
   body {
     font: 62.5% Verdana, Arial, sans-serif;
     color: #222;
     background-color: #D5D2B8;
   }
 
-  /* line 50, sass/_screen.scss */
   #wrap {
     border-top: 40px solid #868D4A;
   }
 
   /* -- Headings -- */
-  /* line 53, sass/_screen.scss */
   #site-title {
     width: 100%;
     color: #fafafa;
@@ -484,104 +437,86 @@ table {
     text-align: center;
   }
 
-  /* line 54, sass/_screen.scss */
   #site-title a {
     color: #fafafa;
     text-decoration: none;
     padding: .5em 0 10px 10px;
   }
 
-  /* line 55, sass/_screen.scss */
   #site-title a:hover {
     text-decoration: none;
   }
 
-  /* line 56, sass/_screen.scss */
   h1 {
     font-size: 2.3em;
     color: #868D4A;
     margin-bottom: 10px;
   }
 
-  /* line 57, sass/_screen.scss */
   h2 {
     font-size: 2em;
   }
 
-  /* line 58, sass/_screen.scss */
   h3 {
     font-size: 1.6em;
   }
 
   /* -- Misc Block elements -- */
-  /* line 61, sass/_screen.scss */
   p, #content ul, #content table {
     font-size: 1.2em;
     line-height: 1.35em;
   }
 
-  /* line 62, sass/_screen.scss */
   p {
     padding-bottom: 5px;
   }
 
-  /* line 63, sass/_screen.scss */
   #content ul ul {
     font-size: 1em;
   }
 
-  /* line 64, sass/_screen.scss */
   ol {
     list-style: decimal inside;
   }
 
   /* -- Misc Inline elements -- */
-  /* line 67, sass/_screen.scss */
   input {
     margin-top: 5px;
   }
 
-  /* line 69, sass/_screen.scss */
   em {
     font-style: italic;
   }
 
-  /* line 70, sass/_screen.scss */
   strong {
     font-weight: bold;
   }
 
   /* -- Links -- */
-  /* line 73, sass/_screen.scss */
   a {
     color: #868D4A;
     text-decoration: none;
   }
 
-  /* line 75, sass/_screen.scss */
   a:hover {
     text-decoration: underline;
   }
 
   /* -- Misc Classes */
-  /* line 79, sass/_screen.scss */
   .view-items-link {
     margin-top: .5em;
   }
 
-  /* line 81, sass/_screen.scss */
   .exhibit-thumbnail {
     float: left;
     padding: 0 10px 0 0;
   }
 
-  /* line 82, sass/_screen.scss */
   .odd .exhibit-thumbnail {
     float: left;
     padding: 0 10px 0 0;
   }
 
-  /* line 83, sass/_screen.scss */
   .even .exhibit-thumbnail {
     float: right;
     padding: 0 0px 0 10px;
@@ -589,112 +524,93 @@ table {
 
   /* items/browse  */
   /* Navigation Classes*/
-  /* line 88, sass/_screen.scss */
   ul.navigation, ul.pagination, #sort-links ul, #sort-links span {
     font-size: 1.3em;
   }
 
-  /* line 89, sass/_screen.scss */
   #sort-links span {
     line-height: 1.35em;
   }
 
   /* Pagination Classes */
-  /* line 92, sass/_screen.scss */
   .pagination, #sort-links {
     clear: both;
   }
 
-  /* line 93, sass/_screen.scss */
   .pagination {
     border-bottom: 1px #d3d6bc solid;
     padding-bottom: .5em;
   }
 
-  /* line 94, sass/_screen.scss */
   #sort-links {
     padding-top: .5em;
   }
 
-  /* line 95, sass/_screen.scss */
   #sort-links-list {
     margin: 0;
     float: left;
     margin-bottom: .5em;
   }
 
-  /* line 96, sass/_screen.scss */
   .pagination li, #sort-links-list li, .sort-label {
     float: left;
     padding-left: 0.5em;
   }
 
-  /* line 97, sass/_screen.scss */
   li.pagination_next, li.pagination_previous {
     padding-top: 0.6em;
   }
 
-  /* line 98, sass/_screen.scss */
   .pagination a, #sort-links-list a {
     color: #686C42;
   }
 
-  /* line 99, sass/_screen.scss */
   .pagination a:hover, #sort-links-list a:hover {
     color: #868D4A;
     width: 82.64463%;
     oration: none;
   }
 
-  /* line 100, sass/_screen.scss */
   .pagination li.current a, #sort-links-list li.current a {
     font-weight: bold;
   }
 
-  /* line 101, sass/_screen.scss */
   .pagination a.current, #sort-links-list li.sorting {
     font-weight: bold;
   }
 
-  /* line 102, sass/_screen.scss */
   .pagination input {
     width: 1.5em;
     text-align: center;
   }
 
   /* Items Classes*/
-  /* line 105, sass/_screen.scss */
   .item-file img, .item-img {
     float: left;
     padding-right: 10px;
   }
 
-  /* line 107, sass/_screen.scss */
   .element {
     overflow: hidden;
     clear: both;
     padding: 5px 0;
   }
 
-  /* line 108, sass/_screen.scss */
   .element-text {
     font-size: 1.2em;
     padding-bottom: 5px;
     line-height: 1.35em;
   }
 
-  /* line 109, sass/_screen.scss */
   .element-text p, .element-text li, .element-text ul, .element-text ol {
     font-size: 1em;
   }
 
-  /* line 111, sass/_screen.scss */
   .title-list {
     clear: both;
   }
 
   /* Collections Classes */
-  /* line 114, sass/_screen.scss */
   .collection {
     padding: 10px 20px 10px 20px;
     overflow: hidden;
@@ -703,77 +619,63 @@ table {
   }
 
   /* Tag Clouds */
-  /* line 117, sass/_screen.scss */
   .hTagcloud ul {
     list-style: none;
     padding: 10px 20px 10px 20px;
   }
 
-  /* line 118, sass/_screen.scss */
   .hTagcloud li {
     display: inline;
     line-height: 2.5em;
     margin-right: .5em;
   }
 
-  /* line 120, sass/_screen.scss */
   .popular a {
     font-size: 120%;
   }
 
-  /* line 121, sass/_screen.scss */
   .v-popular a {
     font-size: 140%;
   }
 
-  /* line 122, sass/_screen.scss */
   .vv-popular a {
     font-size: 180%;
   }
 
-  /* line 123, sass/_screen.scss */
   .vvv-popular a {
     font-size: 220%;
   }
 
-  /* line 124, sass/_screen.scss */
   .vvvv-popular a {
     font-size: 260%;
   }
 
-  /* line 125, sass/_screen.scss */
   .vvvvv-popular a {
     font-size: 300%;
   }
 
-  /* line 126, sass/_screen.scss */
   .vvvvvv-popular a {
     font-size: 320%;
   }
 
-  /* line 127, sass/_screen.scss */
   .vvvvvvv-popular a {
     font-size: 340%;
   }
 
-  /* line 128, sass/_screen.scss */
   .vvvvvvvv-popular a {
     font-size: 360%;
   }
 
   /* == Header == */
-  /* line 131, sass/_screen.scss */
   #header {
     border-bottom: 2px solid #FFF;
     border-top: 2px solid #FFF;
     background: #444;
   }
 
-  /* line 132, sass/_screen.scss */
   #header .center-div {
     background-color: #333;
   }
-  /* line 133, sass/_screen.scss */
   #header .center-div:after {
     content: "";
     display: block;
@@ -781,12 +683,10 @@ table {
     clear: both;
   }
 
-  /* line 141, sass/_screen.scss */
   #search-container {
     width: 100%;
     clear: both;
   }
-  /* line 144, sass/_screen.scss */
   #search-container:after {
     content: "";
     display: block;
@@ -794,21 +694,18 @@ table {
     clear: both;
   }
 
-  /* line 151, sass/_screen.scss */
   div#search-container a {
     margin-top: .6em;
     float: right;
     clear: both;
   }
 
-  /* line 153, sass/_screen.scss */
   #search-form {
     text-align: center;
     position: relative;
     overflow: visible;
   }
 
-  /* line 159, sass/_screen.scss */
   #advanced-search {
     clear: both;
     float: right;
@@ -817,16 +714,13 @@ table {
     width: 100%;
     font-weight: bold;
   }
-  /* line 176, sass/_screen.scss */
   #advanced-search:focus {
     outline: -webkit-focus-ring-color auto 5px;
   }
-  /* line 180, sass/_screen.scss */
   #advanced-search:link, #advanced-search:hover, #advanced-search:active, #advanced-search:visited {
     color: #fff;
   }
 
-  /* line 191, sass/_screen.scss */
   #advanced-form {
     clear: both;
     background-color: #fff;
@@ -839,33 +733,27 @@ table {
     width: 100%;
     text-align: left;
   }
-  /* line 203, sass/_screen.scss */
   #advanced-form #query-types *:first-child {
     margin-top: 0;
   }
-  /* line 207, sass/_screen.scss */
   #advanced-form label {
     margin: 0;
     padding: 0;
   }
-  /* line 212, sass/_screen.scss */
   #advanced-form p {
     margin: 1.2em 0;
   }
-  /* line 215, sass/_screen.scss */
   #advanced-form p:last-of-type {
     margin-bottom: 0em;
   }
 
   /* == Content == */
   /* Items Pages */
-  /* line 223, sass/_screen.scss */
   .item h2 {
     font-weight: bold;
     padding-bottom: .25em;
   }
 
-  /* line 224, sass/_screen.scss */
   .item {
     padding: 10px;
     overflow: hidden;
@@ -873,7 +761,6 @@ table {
     clear: both;
   }
 
-  /* line 225, sass/_screen.scss */
   .item-description {
     margin-top: 3px;
     font-size: 1.2em;
@@ -881,22 +768,18 @@ table {
     clear: left;
   }
 
-  /* line 226, sass/_screen.scss */
   .item-description p, #items.browse .item-description li {
     font-size: 1em;
   }
 
-  /* line 230, sass/_screen.scss */
   ul h3 {
     font-size: 1.6em;
   }
 
-  /* line 232, sass/_screen.scss */
   .tags {
     margin-top: 3px;
   }
 
-  /* line 234, sass/_screen.scss */
   #backlink {
     float: right;
     font-size: 1.5em;
@@ -905,7 +788,6 @@ table {
   }
 
   /* Structure */
-  /* line 237, sass/_screen.scss */
   #content {
     background: #fff;
     padding-top: 15px;
@@ -913,24 +795,20 @@ table {
     overflow: hidden;
     *zoom: 1;
   }
-  /* line 38, ../../../../../../home/ken/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
   #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 244, sass/_screen.scss */
   #content > div, #content nav {
     *zoom: 1;
   }
-  /* line 38, ../../../../../../home/ken/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
   #content > div:after, #content nav:after {
     content: "";
     display: table;
     clear: both;
   }
 
-  /* line 248, sass/_screen.scss */
   .center-div {
     width: 82.64463%;
     margin: auto;
@@ -941,7 +819,6 @@ table {
   }
 
   /* General */
-  /* line 251, sass/_screen.scss */
   #login-status {
     float: right;
     color: #D5D2B8;
@@ -949,93 +826,77 @@ table {
   }
 
   /* Navigation */
-  /* line 259, sass/_screen.scss */
   #primary-nav {
     clear: both;
     *zoom: 1;
   }
-  /* line 38, ../../../../../../home/ken/.rbenv/versions/2.0.0-p0/lib/ruby/gems/2.0.0/gems/compass-core-1.0.0.alpha.19/stylesheets/compass/utilities/general/_clearfix.scss */
   #primary-nav:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 263, sass/_screen.scss */
   #primary-nav ul {
     display: none;
   }
-  /* line 266, sass/_screen.scss */
   #primary-nav select {
     display: block;
     width: 80%;
     margin: auto;
   }
 
-  /* line 275, sass/_screen.scss */
   .secondary-nav {
     border-top: 1px #d3d6bc solid;
     width: 100%;
   }
 
-  /* line 276, sass/_screen.scss */
   .secondary-nav ul {
     margin: 0;
     float: left;
   }
 
-  /* line 277, sass/_screen.scss */
   .secondary-nav li {
     padding: .5em 0 .5em .5em;
     float: left;
   }
 
-  /* line 278, sass/_screen.scss */
   .secondary-nav a {
     color: #686C42;
   }
 
-  /* line 279, sass/_screen.scss */
   .secondary-nav a:hover {
     color: #868D4A;
     text-decoration: none;
   }
 
-  /* line 280, sass/_screen.scss */
   .secondary-nav li.active a {
     font-weight: bold;
   }
 
   /* Home Page */
-  /* line 285, sass/_screen.scss */
   #home #content > div {
     border-top: 1px #d3d6bc solid;
     padding: 1em 0 .5em;
   }
 
-  /* line 291, sass/_screen.scss */
   #recent-items {
     border: none;
   }
 
-  /* line 295, sass/_screen.scss */
   #featured-exhibit {
     border-bottom: 1px #d3d6bc solid;
   }
 
-  /* line 299, sass/_screen.scss */
   #intro {
     width: 100%;
     padding: 10px 0;
   }
 
-  /* line 304, sass/_screen.scss */
   #home #content #recent-items {
     background: #D3D6BD;
     padding-left: 1em;
     padding-right: 1em;
   }
 
-  /* line 306, sass/_screen.scss */
   #recent-items .item {
     padding: 0;
     border: none;
@@ -1044,114 +905,94 @@ table {
     padding-top: 1em;
   }
 
-  /* line 307, sass/_screen.scss */
   #recent-items .item-description {
     font-size: 1.2em;
     line-height: 1.35em;
   }
 
-  /* line 308, sass/_screen.scss */
   #recent-items .item-description p {
     font-size: 1em;
   }
 
-  /* line 309, sass/_screen.scss */
   #recent-items .item a {
     color: #555A2F;
   }
 
-  /* line 310, sass/_screen.scss */
   #recent-items .item-description a.show {
     margin-left: 5px;
   }
 
   /* Forum Page */
-  /* line 313, sass/_screen.scss */
   #forum #primary {
     float: none;
   }
 
   /* Advanced Search */
-  /* line 319, sass/_screen.scss */
   .advanced-search input, .advanced-search label, .advanced-search select {
     width: 90%;
   }
 
-  /* line 321, sass/_screen.scss */
   fieldset {
     display: block;
     clear: both;
   }
 
-  /* line 322, sass/_screen.scss */
   label {
     font-size: 1.2em;
   }
 
-  /* line 323, sass/_screen.scss */
   .label {
     font-size: 1.2em;
   }
 
-  /* line 324, sass/_screen.scss */
   .inputs {
     overflow: hidden;
     zoom: 1;
   }
 
-  /* line 325, sass/_screen.scss */
   .field {
     padding: 0.75em 0.5em;
     overflow: hidden;
   }
 
-  /* line 326, sass/_screen.scss */
   .advanced-search .field {
     background: #d3d6bc;
     margin-bottom: 1em;
   }
 
-  /* line 329, sass/_screen.scss */
   .search-entry select {
     margin-bottom: .5em;
   }
 
-  /* line 330, sass/_screen.scss */
   #submit_search_advanced {
     width: 10%;
     margin: .5em 0 1em 80%;
   }
 
-  /* line 331, sass/_screen.scss */
   .no-results {
     margin: 10px;
   }
 
   /* Search Results */
-  /* line 334, sass/_screen.scss */
   #search-filters {
     margin-bottom: 1em;
   }
 
-  /* line 335, sass/_screen.scss */
   #search-filters > ul > li {
     float: left;
     clear: left;
     margin-bottom: .75em;
   }
 
-  /* line 337, sass/_screen.scss */
   #search-results th {
     font-weight: bold;
   }
 
-  /* line 338, sass/_screen.scss */
   #search-results th, #search-results td {
     padding: 0.75em 1em 0 0;
   }
 
   /* Exhibits Pages */
-  /* line 344, sass/_screen.scss */
   .exhibit {
     padding: 10px 20px 10px 20px;
     overflow: hidden;
@@ -1159,24 +1000,20 @@ table {
     clear: both;
   }
 
-  /* line 346, sass/_screen.scss */
   .summary #exhibit-pages {
     border: none;
     border-top: 1px #d3d6bc solid;
     padding-top: 5px;
   }
 
-  /* line 347, sass/_screen.scss */
   .summary #exhibit-pages ul {
     margin: 0;
   }
 
-  /* line 348, sass/_screen.scss */
   .summary #exhibit-pages ul ul {
     margin-left: 10px;
   }
 
-  /* line 360, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav {
     width: 100%;
     margin-bottom: 10px;
@@ -1185,88 +1022,73 @@ table {
     float: left;
   }
 
-  /* line 361, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav li {
     float: left;
   }
 
-  /* line 362, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav a {
     color: #686C42;
   }
 
-  /* line 363, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav a:hover {
     color: #868D4A;
     text-decoration: none;
   }
 
-  /* line 364, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav li.current a {
     font-weight: bold;
   }
 
-  /* line 365, sass/_screen.scss */
   .exhibit-page-nav, .exhibit-child-nav a.current {
     font-weight: bold;
   }
 
-  /* line 367, sass/_screen.scss */
   .exhibit-text ul, ol {
     list-style: disc;
     margin: 1em 4em;
     padding: 0;
   }
 
-  /* line 369, sass/_screen.scss */
   #exhibit-pages ul {
     margin: 0;
   }
 
-  /* line 371, sass/_screen.scss */
   #exhibit-pages {
     border-bottom: 1px #d3d6bc solid;
     margin-bottom: 1em;
   }
 
-  /* line 374, sass/_screen.scss */
   .exhibit-page-nav > li {
     display: block;
     float: none;
     overflow: auto;
     margin-right: 0;
   }
-  /* line 380, sass/_screen.scss */
   .exhibit-page-nav > li:first-of-type {
     font-size: 1.6em;
     font-weight: bold;
     padding: .5em 0;
   }
-  /* line 386, sass/_screen.scss */
   .exhibit-page-nav > li ul {
     padding-left: 0;
   }
-  /* line 389, sass/_screen.scss */
   .exhibit-page-nav > li ul li {
     display: inline-block;
     padding: 0 .5em;
     border-left: 1px solid #686C42;
     width: auto;
   }
-  /* line 395, sass/_screen.scss */
   .exhibit-page-nav > li ul li:first-of-type {
     border: none;
     padding-left: 0;
   }
 
-  /* line 404, sass/_screen.scss */
   .exhibit-child-nav li {
     display: inline-block;
     padding: 0 .5em;
     border-left: 1px solid #686C42;
     width: auto;
   }
-  /* line 410, sass/_screen.scss */
   .exhibit-child-nav li:first-of-type {
     border: none;
     padding-left: 0;
@@ -1274,7 +1096,6 @@ table {
 
   /* Collections Pages */
   /* == Footer == */
-  /* line 420, sass/_screen.scss */
   #footer {
     width: 82.64463%;
     margin: auto;
@@ -1287,38 +1108,31 @@ table {
     padding-right: 1.875%;
   }
 
-  /* line 432, sass/_screen.scss */
   #footer li {
     display: inline;
   }
 
-  /* line 433, sass/_screen.scss */
   #footer .navigation li {
     margin-right: .5em;
   }
 
-  /* line 434, sass/_screen.scss */
   #footer a {
     color: #D5D2B8;
   }
 
-  /* line 435, sass/_screen.scss */
   #footer p {
     color: #D5D2B8;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 1, sass/_screen_768.scss */
   #site-title {
     width: 50%;
   }
 
-  /* line 2, sass/_screen_768.scss */
   #site-title a {
     float: left;
   }
 
-  /* line 4, sass/_screen_768.scss */
   div#search-container {
     width: 23.72881%;
     float: right;
@@ -1330,44 +1144,36 @@ table {
     clear: none;
   }
 
-  /* line 6, sass/_screen_768.scss */
   #search-form {
     text-align: right;
   }
 
-  /* line 10, sass/_screen_768.scss */
   #primary-nav {
     line-height: 1.2;
   }
-  /* line 13, sass/_screen_768.scss */
   #primary-nav ul {
     margin: 0;
     display: block;
     position: relative;
     z-index: 1000;
   }
-  /* line 20, sass/_screen_768.scss */
   #primary-nav li {
     display: block;
     float: left;
     position: relative;
   }
-  /* line 25, sass/_screen_768.scss */
   #primary-nav li a {
     color: #868D4A;
     display: block;
     float: left;
     padding: 10px;
   }
-  /* line 32, sass/_screen_768.scss */
   #primary-nav li:hover {
     background-color: rgba(0, 0, 0, 0.25);
   }
-  /* line 34, sass/_screen_768.scss */
   #primary-nav li:hover > ul {
     display: block;
   }
-  /* line 37, sass/_screen_768.scss */
   #primary-nav li ul {
     min-width: 200px;
     display: none;
@@ -1377,7 +1183,6 @@ table {
     margin-top: 40px;
     background: #333;
   }
-  /* line 46, sass/_screen_768.scss */
   #primary-nav li ul li {
     width: 100%;
     clear: both;
@@ -1385,18 +1190,15 @@ table {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
-  /* line 52, sass/_screen_768.scss */
   #primary-nav li ul li ul {
     position: absolute;
     left: 100%;
     margin-top: 0;
   }
-  /* line 60, sass/_screen_768.scss */
   #primary-nav .mobile {
     display: none;
   }
 
-  /* line 67, sass/_screen_768.scss */
   #home #content > div {
     width: 66.10169%;
     float: right;
@@ -1404,7 +1206,6 @@ table {
     *margin-left: -1em;
     display: inline;
   }
-  /* line 71, sass/_screen_768.scss */
   #home #content #recent-items {
     float: left;
     overflow: hidden;
@@ -1419,7 +1220,6 @@ table {
   }
 
   /* Pagination Classes */
-  /* line 81, sass/_screen_768.scss */
   .pagination {
     margin: 0;
     float: left;
@@ -1428,7 +1228,6 @@ table {
     margin-bottom: .5em;
   }
 
-  /* line 82, sass/_screen_768.scss */
   #sort-links {
     padding: 0;
     float: right;
@@ -1437,55 +1236,45 @@ table {
   }
 
   /*Search Results */
-  /* line 86, sass/_screen_768.scss */
   #search-filters ul ul {
     float: right;
     margin-left: .5em;
   }
 
-  /* line 87, sass/_screen_768.scss */
   #search-filters ul ul li {
     margin-right: .5em;
   }
 
-  /* line 88, sass/_screen_768.scss */
   #search-filters li {
     float: left;
   }
 
-  /* line 89, sass/_screen_768.scss */
   #search-filters > ul > li {
     margin-right: 1em;
   }
 
-  /* line 91, sass/_screen_768.scss */
   #footer {
     min-height: 30px;
   }
 
-  /* line 95, sass/_screen_768.scss */
   #home #featured-item h3 {
     margin-bottom: 5px;
   }
 
-  /* line 96, sass/_screen_768.scss */
   #home #featured-item .image {
     float: left;
     padding-right: 10px;
   }
 
-  /* line 98, sass/_screen_768.scss */
   #intro {
     width: 82.64463%;
   }
 
   /* Advanced Search */
-  /* line 101, sass/_screen_768.scss */
   .field {
     width: 512px;
   }
 
-  /* line 102, sass/_screen_768.scss */
   .field label {
     float: left;
     width: 114px;
@@ -1493,7 +1282,6 @@ table {
     clear: left;
   }
 
-  /* line 103, sass/_screen_768.scss */
   .field .label {
     float: left;
     width: 114px;
@@ -1501,65 +1289,54 @@ table {
     clear: left;
   }
 
-  /* line 104, sass/_screen_768.scss */
   .field input, .field select {
     float: right;
     width: 378px;
     background: #fff;
   }
 
-  /* line 105, sass/_screen_768.scss */
   .field select {
     width: 382px;
   }
 
-  /* line 106, sass/_screen_768.scss */
   .field input {
     margin: 0;
     margin-left: 16px;
   }
 
-  /* line 107, sass/_screen_768.scss */
   input.submitinput {
     margin-top: 1em;
   }
 
-  /* line 108, sass/_screen_768.scss */
   input#description {
     width: 378px;
     height: 312px;
   }
 
-  /* line 110, sass/_screen_768.scss */
   #submit_search_advanced {
     margin: .5em 0 1em 440px;
   }
 
   /* Items */
-  /* line 114, sass/_screen_768.scss */
   .item-description {
     clear: none;
   }
 
   /* Exhibits */
-  /* line 119, sass/_screen_768.scss */
   .exhibits.summary #primary {
     width: 66%;
     float: left;
   }
-  /* line 121, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages {
     width: 30%;
     float: right;
   }
-  /* line 123, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages {
     border: none;
     border-left: 1px #d3d6bc solid;
     padding: 0;
     padding-left: 5px;
   }
-  /* line 129, sass/_screen_768.scss */
   .exhibits.summary #exhibit-pages a {
     display: block;
     margin: 2px 0;
