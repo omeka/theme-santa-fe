@@ -52,6 +52,10 @@ body {
         font-size: 1.5 * $base-font-size;
         @include trailer(1, 1.5 * $base-font-size);
     }
+    
+    p, ul, ol, dl {
+        margin: rhythm(1) 0;
+    }
 
     i, em {
         font-style:italic;
@@ -95,7 +99,8 @@ body {
     }
     
     input[type="text"],
-    input[type="password"] {
+    input[type="password"],
+    textarea {
         border-color: $sand;
         @include rhythm-borders(1px, 0, $base-font-size, solid);
     }
@@ -108,8 +113,38 @@ body {
         border: 0;
         margin: 0;
     }
+    
+    /* -- Table -- */
+    
+    table {
+        margin: rhythm() auto;
+    }
+    
+    tr:first-of-type > * {
+        border-color: $sand;
+        @include leading-border(1px, .5, $base-font-size, solid);
+    }
+    
+    th,td {
+        border-color: $sand;
+        border-left: 1px solid $sand;
+        padding: rhythm(.5);
+        @include trailing-border(1px, .5, $base-font-size, solid);
+        
+        &:last-of-type {
+            border-right: 1px solid $sand;
+        }
+    }
+    
+    th {
+        background-color: $sand;
+    }
 
     /* -- Misc Classes */
+    
+    caption {
+        font-style: italic;
+    }
 
     .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
@@ -402,7 +437,6 @@ body {
     }
 }
 
-
 /* == Content == */
 
     ul h3 {font-size:1.6em;}
@@ -524,13 +558,44 @@ body {
     .no-results {margin:10px;}
 
     /* Search Results */
-    #search-filters {margin-bottom:1em}
-    #search-filters > ul > li {float:left;clear:left;margin-bottom:.75em}
+    #item-filters,
+    #search-filters {
+        border-color: $sand;
+        @include trailing-border(1px, .5, $base-font-size, solid);
 
-    #search-results th {font-weight:bold}
-    #search-results th, #search-results td {padding:0.75em 1em 0 0}
-
-
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+        
+        li {
+            display: inline-block;
+            background-color: $sand;
+            padding: rhythm(.25);
+        }
+        
+        ul ul {
+            display: inline;
+        }
+        
+        ul ul li {
+            padding: 0;
+        }
+    }
+    
+    #search-results {
+        width: 100%;
+        
+        th {
+            text-align: left;
+        }
+        
+        th, td {
+            border-left-color: transparent;
+            border-right-color: transparent;
+        }
+    }
 
     /* Exhibits Pages */
 

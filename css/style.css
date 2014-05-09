@@ -424,6 +424,10 @@ table {
     margin-bottom: 1em;
   }
 
+  p, ul, ol, dl {
+    margin: 1.5em 0;
+  }
+
   i, em {
     font-style: italic;
   }
@@ -466,7 +470,8 @@ table {
   }
 
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  textarea {
     border-color: #d3d6bc;
     border-width: 0.08333em;
     border-style: solid;
@@ -482,7 +487,39 @@ table {
     margin: 0;
   }
 
+  /* -- Table -- */
+  table {
+    margin: 1.5em auto;
+  }
+
+  tr:first-of-type > * {
+    border-color: #d3d6bc;
+    border-top-width: 0.08333em;
+    border-top-style: solid;
+    padding-top: 0.66667em;
+  }
+
+  th, td {
+    border-color: #d3d6bc;
+    border-left: 1px solid #d3d6bc;
+    padding: 0.75em;
+    border-bottom-width: 0.08333em;
+    border-bottom-style: solid;
+    padding-bottom: 0.66667em;
+  }
+  th:last-of-type, td:last-of-type {
+    border-right: 1px solid #d3d6bc;
+  }
+
+  th {
+    background-color: #d3d6bc;
+  }
+
   /* -- Misc Classes */
+  caption {
+    font-style: italic;
+  }
+
   .exhibit-thumbnail {
     float: left;
     padding: 0 10px 0 0;
@@ -993,22 +1030,43 @@ table {
   }
 
   /* Search Results */
+  #item-filters,
   #search-filters {
-    margin-bottom: 1em;
+    border-color: #d3d6bc;
+    border-bottom-width: 0.08333em;
+    border-bottom-style: solid;
+    padding-bottom: 0.66667em;
+  }
+  #item-filters ul,
+  #search-filters ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #item-filters li,
+  #search-filters li {
+    display: inline-block;
+    background-color: #d3d6bc;
+    padding: 0.375em;
+  }
+  #item-filters ul ul,
+  #search-filters ul ul {
+    display: inline;
+  }
+  #item-filters ul ul li,
+  #search-filters ul ul li {
+    padding: 0;
   }
 
-  #search-filters > ul > li {
-    float: left;
-    clear: left;
-    margin-bottom: .75em;
+  #search-results {
+    width: 100%;
   }
-
   #search-results th {
-    font-weight: bold;
+    text-align: left;
   }
-
   #search-results th, #search-results td {
-    padding: 0.75em 1em 0 0;
+    border-left-color: transparent;
+    border-right-color: transparent;
   }
 
   /* Exhibits Pages */
@@ -1248,23 +1306,6 @@ table {
   }
 
   /*Search Results */
-  #search-filters ul ul {
-    float: right;
-    margin-left: .5em;
-  }
-
-  #search-filters ul ul li {
-    margin-right: .5em;
-  }
-
-  #search-filters li {
-    float: left;
-  }
-
-  #search-filters > ul > li {
-    margin-right: 1em;
-  }
-
   #footer {
     min-height: 30px;
   }
