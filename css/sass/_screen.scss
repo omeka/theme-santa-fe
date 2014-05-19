@@ -149,6 +149,16 @@ body {
     .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
+    
+    .collection.record-image img {
+        height: rhythm(3.5);
+        width: auto;
+        float: left;
+        @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
+        border-color: rgba(0,0,0,.2);
+        @include rhythm-borders(1px, 0, $base-font-size, solid);
+        margin: 0 rhythm(.5) rhythm(.5) 6px;
+    }
 
     /* Navigation Classes*/
     ul.navigation, 
@@ -263,7 +273,7 @@ body {
 
         /* Items Classes*/
         .item,
-        .collection,
+        .collection:not(.record-image),
         .exhibit {
             border-color: $sand;
             @include trailing-border(1px, 1, $base-font-size, solid);
@@ -295,10 +305,6 @@ body {
             margin: 0;
             border: 0;
         }
-            
-        .element {overflow:hidden;clear:both;padding:5px 0;}
-        .element-text {font-size:1.2em;padding-bottom:5px;line-height:1.35em;}
-        .element-text p, .element-text li, .element-text ul, .element-text ol {font-size:1em;}
     
         .title-list {clear:both;}
 
@@ -519,10 +525,11 @@ body {
     }
     
     #featured-item .item,
-    #featured-collection .collection,
+    #featured-collection .collection:not(.record-image),
     #featured-exhibit .exhibit {
         @include trailing-border(0px, 0, $base-font-size, solid);
         padding: 0;
+        overflow: visible;
     }
 
     #recent-items {
@@ -680,7 +687,14 @@ body {
                            }
 
     /* Collections Pages */    
-    #collection-description {}
+    
+    .show.collections .element {
+        @include trailer();
+    }
+    
+    .browse.collections .element {
+        clear: none;
+    }
 
 /* == Footer == */
 #footer {

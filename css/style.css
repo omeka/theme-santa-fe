@@ -535,6 +535,20 @@ table {
     padding: 0 0px 0 10px;
   }
 
+  .collection.record-image img {
+    height: 5.25em;
+    width: auto;
+    float: left;
+    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    border-color: rgba(0, 0, 0, 0.2);
+    border-width: 0.08333em;
+    border-style: solid;
+    padding: -0.08333em;
+    margin: 0 0.75em 0.75em 6px;
+  }
+
   /* Navigation Classes*/
   ul.navigation,
   ul.pagination,
@@ -645,7 +659,7 @@ table {
 
   /* Items Classes*/
   .item,
-  .collection,
+  .collection:not(.record-image),
   .exhibit {
     border-color: #d3d6bc;
     border-bottom-width: 0.08333em;
@@ -655,12 +669,12 @@ table {
     overflow: hidden;
   }
   .item p:last-child,
-  .collection p:last-child,
+  .collection:not(.record-image) p:last-child,
   .exhibit p:last-child {
     margin-bottom: 0em;
   }
   .item + .pagination-nav,
-  .collection + .pagination-nav,
+  .collection:not(.record-image) + .pagination-nav,
   .exhibit + .pagination-nav {
     margin-top: -0.75em;
   }
@@ -682,22 +696,6 @@ table {
   .item-img img {
     margin: 0;
     border: 0;
-  }
-
-  .element {
-    overflow: hidden;
-    clear: both;
-    padding: 5px 0;
-  }
-
-  .element-text {
-    font-size: 1.2em;
-    padding-bottom: 5px;
-    line-height: 1.35em;
-  }
-
-  .element-text p, .element-text li, .element-text ul, .element-text ol {
-    font-size: 1em;
   }
 
   .title-list {
@@ -988,12 +986,13 @@ table {
   }
 
   #featured-item .item,
-  #featured-collection .collection,
+  #featured-collection .collection:not(.record-image),
   #featured-exhibit .exhibit {
     border-bottom-width: 0em;
     border-bottom-style: solid;
     padding-bottom: 0em;
     padding: 0;
+    overflow: visible;
   }
 
   #recent-items {
@@ -1165,6 +1164,14 @@ table {
   }
 
   /* Collections Pages */
+  .show.collections .element {
+    margin-bottom: 1.5em;
+  }
+
+  .browse.collections .element {
+    clear: none;
+  }
+
   /* == Footer == */
   #footer {
     margin: 0 1.69492%;
