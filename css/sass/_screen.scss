@@ -150,14 +150,19 @@ body {
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
     
-    .collection.record-image img {
+    .image img {
         height: rhythm(3.5);
         width: auto;
         float: left;
-        @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
         border-color: rgba(0,0,0,.2);
         @include rhythm-borders(1px, 0, $base-font-size, solid);
-        margin: 0 rhythm(.5) rhythm(.5) 6px;
+        margin: 0 rhythm(.5) rhythm(.5) 0;
+    }
+    
+    .collection .image img,
+    .exhibit .image img {
+        @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
+        margin-left: 6px;
     }
 
     /* Navigation Classes*/
@@ -273,7 +278,7 @@ body {
 
         /* Items Classes*/
         .item,
-        .collection:not(.record-image),
+        .collection,
         .exhibit {
             border-color: $sand;
             @include trailing-border(1px, 1, $base-font-size, solid);
@@ -525,7 +530,7 @@ body {
     }
     
     #featured-item .item,
-    #featured-collection .collection:not(.record-image),
+    #featured-collection .collection,
     #featured-exhibit .exhibit {
         @include trailing-border(0px, 0, $base-font-size, solid);
         padding: 0;
@@ -601,6 +606,17 @@ body {
         th, td {
             border-left-color: transparent;
             border-right-color: transparent;
+            vertical-align: top;
+        }
+        
+        .image {
+            float: left;
+        }
+        
+        .image img {
+            height: rhythm(4);
+            width: auto;
+            margin: 0 rhythm(.5) 0 0;
         }
     }
 

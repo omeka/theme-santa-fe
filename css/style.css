@@ -535,18 +535,23 @@ table {
     padding: 0 0px 0 10px;
   }
 
-  .collection.record-image img {
+  .image img {
     height: 5.25em;
     width: auto;
     float: left;
-    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
-    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 0.08333em;
     border-style: solid;
     padding: -0.08333em;
-    margin: 0 0.75em 0.75em 6px;
+    margin: 0 0.75em 0.75em 0;
+  }
+
+  .collection .image img,
+  .exhibit .image img {
+    -moz-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: -3px -3px 0 rgba(0, 0, 0, 0.2), -6px -6px 0 rgba(0, 0, 0, 0.1);
+    margin-left: 6px;
   }
 
   /* Navigation Classes*/
@@ -659,7 +664,7 @@ table {
 
   /* Items Classes*/
   .item,
-  .collection:not(.record-image),
+  .collection,
   .exhibit {
     border-color: #d3d6bc;
     border-bottom-width: 0.08333em;
@@ -669,12 +674,12 @@ table {
     overflow: hidden;
   }
   .item p:last-child,
-  .collection:not(.record-image) p:last-child,
+  .collection p:last-child,
   .exhibit p:last-child {
     margin-bottom: 0em;
   }
   .item + .pagination-nav,
-  .collection:not(.record-image) + .pagination-nav,
+  .collection + .pagination-nav,
   .exhibit + .pagination-nav {
     margin-top: -0.75em;
   }
@@ -986,7 +991,7 @@ table {
   }
 
   #featured-item .item,
-  #featured-collection .collection:not(.record-image),
+  #featured-collection .collection,
   #featured-exhibit .exhibit {
     border-bottom-width: 0em;
     border-bottom-style: solid;
@@ -1066,6 +1071,15 @@ table {
   #search-results th, #search-results td {
     border-left-color: transparent;
     border-right-color: transparent;
+    vertical-align: top;
+  }
+  #search-results .image {
+    float: left;
+  }
+  #search-results .image img {
+    height: 6em;
+    width: auto;
+    margin: 0 0.75em 0 0;
   }
 
   /* Exhibits Pages */
