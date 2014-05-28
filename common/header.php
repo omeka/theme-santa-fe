@@ -44,10 +44,10 @@
                 <?php echo theme_header_image(); ?>
 
                 <div id="search-container">
-                    <?php if (get_theme_option('use_advanced_search')): ?>
+                    <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
                     <?php echo search_form(array('show_advanced' => true)); ?>
                     <?php else: ?>
-                    <?php echo search_form(); ?>
+                    <?Php echo search_form(); ?>
                     <?php endif; ?>
                 </div>
 
