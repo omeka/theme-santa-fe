@@ -453,10 +453,9 @@ table {
     font-family: "Verdana", "Arial", sans-serif;
     font-size: 12px;
     line-height: 18px;
-    padding: 0;
+    padding: 0 5px;
     border: 0;
     min-height: 2.25em;
-    padding: 0.375em;
   }
 
   input[type="submit"],
@@ -485,6 +484,15 @@ table {
   fieldset {
     border: 0;
     margin: 0;
+  }
+
+  select {
+    vertical-align: top;
+    display: inline-block;
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+    border: 1px solid #d3d6bc;
   }
 
   /* -- Table -- */
@@ -1060,6 +1068,33 @@ table {
   #item-filters ul ul li,
   #search-filters ul ul li {
     padding: 0;
+  }
+
+  .search-entry select {
+    width: 28%;
+    margin-right: 1%;
+  }
+
+  .search-entry input {
+    vertical-align: top;
+  }
+
+  .remove_search {
+    text-indent: -9999px;
+    width: 27px;
+    position: relative;
+    height: 18px;
+  }
+  .remove_search:after {
+    content: "\f00d";
+    font-family: "FontAwesome";
+    text-indent: 0;
+    text-align: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    line-height: 27px;
   }
 
   #search-results {
