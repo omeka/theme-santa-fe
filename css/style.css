@@ -692,6 +692,10 @@ table {
     margin-top: -0.75em;
   }
 
+  .items.show .element {
+    margin-bottom: 3em;
+  }
+
   .item img,
   .item-img,
   .item-file img {
@@ -704,6 +708,10 @@ table {
     border-style: solid;
     padding: -0.08333em;
     overflow: hidden;
+  }
+
+  #itemfiles .item-file img {
+    height: 6.75em;
   }
 
   .item-img img {

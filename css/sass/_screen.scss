@@ -301,6 +301,10 @@ body {
                 @include leader(-.5);
             }
         }
+        
+        .items.show .element {
+            @include trailer(2);
+        }
     
         .item img, 
         .item-img,
@@ -312,6 +316,10 @@ body {
             border-color: rgba(0,0,0,.2);
             @include rhythm-borders(1px, 0, $base-font-size, solid);
             overflow: hidden;
+        }
+        
+        #itemfiles .item-file img {
+            height: rhythm(4.5);
         }
         
         .item-img img {
