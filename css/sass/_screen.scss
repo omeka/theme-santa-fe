@@ -514,6 +514,7 @@ body {
         @include trailing-border(1px, .5, $base-font-size, solid);
         width:100%;
         margin: rhythm(-.5) 0 rhythm(.5);
+        overflow: hidden;
         
         li {
             display: block;
@@ -729,10 +730,6 @@ body {
 #footer p {color:#D5D2B8;}
 
 /* == Recaptcha == */
-
-#recaptcha_table {
-    width: 318px;
-}
 
 #recaptcha_area input {
     min-height: 0;
