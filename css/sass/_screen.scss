@@ -727,3 +727,13 @@ body {
 #footer .navigation li {margin-right:.5em}
 #footer a {color:#D5D2B8;}
 #footer p {color:#D5D2B8;}
+
+/* == Recaptcha == */
+
+#recaptcha_table {
+    width: 318px;
+}
+
+#recaptcha_area input {
+    min-height: 0;
+}
