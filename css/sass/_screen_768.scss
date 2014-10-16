@@ -135,7 +135,7 @@ div#search-container {
         @include span-columns(6 omega, 8);
         vertical-align: top;
         
-        *:only-child {
+        > *:only-child {
             width: 100%;
         }
     }
