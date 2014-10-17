@@ -2,12 +2,14 @@
     width:50%;
     float: left;
     text-align: left;
+    padding: rhythm() 0 rhythm() $gutter-width;
 }
 
 div#search-container {
     @include span-columns(3 omega, 12);
     clear: none;
     @include leader(1.25);
+    padding-right: $gutter-width;
 }
 
 .center-div {
@@ -16,21 +18,20 @@ div#search-container {
 
 #header .center-div {
     position: relative;
-    @include padding-leader(2);
+    padding: 0;
 }
 
 #primary-nav {
+    overflow: visible;
+    padding: 0;
+
     ul {
         margin:0;
         display:block;
-        position: absolute;
-        z-index: 1000;
-        top: 0;
-        left: 0;
+        position: relative;
         width: 100%;
-        border-color: #fff;
-        @include trailing-border(2px, 0, $base-font-size, solid);
         background-color: #000;
+        float: left;
     }
 
     li {
@@ -59,6 +60,7 @@ div#search-container {
             left: 0px;
             margin-top:40px;
             background: lighten(#000000, 15%);
+            z-index: 1000;
             
             li {
                 width: 100%;
@@ -83,7 +85,12 @@ div#search-container {
     margin: 0 gutter(2);
 }
 
+#content {
+     padding: rhythm() $gutter-width;
+}
+
 #home #content {
+
     & > div {
         @include span-columns(8 omega, 12);
     }

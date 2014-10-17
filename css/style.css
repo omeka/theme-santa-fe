@@ -390,14 +390,15 @@ table {
   #site-title {
     width: 100%;
     color: #fafafa;
-    font-size: 24px;
-    line-height: 36px;
     text-align: center;
     padding: 0.75em 0;
+    padding-left: 1em;
   }
   #site-title a {
     color: #fafafa;
     text-decoration: none;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   h1, h2, h3, h4 {
@@ -812,9 +813,10 @@ table {
     position: relative;
   }
 
-  #search-form {
-    margin-bottom: 1.5em;
+  #search-container {
+    padding: 0 1em 1.5em;
   }
+
   #search-form input[type="text"] {
     border-color: #fff;
   }
@@ -905,8 +907,7 @@ table {
   /* Structure */
   #content {
     background: #fff;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 1.5em 1em;
     overflow: hidden;
     *zoom: 1;
   }
@@ -930,8 +931,7 @@ table {
     padding-right: 0em;
     margin-left: auto;
     margin-right: auto;
-    padding: 0 1.69492%;
-    margin: 0 1.69492%;
+    margin: 0 1em;
   }
   .center-div:after {
     content: "";
@@ -950,6 +950,12 @@ table {
   #primary-nav {
     clear: both;
     *zoom: 1;
+    overflow: hidden;
+    border-color: #fff;
+    padding: 1.5em 1em;
+    border-bottom-width: 0.16667em;
+    border-bottom-style: solid;
+    padding-bottom: -0.16667em;
   }
   #primary-nav:after {
     content: "";
@@ -962,7 +968,6 @@ table {
   #primary-nav select {
     width: 100%;
     display: block;
-    margin-bottom: 1.5em;
   }
 
   .secondary-nav,
@@ -1219,6 +1224,7 @@ table {
     width: 50%;
     float: left;
     text-align: left;
+    padding: 1.5em 0 1.5em 1em;
   }
 
   div#search-container {
@@ -1229,6 +1235,7 @@ table {
     display: inline;
     clear: none;
     margin-top: 1.875em;
+    padding-right: 1em;
   }
 
   .center-div {
@@ -1237,22 +1244,20 @@ table {
 
   #header .center-div {
     position: relative;
-    padding-top: 3em;
+    padding: 0;
   }
 
+  #primary-nav {
+    overflow: visible;
+    padding: 0;
+  }
   #primary-nav ul {
     margin: 0;
     display: block;
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 0;
+    position: relative;
     width: 100%;
-    border-color: #fff;
-    border-bottom-width: 0.16667em;
-    border-bottom-style: solid;
-    padding-bottom: -0.16667em;
     background-color: #000;
+    float: left;
   }
   #primary-nav li {
     display: block;
@@ -1280,6 +1285,7 @@ table {
     left: 0px;
     margin-top: 40px;
     background: #262626;
+    z-index: 1000;
   }
   #primary-nav li ul li {
     width: 100%;
@@ -1299,6 +1305,10 @@ table {
 
   #footer {
     margin: 0 11.11111%;
+  }
+
+  #content {
+    padding: 1.5em 1em;
   }
 
   #home #content > div {

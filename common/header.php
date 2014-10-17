@@ -40,6 +40,10 @@
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
             <div class="center-div">
 
+                <div id="primary-nav">
+                    <?php echo public_nav_main(); ?>
+                </div><!-- end primary-nav -->
+
                 <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
                 <?php echo theme_header_image(); ?>
 
@@ -50,10 +54,6 @@
                     <?Php echo search_form(); ?>
                     <?php endif; ?>
                 </div>
-
-                <div id="primary-nav">
-                    <?php echo public_nav_main(); ?>
-                </div><!-- end primary-nav -->
 
             </div>
         </div><!-- end header -->

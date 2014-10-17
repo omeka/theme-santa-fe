@@ -18,14 +18,15 @@ body {
     #site-title {
         width: 100%;
         color: #fafafa;
-        font-size: 2 * $base-font-size;
-        line-height: 2 * $base-line-height;
         text-align: center;
         padding: rhythm(1, 2 * $base-font-size) 0;
+        padding-left: $gutter-width;
         
         a {
             color: #fafafa;
             text-decoration: none;
+            font-size: 2 * $base-font-size;
+            line-height: 2 * $base-line-height;
         }
     }
     
@@ -385,8 +386,11 @@ body {
     position: relative;
 }
 
+#search-container {
+    padding: 0 $gutter-width rhythm();
+}
+
 #search-form {
-    @include trailer();
     
     input[type="text"] {
         border-color: #fff;
@@ -475,8 +479,7 @@ body {
     /* Structure */
     #content {
         background:#fff;
-        padding-top:15px;
-        padding-bottom:15px;
+        padding: rhythm() $gutter-width;
         overflow:hidden;
         @include pie-clearfix();
 
@@ -486,8 +489,7 @@ body {
     }
     .center-div {
         @include container;
-        padding: 0 gutter();
-        margin: 0 gutter();
+        margin: 0 $gutter-width;
     }
     
     /* General */
@@ -497,6 +499,10 @@ body {
     #primary-nav {
         clear:both;
         @include pie-clearfix;
+        overflow: hidden;
+        border-color: #fff;
+        padding: rhythm() $gutter-width;
+        @include trailing-border(2px, 0, $base-font-size, solid);
         
         ul {
             display:none
@@ -504,7 +510,6 @@ body {
         select {
             width: 100%;
             display:block;
-            @include trailer();
         }
     }
 
