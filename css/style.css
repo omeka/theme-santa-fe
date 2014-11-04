@@ -701,14 +701,16 @@ table {
   .item-img,
   .item-file img {
     float: left;
-    height: 5.25em;
-    width: auto;
     margin: 0 0.75em 0.75em 0;
     border-color: rgba(0, 0, 0, 0.2);
     border-width: 0.08333em;
     border-style: solid;
     padding: -0.08333em;
     overflow: hidden;
+  }
+
+  .item img {
+    height: 5.25em;
   }
 
   #itemfiles .item-file img {
@@ -997,8 +999,7 @@ table {
   }
 
   /* Home Page */
-  #featured-item,
-  #featured-collection,
+  .featured,
   #featured-exhibit {
     border-color: #d3d6bc;
     border-bottom-width: 0.08333em;
@@ -1006,14 +1007,12 @@ table {
     padding-bottom: 1.41667em;
     margin-bottom: 1.5em;
   }
-  #featured-item *:last-child,
-  #featured-collection *:last-child,
+  .featured *:last-child,
   #featured-exhibit *:last-child {
     margin-bottom: 0em;
   }
 
-  #featured-item .item,
-  #featured-collection .collection,
+  .featured .record,
   #featured-exhibit .exhibit {
     border-bottom-width: 0em;
     border-bottom-style: solid;
@@ -1034,11 +1033,6 @@ table {
   #intro {
     width: 100%;
     padding: 10px 0;
-  }
-
-  /* Forum Page */
-  #forum #primary {
-    float: none;
   }
 
   /* Advanced Search */
@@ -1340,9 +1334,8 @@ table {
     min-height: 30px;
   }
 
-  #featured-item,
-  #featured-exhibit,
-  #featured-collection {
+  .featured,
+  #featured-exhibit {
     width: 66.10169%;
     float: right;
     margin-right: 0;

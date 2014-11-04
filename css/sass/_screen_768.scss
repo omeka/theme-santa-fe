@@ -114,9 +114,8 @@ div#search-container {
     min-height:30px;
 }
 
-#featured-item,
-#featured-exhibit,
-#featured-collection {
+.featured,
+#featured-exhibit {
     @include span-columns(8 omega, 12);
     clear: right;
 }

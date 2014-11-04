@@ -311,12 +311,14 @@ body {
         .item-img,
         .item-file img {
             float:left;
-            height: rhythm(3.5);
-            width: auto;
             margin: 0 rhythm(.5) rhythm(.5) 0;
             border-color: rgba(0,0,0,.2);
             @include rhythm-borders(1px, 0, $base-font-size, solid);
             overflow: hidden;
+        }
+        
+        .item img {
+            height: rhythm(3.5);
         }
         
         #itemfiles .item-file img {
@@ -539,8 +541,7 @@ body {
 
     /* Home Page */
 
-    #featured-item,
-    #featured-collection,
+    .featured,
     #featured-exhibit {
         border-color: $sand;
         @include trailing-border(1px, 1, $base-font-size, solid);
@@ -551,8 +552,7 @@ body {
         }
     }
     
-    #featured-item .item,
-    #featured-collection .collection,
+    .featured .record,
     #featured-exhibit .exhibit {
         @include trailing-border(0px, 0, $base-font-size, solid);
         padding: 0;
@@ -573,11 +573,6 @@ body {
         width:100%;
         padding:10px 0;
     }
-
-    /* Forum Page */
-    #forum #primary {float:none;}
-
-
 
     /* Advanced Search */
 
