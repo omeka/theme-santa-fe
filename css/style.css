@@ -411,6 +411,7 @@ table {
     color: #868D4A;
     margin-bottom: 0.66667em;
     font-weight: normal;
+    word-wrap: break-word;
   }
 
   h2 {
@@ -715,6 +716,11 @@ table {
 
   #itemfiles .item-file img {
     height: 9em;
+  }
+
+  .files .item-file img {
+    max-width: 100%;
+    margin-right: 0;
   }
 
   .item-img img {

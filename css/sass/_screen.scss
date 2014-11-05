@@ -40,6 +40,7 @@ body {
         color: #868D4A;
         @include trailer(1, 2.25 * $base-font-size);
         font-weight: normal;
+        word-wrap: break-word;
     }
 
     h2 {
@@ -323,6 +324,11 @@ body {
         
         #itemfiles .item-file img {
             height: rhythm(6);
+        }
+        
+        .files .item-file img {
+            max-width: 100%;
+            margin-right: 0;
         }
         
         .item-img img {
