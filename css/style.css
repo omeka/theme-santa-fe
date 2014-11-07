@@ -473,10 +473,7 @@ table {
   input[type="text"],
   input[type="password"],
   textarea {
-    border-color: #d3d6bc;
-    border-width: 0.08333em;
-    border-style: solid;
-    padding: -0.08333em;
+    border: 1px solid #d3d6bc;
   }
 
   input[type="radio"] {
@@ -549,10 +546,7 @@ table {
     height: 5.25em;
     width: auto;
     float: left;
-    border-color: rgba(0, 0, 0, 0.2);
-    border-width: 0.08333em;
-    border-style: solid;
-    padding: -0.08333em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 0 0.75em 0.75em 0;
   }
 
@@ -624,10 +618,7 @@ table {
   }
 
   .page-input {
-    border-color: #d3d6bc;
-    border-width: 0.08333em;
-    border-style: solid;
-    padding: 0.66667em;
+    border: 1px solid #d3d6bc;
   }
   .page-input input[type=text] {
     width: 3em;
@@ -703,10 +694,7 @@ table {
   .item-file img {
     float: left;
     margin: 0 0.75em 0.75em 0;
-    border-color: rgba(0, 0, 0, 0.2);
-    border-width: 0.08333em;
-    border-style: solid;
-    padding: -0.08333em;
+    border: 1px solid rgba(0, 0, 0, 0.2);
     overflow: hidden;
   }
 

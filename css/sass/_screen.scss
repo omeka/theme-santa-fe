@@ -102,8 +102,7 @@ body {
     input[type="text"],
     input[type="password"],
     textarea {
-        border-color: $sand;
-        @include rhythm-borders(1px, 0, $base-font-size, solid);
+        border: 1px solid $sand;
     }
     
     input[type="radio"] {
@@ -164,8 +163,7 @@ body {
         height: rhythm(3.5);
         width: auto;
         float: left;
-        border-color: rgba(0,0,0,.2);
-        @include rhythm-borders(1px, 0, $base-font-size, solid);
+        border: 1px solid rgba(0,0,0,.2);
         margin: 0 rhythm(.5) rhythm(.5) 0;
     }
     
@@ -238,8 +236,7 @@ body {
     }
     
     .page-input {
-        border-color: $sand;
-        @include rhythm-borders(1px, .5, $base-font-size, solid);
+        border: 1px solid $sand;
         
         input[type=text] {
             width: 3em;
@@ -313,8 +310,7 @@ body {
         .item-file img {
             float:left;
             margin: 0 rhythm(.5) rhythm(.5) 0;
-            border-color: rgba(0,0,0,.2);
-            @include rhythm-borders(1px, 0, $base-font-size, solid);
+            border: 1px solid rgba(0,0,0,.2);
             overflow: hidden;
         }
         
