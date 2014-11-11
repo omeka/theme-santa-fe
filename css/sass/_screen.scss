@@ -342,8 +342,9 @@ body {
         }
         
         .hTagcloud li {
-            display:inline;
-            margin-right: 1em;
+            display:inline-block;
+            margin: (.5 * $base-font-size) 10px;
+            margin-left: 0;
             
             a {
                 display: inline-block;

@@ -728,8 +728,9 @@ table {
   }
 
   .hTagcloud li {
-    display: inline;
-    margin-right: 1em;
+    display: inline-block;
+    margin: 6px 10px;
+    margin-left: 0;
   }
   .hTagcloud li a {
     display: inline-block;
