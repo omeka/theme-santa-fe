@@ -619,6 +619,7 @@ table {
 
   .page-input {
     border: 1px solid #d3d6bc;
+    padding: 0.75em;
   }
   .page-input input[type=text] {
     width: 3em;
@@ -1121,6 +1122,10 @@ table {
   }
 
   /* Exhibits Pages */
+  .browse .exhibit {
+    clear: both;
+  }
+
   #exhibit-pages {
     width: 23.72881%;
     float: left;
@@ -1151,18 +1156,56 @@ table {
     float: none;
   }
 
-  #exhibit-pages > ul {
+  #exhibit-pages {
     background-color: #f2f3eb;
     margin: 0;
     overflow: hidden;
     border-color: #868D4A;
-    padding: 0 5.26316%;
+    padding: 0 1.26582%;
     border-top-width: 0.41667em;
     border-top-style: solid;
     padding-top: 1.08333em;
     border-bottom-width: 0.08333em;
     border-bottom-style: solid;
     padding-bottom: 1.41667em;
+  }
+  #exhibit-pages > h4 {
+    font-size: 15px;
+    margin-bottom: 1.2em;
+    margin-left: -6.32911%;
+    padding-left: 6.32911%;
+    margin-right: -6.32911%;
+    padding-right: 6.32911%;
+    border-bottom-width: 0.06667em;
+    border-bottom-style: solid;
+    padding-bottom: 0.83333em;
+    border-color: #868D4A;
+  }
+  #exhibit-pages > ul {
+    margin: 0;
+    padding: 0;
+  }
+  #exhibit-pages > ul > li:not(.parent) li {
+    display: none;
+  }
+  #exhibit-pages > ul > li.current li {
+    display: block;
+  }
+
+  .exhibits.browse .secondary-nav + nav.pagination-nav {
+    width: 100%;
+    position: relative;
+    margin-bottom: 1.5em;
+  }
+
+  .exhibits.browse .secondary-nav + nav.pagination-nav:after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #d3d6bc;
   }
 
   /* Collections Pages */

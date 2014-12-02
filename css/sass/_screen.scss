@@ -237,6 +237,7 @@ body {
     
     .page-input {
         border: 1px solid $sand;
+        padding: rhythm(.5);
         
         input[type=text] {
             width: 3em;
@@ -669,6 +670,10 @@ body {
     }
 
     /* Exhibits Pages */
+    
+    .browse .exhibit {
+        clear: both;
+    }
 
     #exhibit-pages {
         @include span-columns(3 alpha);
@@ -697,14 +702,51 @@ body {
         }
     }
 
-    #exhibit-pages > ul {
+    #exhibit-pages {
         background-color: lighten($sand, 15%);
         margin: 0;
         overflow: hidden;
         border-color: $olive;
-        padding: 0 gutter(4);
+        padding: 0 gutter(16);
         @include leading-border(5px, 1, $base-font-size, solid);
         @include trailing-border(1px, 1, $base-font-size, solid);
+        
+        & > h4 {
+            font-size: 1.25 * $base-font-size;
+            @include trailer(1, 1.25 * $base-font-size);
+            @include bleed(1 of 16);
+            @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
+            border-color: $olive;
+        }
+        
+        & > ul {
+            margin: 0;
+            padding: 0;
+            
+            & > li:not(.parent) li {
+                display: none;
+            }
+            
+            & > li.current li {
+                display: block;
+            }
+        }
+    }
+    
+    .exhibits.browse .secondary-nav + nav.pagination-nav {
+        width: 100%;
+        position: relative;
+        @include trailer();
+    }
+    
+    .exhibits.browse .secondary-nav + nav.pagination-nav:after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background-color: $sand;
     }
     
     /* Collections Pages */    
