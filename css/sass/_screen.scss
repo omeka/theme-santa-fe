@@ -699,6 +699,7 @@ body {
         li {
             list-style-type: none;
             float: none;
+            @include padding-leader(.5);
         }
     }
 

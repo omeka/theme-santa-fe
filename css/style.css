@@ -1154,6 +1154,7 @@ table {
   #exhibit-pages li {
     list-style-type: none;
     float: none;
+    padding-top: 0.75em;
   }
 
   #exhibit-pages {
