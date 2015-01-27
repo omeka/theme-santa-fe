@@ -674,10 +674,25 @@ body {
     .browse .exhibit {
         clear: both;
     }
+    
+    
+    .exhibits.summary #primary,
+    .exhibits #content > h1:first-of-type,
+    #exhibit-blocks,
+    #exhibit-page-navigation {
+        @include span-columns(9 omega);
+    }
 
     #exhibit-pages {
-        @include span-columns(3 alpha);
+        width: columns(3);
         overflow: hidden;
+        background-color: lighten($sand, 15%);
+        margin: 0;
+        border-color: $olive;
+        padding: 0 gutter(16);
+        @include leading-border(5px, 1, $base-font-size, solid);
+        @include trailing-border(1px, 1, $base-font-size, solid);
+        
         
         & ~ * {
             @include span-columns(9 omega);
@@ -701,17 +716,7 @@ body {
             float: none;
             @include padding-leader(.5);
         }
-    }
 
-    #exhibit-pages {
-        background-color: lighten($sand, 15%);
-        margin: 0;
-        overflow: hidden;
-        border-color: $olive;
-        padding: 0 gutter(16);
-        @include leading-border(5px, 1, $base-font-size, solid);
-        @include trailing-border(1px, 1, $base-font-size, solid);
-        
         & > h4 {
             font-size: 1.25 * $base-font-size;
             @include trailer(1, 1.25 * $base-font-size);

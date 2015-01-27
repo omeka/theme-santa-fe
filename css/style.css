@@ -1126,12 +1126,30 @@ table {
     clear: both;
   }
 
+  .exhibits.summary #primary,
+  .exhibits #content > h1:first-of-type,
+  #exhibit-blocks,
+  #exhibit-page-navigation {
+    width: 74.57627%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -1em;
+    display: inline;
+  }
+
   #exhibit-pages {
     width: 23.72881%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
     overflow: hidden;
+    background-color: #f2f3eb;
+    margin: 0;
+    border-color: #868D4A;
+    padding: 0 1.26582%;
+    border-top-width: 0.41667em;
+    border-top-style: solid;
+    padding-top: 1.08333em;
+    border-bottom-width: 0.08333em;
+    border-bottom-style: solid;
+    padding-bottom: 1.41667em;
   }
   #exhibit-pages ~ * {
     width: 74.57627%;
@@ -1155,20 +1173,6 @@ table {
     list-style-type: none;
     float: none;
     padding-top: 0.75em;
-  }
-
-  #exhibit-pages {
-    background-color: #f2f3eb;
-    margin: 0;
-    overflow: hidden;
-    border-color: #868D4A;
-    padding: 0 1.26582%;
-    border-top-width: 0.41667em;
-    border-top-style: solid;
-    padding-top: 1.08333em;
-    border-bottom-width: 0.08333em;
-    border-bottom-style: solid;
-    padding-bottom: 1.41667em;
   }
   #exhibit-pages > h4 {
     font-size: 15px;
