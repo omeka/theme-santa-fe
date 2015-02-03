@@ -1213,6 +1213,18 @@ table {
     background-color: #d3d6bc;
   }
 
+  .exhibit-block {
+    clear: none;
+  }
+
+  .exhibit-items.left {
+    clear: left;
+  }
+
+  .exhibit-items.right {
+    clear: right;
+  }
+
   /* Collections Pages */
   .show.collections .element {
     margin-bottom: 1.5em;

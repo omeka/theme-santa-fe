@@ -754,6 +754,19 @@ body {
         left: 0;
         background-color: $sand;
     }
+
+    .exhibit-block {
+        clear: none;
+    }
+    
+    .exhibit-items.left {
+        clear: left;
+    }
+    
+    .exhibit-items.right {
+        clear: right;
+    }
+
     
     /* Collections Pages */    
     
