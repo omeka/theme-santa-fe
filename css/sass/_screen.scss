@@ -756,17 +756,12 @@ body {
     }
 
     .exhibit-block {
-        clear: none;
+        overflow: hidden;
     }
     
-    .exhibit-items.left {
-        clear: left;
+    .exhibit-block > *:last-child {
+        margin-bottom: 0;
     }
-    
-    .exhibit-items.right {
-        clear: right;
-    }
-
     
     /* Collections Pages */    
     

@@ -1214,15 +1214,11 @@ table {
   }
 
   .exhibit-block {
-    clear: none;
+    overflow: hidden;
   }
 
-  .exhibit-items.left {
-    clear: left;
-  }
-
-  .exhibit-items.right {
-    clear: right;
+  .exhibit-block > *:last-child {
+    margin-bottom: 0;
   }
 
   /* Collections Pages */
