@@ -4,9 +4,9 @@
 }
 
 body {
-    font: $base-font-size Verdana, Arial, sans-serif; 
+    font: $base-font-size Verdana, Arial, sans-serif;
     line-height: $base-line-height;
-    color:#222; 
+    color:#222;
     background-color:#D5D2B8;
 }
 
@@ -21,7 +21,7 @@ body {
         text-align: center;
         padding: rhythm(1, 2 * $base-font-size) 0;
         padding-left: $gutter-width;
-        
+
         a {
             color: #fafafa;
             text-decoration: none;
@@ -29,7 +29,7 @@ body {
             line-height: 2 * $base-line-height;
         }
     }
-    
+
     h1, h2, h3, h4 {
         margin: 0;
     }
@@ -54,7 +54,7 @@ body {
         font-size: 1.5 * $base-font-size;
         @include trailer(1, 1.5 * $base-font-size);
     }
-    
+
     p, ul, ol, dl {
         margin: rhythm(1) 0;
     }
@@ -62,7 +62,7 @@ body {
     i, em {
         font-style:italic;
     }
-    
+
     b, strong {
         font-weight:bold;
     }
@@ -76,9 +76,9 @@ body {
     a:hover {
         text-decoration:underline;
     }
-    
+
     /* -- Form Elements -- */
-    
+
     input,
     textarea,
     button {
@@ -89,7 +89,7 @@ body {
         border: 0;
         min-height: rhythm(1.5);
     }
-    
+
     input[type="submit"],
     .button,
     button {
@@ -98,22 +98,22 @@ body {
         @include appearance(none);
         line-height: rhythm(1.5);
     }
-    
+
     input[type="text"],
     input[type="password"],
     textarea {
         border: 1px solid $sand;
     }
-    
+
     input[type="radio"] {
         margin-right: 3px;
     }
-    
+
     fieldset {
         border: 0;
         margin: 0;
     }
-    
+
     select {
         vertical-align: top;
         display: inline-block;
@@ -122,35 +122,35 @@ body {
         font-size: $base-font-size;
         border: 1px solid $sand;
     }
-    
+
     /* -- Table -- */
-    
+
     table {
         margin: rhythm() auto;
     }
-    
+
     tr:first-of-type > * {
         border-color: $sand;
         @include leading-border(1px, .5, $base-font-size, solid);
     }
-    
+
     th,td {
         border-color: $sand;
         border-left: 1px solid $sand;
         padding: rhythm(.5);
         @include trailing-border(1px, .5, $base-font-size, solid);
-        
+
         &:last-of-type {
             border-right: 1px solid $sand;
         }
     }
-    
+
     th {
         background-color: $sand;
     }
 
     /* -- Misc Classes */
-    
+
     caption {
         font-style: italic;
     }
@@ -158,7 +158,7 @@ body {
     .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .odd .exhibit-thumbnail {float:left;padding:0 10px 0 0;}
     .even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
-    
+
     .image img {
         height: rhythm(3.5);
         width: auto;
@@ -166,7 +166,7 @@ body {
         border: 1px solid rgba(0,0,0,.2);
         margin: 0 rhythm(.5) rhythm(.5) 0;
     }
-    
+
     .collection .image img,
     .exhibit .image img {
         @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
@@ -174,37 +174,47 @@ body {
     }
 
     /* Navigation Classes*/
-    ul.navigation, 
-    ul.pagination, 
-    #sort-links ul, 
+    ul.navigation,
+    ul.pagination,
+    #sort-links ul,
     #sort-links span {
         padding: 0;
         list-style-type: none;
     }
-    
-    /* Pagination Classes */
+
+    #skipnav {
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+          /* Pagination Classes */
 
     ul.pagination {
         overflow: hidden;
         clear:both;
     }
-    
+
     .pagination li {
         display: block;
         float: left;
-        
+
         &:last-of-type {
             border-right: 1px solid $sand;
         }
     }
-    
+
     .page-input,
     .pagination_next a,
     .pagination_previous a {
         display: block;
         height: rhythm(2.5);
     }
-    
+
     .pagination_next a,
     .pagination_previous a {
         background-color: $sand;
@@ -212,7 +222,7 @@ body {
         text-indent: -9999px;
         position: relative;
         width: rhythm(2.5);
-        
+
         &:after {
             font-family: "FontAwesome";
             text-indent: 0;
@@ -224,9 +234,9 @@ body {
             text-align: center;
             line-height: rhythm(2.75);
         }
-            
+
     }
-    
+
     .pagination_next a:after {
         content: "\f054";
     }
@@ -234,11 +244,11 @@ body {
     .pagination_previous a:after {
         content: "\f053";
     }
-    
+
     .page-input {
         border: 1px solid $sand;
         padding: rhythm(.5);
-        
+
         input[type=text] {
             width: 3em;
         }
@@ -248,13 +258,13 @@ body {
         border-color: $sand;
         @include trailing-border(1px, 0, $base-font-size, solid);
         @include trailer();
-        
+
         span, ul, li, a {
             display: block;
             float: left;
             margin: 0;
         }
-        
+
         span, a {
             margin-right: 1em;
             padding: rhythm(.5) 0;
@@ -265,21 +275,21 @@ body {
     .desc a:after {
         font-family: "FontAwesome";
     }
-    
+
     .asc a:after {
         content: "\20\f0d8";
     }
-    
+
     .desc a:after {
         content: "\20\f0d7";
     }
 
-        
+
     .current,
     .active {
         font-weight: bold;
     }
-    
+
     #outputs {
         clear: both;
     }
@@ -292,21 +302,21 @@ body {
             @include trailing-border(1px, 1, $base-font-size, solid);
             @include trailer();
             overflow: hidden;
-            
+
             p:last-child {
                 @include trailer(0);
             }
-            
+
             & + .pagination-nav {
                 @include leader(-.5);
             }
         }
-        
+
         .items.show .element {
             @include trailer(2);
         }
-    
-        .item img, 
+
+        .item img,
         .item-img,
         .item-file img {
             float:left;
@@ -314,25 +324,25 @@ body {
             border: 1px solid rgba(0,0,0,.2);
             overflow: hidden;
         }
-        
+
         .item img {
             height: rhythm(3.5);
         }
-        
+
         #itemfiles .item-file img {
             height: rhythm(6);
         }
-        
+
         .files .item-file img {
             max-width: 100%;
             margin-right: 0;
         }
-        
+
         .item-img img {
             margin: 0;
             border: 0;
         }
-    
+
         .title-list {clear:both;}
 
         /* Tag Clouds */
@@ -341,12 +351,12 @@ body {
             margin: rhythm() 0;
             overflow: visible;
         }
-        
+
         .hTagcloud li {
             display:inline-block;
             margin: (.5 * $base-font-size) 10px;
             margin-left: 0;
-            
+
             a {
                 display: inline-block;
                 background-color: $sand;
@@ -397,11 +407,11 @@ body {
 }
 
 #search-form {
-    
+
     input[type="text"] {
         border-color: #fff;
     }
-    
+
     #advanced-search,
     button {
         display: block;
@@ -412,7 +422,7 @@ body {
         right: 0;
         bottom: 0;
         text-indent: -9999px;
-        
+
         &:after {
             font-family: "FontAwesome";
             text-indent: 0;
@@ -425,7 +435,7 @@ body {
             text-align: center;
         }
     }
-    
+
     &.with-advanced button {
         right: rhythm(1.5);
     }
@@ -457,19 +467,19 @@ body {
     margin: 0;
     width: 100%;
     text-align: left;
-    
+
     #query-types *:first-child {
         margin-top: 0;
     }
-    
+
     label {
         margin: 0;
         padding: 0;
     }
-    
+
     p {
         margin: rhythm(.5) 0;
-        
+
         &:last-of-type { @include trailer(0); }
     }
 }
@@ -497,7 +507,7 @@ body {
         @include container;
         margin: 0 $gutter-width;
     }
-    
+
     /* General */
     #login-status {float:right;color:#D5D2B8;padding:10px .55em 0 0;}
 
@@ -509,7 +519,7 @@ body {
         border-color: #fff;
         padding: rhythm() $gutter-width;
         @include trailing-border(2px, 0, $base-font-size, solid);
-        
+
         ul {
             display:none
         }
@@ -526,13 +536,13 @@ body {
         width:100%;
         margin: rhythm(-.5) 0 rhythm(.5);
         overflow: hidden;
-        
+
         li {
             display: block;
             float: left;
             margin-right: 1em;
         }
-        
+
         a {
             color:#686C42;
         }
@@ -550,12 +560,12 @@ body {
         border-color: $sand;
         @include trailing-border(1px, 1, $base-font-size, solid);
         @include trailer();
-        
+
         *:last-child {
             @include trailer(0);
         }
     }
-    
+
     .featured .record,
     #featured-exhibit .exhibit {
         @include trailing-border(0px, 0, $base-font-size, solid);
@@ -567,7 +577,7 @@ body {
         border:none;
         background-color: $sand;
         padding: rhythm(1) gutter();
-        
+
         .item, .item img {
             border-color: $olive;
         }
@@ -601,37 +611,37 @@ body {
             padding: 0;
             list-style-type: none;
         }
-        
+
         li {
             display: inline-block;
             background-color: $sand;
             padding: rhythm(.25);
         }
-        
+
         ul ul {
             display: inline;
         }
-        
+
         ul ul li {
             padding: 0;
         }
     }
-    
+
     .search-entry select {
         width: 28%;
         margin-right: 1%;
     }
-    
+
     .search-entry input {
         vertical-align: top;
     }
-    
+
     .remove_search {
         text-indent: -9999px;
         width: 1.5 * $base-line-height;
         position: relative;
         height: $base-line-height;
-        
+
         &:after {
             content: "\f00d";
             font-family: "FontAwesome";
@@ -644,24 +654,24 @@ body {
             line-height: 1.5 * $base-line-height;
         }
     }
-    
+
     #search-results {
         width: 100%;
-        
+
         th {
             text-align: left;
         }
-        
+
         th, td {
             border-left-color: transparent;
             border-right-color: transparent;
             vertical-align: top;
         }
-        
+
         .image {
             float: left;
         }
-        
+
         .image img {
             height: rhythm(4);
             width: auto;
@@ -670,12 +680,12 @@ body {
     }
 
     /* Exhibits Pages */
-    
+
     .browse .exhibit {
         clear: both;
     }
-    
-    
+
+
     .exhibits.summary #primary,
     .exhibits #content > h1:first-of-type,
     #exhibit-blocks,
@@ -692,13 +702,13 @@ body {
         padding: 0 gutter(16);
         @include leading-border(5px, 1, $base-font-size, solid);
         @include trailing-border(1px, 1, $base-font-size, solid);
-        
-        
+
+
         & ~ * {
             @include span-columns(9 omega);
             clear: right;
         }
-        
+
         ul ul,
         .child-pages {
             margin: 0;
@@ -706,11 +716,11 @@ body {
             padding:0 0 0 gutter(2);
             border-left:1px solid #686C42;
         }
-        
+
         .current ul {
             font-weight: normal;
         }
-        
+
         li {
             list-style-type: none;
             float: none;
@@ -724,27 +734,27 @@ body {
             @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
             border-color: $olive;
         }
-        
+
         & > ul {
             margin: 0;
             padding: 0;
-            
+
             & > li:not(.parent) li {
                 display: none;
             }
-            
+
             & > li.current li {
                 display: block;
             }
         }
     }
-    
+
     .exhibits.browse .secondary-nav + nav.pagination-nav {
         width: 100%;
         position: relative;
         @include trailer();
     }
-    
+
     .exhibits.browse .secondary-nav + nav.pagination-nav:after {
         position: absolute;
         content: "";
@@ -768,7 +778,7 @@ body {
     .show.collections .element {
         @include trailer();
     }
-    
+
     .browse.collections .element {
         clear: none;
     }
