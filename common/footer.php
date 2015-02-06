@@ -27,6 +27,7 @@
 jQuery(document).ready(function () {
     SantaFe.showAdvancedForm();
     SantaFe.mobileSelectNav();
+    SantaFe.skipnav();
 });
 </script>
 

@@ -34,6 +34,7 @@
 
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
+    <a href="#content" id="skipnav">Skip to main content</a>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <div id="wrap">
         <div id="header" role="banner">
@@ -57,5 +58,5 @@
 
             </div>
         </div><!-- end header -->
-        <div id="content" class="center-div" role="main">
+        <div id="content" class="center-div" role="main" tabindex="-1">
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

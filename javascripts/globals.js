@@ -30,19 +30,19 @@ if (!SantaFe) {
             $('#search-form input[type=submit]').addClass("blue button");
         }
     };
-    
-    
+
+
     SantaFe.mobileSelectNav = function () {
         // Create the dropdown base
         $("<select class=\"mobile\" />").appendTo("#primary-nav");
-        
+
         // Create default option "Go to..."
         $("<option />", {
            "selected": "selected",
            "value"   : "",
            "text"    : "Go to..."
         }).appendTo("#primary-nav select");
-        
+
         // Populate dropdown with menu items
         $("#primary-nav a").each(function() {
             var el = $(this);
@@ -64,5 +64,19 @@ if (!SantaFe) {
             });
         });
     }
+
+    SantaFe.skipnav = function(){
+      $("a[href^='#']").click(function() {
+      // get the href attribute of the internal link
+      // then strip the first character off it (#)
+      // leaving the corresponding id attribute
+      $("#"+$(this).attr("href").slice(1)+"")
+        // give that id focus (for browsers that didn't already do so)
+        .focus()
+        // add a highlight effect to that id (comment out if not using)
+        //.effect("highlight", {}, 3000);
+      });
+    };
+
 
 })(jQuery);
