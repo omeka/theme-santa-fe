@@ -1234,14 +1234,6 @@ table {
     background-color: #d3d6bc;
   }
 
-  .exhibit-block {
-    overflow: hidden;
-  }
-
-  .exhibit-block > *:last-child {
-    margin-bottom: 0;
-  }
-
   /* Collections Pages */
   .show.collections .element {
     margin-bottom: 1.5em;
