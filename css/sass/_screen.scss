@@ -775,6 +775,14 @@ body {
         background-color: $sand;
     }
 
+    .exhibit-block {
+        overflow: hidden;
+    }
+
+    .exhibit-block > *:last-child {
+        margin-bottom: 0;
+    }
+
     /* Collections Pages */
 
     .show.collections .element {
