@@ -1,6 +1,6 @@
 </div><!-- end content -->
 
-<div id="footer">
+<div id="footer" role="contentinfo">
 
 
     <div id="custom-footer-text">
@@ -27,6 +27,7 @@
 jQuery(document).ready(function () {
     SantaFe.showAdvancedForm();
     SantaFe.mobileSelectNav();
+    SantaFe.skipnav();
 });
 </script>
 

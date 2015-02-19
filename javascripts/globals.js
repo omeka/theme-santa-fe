@@ -30,19 +30,19 @@ if (!SantaFe) {
             $('#search-form input[type=submit]').addClass("blue button");
         }
     };
-    
-    
+
+
     SantaFe.mobileSelectNav = function () {
         // Create the dropdown base
         $("<select class=\"mobile\" />").appendTo("#primary-nav");
-        
+
         // Create default option "Go to..."
         $("<option />", {
            "selected": "selected",
            "value"   : "",
            "text"    : "Go to..."
         }).appendTo("#primary-nav select");
-        
+
         // Populate dropdown with menu items
         $("#primary-nav a").each(function() {
             var el = $(this);
@@ -64,5 +64,12 @@ if (!SantaFe) {
             });
         });
     }
+
+    SantaFe.skipnav = function(){
+        $("#skipnav").click(function() {
+            $("#content").focus();
+        });
+    };
+
 
 })(jQuery);
