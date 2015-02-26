@@ -63,6 +63,12 @@ if (!SantaFe) {
               window.location = $(this).find("option:selected").val();
             });
         });
-    }
+    };
+    
+    SantaFe.skipNav = function(){
+        $("#skipnav").click(function() {
+            $("#content").focus();
+        });
+    };
 
 })(jQuery);
