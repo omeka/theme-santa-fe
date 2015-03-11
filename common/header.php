@@ -27,11 +27,10 @@
     ?>
 
     <!-- JavaScripts -->
-    <?php queue_js_file(array('globals', 'vendors/modernizr')); ?>
+    <?php queue_js_file(array('vendor/jQuery-accessibleMegaMenu', 'santa-fe', 'globals')); ?>
     <?php queue_js_file('vendor/selectivizr', 'javascripts', array('conditional' => '(gte IE 6)&(lte IE 8)')); ?>
     <?php queue_js_file('vendor/respond'); ?>
     <?php echo head_js(); ?>
-
 </head>
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <a href="#content" id="skipnav"><?php echo __('Skip to main content'); ?></a>

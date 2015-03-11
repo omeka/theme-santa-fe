@@ -25,9 +25,10 @@
 
 <script type="text/javascript">
 jQuery(document).ready(function () {
-    SantaFe.showAdvancedForm();
+    Omeka.showAdvancedForm();
+    Omeka.skipNav();
+    Omeka.megaMenu();
     SantaFe.mobileSelectNav();
-    SantaFe.skipNav();
 });
 </script>
 

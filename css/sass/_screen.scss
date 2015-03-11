@@ -402,14 +402,13 @@ body {
         border-color: #fff;
     }
     
-    #advanced-search,
+    .show-advanced.button,
     button {
         display: block;
         width: rhythm(1.5);
         position: absolute;
         height: rhythm(1.5);
         top: 0;
-        right: 0;
         bottom: 0;
         text-indent: -9999px;
         
@@ -426,8 +425,8 @@ body {
         }
     }
     
-    &.with-advanced button {
-        right: rhythm(1.5);
+    button {
+        right: 0;
     }
 }
 
@@ -437,9 +436,13 @@ body {
     height: rhythm(1.5);
 }
 
-#advanced-search:after {
-    content: "\2026";
-    border-left: 1px solid rgba(0,0,0,.2);
+.show-advanced.button {
+    right: rhythm(1.5);
+
+    &:after {
+        content: "\2026";
+        border-left: 1px solid rgba(0,0,0,.2);
+    }
 }
 
 #search-form button:after {
@@ -457,6 +460,15 @@ body {
     margin: 0;
     width: 100%;
     text-align: left;
+    padding: rhythm(.5);
+    
+    &.closed {
+        display: none;
+    }
+    
+    fieldset {
+        padding: 0 0 rhythm(.5);
+    }
     
     #query-types *:first-child {
         margin-top: 0;

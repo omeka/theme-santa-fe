@@ -25,31 +25,11 @@ div#search-container {
     overflow: visible;
     padding: 0;
 
-    ul {
-        margin:0;
-        display:block;
-        position: relative;
-        width: 100%;
-        background-color: #000;
-        float: left;
-    }
+    /*
 
     li {
-        display:block;
-        float:left;
-        position:relative;
-
-        a {
-            color:#868D4A;
-            display:block;
-            float:left;
-            padding:10px;
-        }
 
         &:hover {
-            background-color:rgba(255,255,255,.15);
-            & > ul { display: block; }
-            }
 
         ul {
             min-width: 200px;
@@ -75,7 +55,89 @@ div#search-container {
                 }
             }
           }
+    } */
+
+    /* mega menu list */
+    .nav-menu {
+        display: block;
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        z-index: 15;
+        width: 100%;
+        background-color: #000;
+        float: left;
     }
+
+    /* a top level navigation item in the mega menu */
+    .nav-item {
+        list-style: none;
+        display: inline-block;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* first descendant link within a top level navigation item */
+    .nav-item > a {
+        position: relative;
+        margin: 0 0 -1px 0;
+        color:#868D4A;
+        display:block;
+        float:left;
+        padding:10px;
+    }
+
+    /* open state of first descendant link within a top level 
+       navigation item */
+    .nav-item > a.open {
+        background-color: #fff;
+        border: 1px solid #dedede;
+        border-bottom: none;
+        z-index: 1;
+    }
+
+    /* sub-navigation panel */
+    .sub-nav {
+        position: absolute;
+        display: none;
+        top: rhythm(2.125);
+        margin-top: -1px;
+        padding: 0.5em 1em;
+        border: 1px solid #dedede;
+        border-top: 0;
+        background-color: #fff;
+        z-index: 2;
+    }
+
+    /* sub-navigation panel open state */
+    .sub-nav.open {
+        display: block;
+    }
+
+    /* list of items within sub-navigation panel */
+    .sub-nav ul {
+        display: block;
+        vertical-align: top;
+        margin: 0 1em 0 0;
+        padding: 0 0 0 1em;
+    }
+
+    /* list item within sub-navigation panel */
+    .sub-nav li {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .sub-nav a {
+        padding: rhythm(.5);
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
     .mobile {
         display:none;
     }
