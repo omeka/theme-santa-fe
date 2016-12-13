@@ -190,8 +190,8 @@ div#search-container {
 
 /* Advanced Search */
 .field {
-    @include span-columns(8 alpha);
     @include trailer();
+    overflow: hidden;
 
     label,
     .label {

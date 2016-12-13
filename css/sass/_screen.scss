@@ -122,7 +122,11 @@ body {
         font-size: $base-font-size;
         border: 1px solid $sand;
     }
-    
+
+    .field {
+        margin-bottom: rhythm();
+    }
+
     /* -- Table -- */
     
     table {
@@ -649,10 +653,23 @@ body {
             padding: 0;
         }
     }
-    
-    .search-entry select {
-        width: 28%;
-        margin-right: 1%;
+
+    .search-entry {
+        @include trailer(.5);
+    }
+
+    .search-entry:first-child .advanced-search-joiner {
+        display: none;
+    }
+
+    .search-entry .advanced-search-joiner {
+        width: 5em;
+    }
+
+    .search-entry select,
+    .search-entry input[type="text"] {
+        width: calc(33% - 2.75em);
+        margin-right: .5%;
     }
     
     .search-entry input {
