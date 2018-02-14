@@ -817,6 +817,15 @@ body {
         clear: none;
     }
 
+    .collections .view-items-link {
+        margin: $spacing-unit 0;
+        display: block;
+    }
+
+    .show.collections .view-items-link {
+        font-size: 1.25 * $base-font-size;
+    }
+
 /* == Footer == */
 #footer {
     margin: 0 gutter();

@@ -941,6 +941,11 @@ th {
     margin-bottom: 18px; }
   .browse.collections .element {
     clear: none; }
+  .collections .view-items-link {
+    margin: 18px 0;
+    display: block; }
+  .show.collections .view-items-link {
+    font-size: 15px; }
   /* == Footer == */
   #footer {
     margin: 0 5.26316%;
