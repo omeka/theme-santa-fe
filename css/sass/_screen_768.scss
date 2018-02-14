@@ -2,13 +2,14 @@
     width:50%;
     float: left;
     text-align: left;
-    padding: rhythm() 0 rhythm() $gutter-width;
+    padding: $spacing-unit 0 $spacing-unit $gutter-width;
 }
 
 div#search-container {
-    @include span-columns(3 omega, 12);
+    @include span(3 of 12);
+    margin-right: 0;
     clear: none;
-    @include leader(1.25);
+    margin-top: 1.25 * $spacing-unit;
     padding-right: $gutter-width;
 }
 
@@ -24,38 +25,6 @@ div#search-container {
 #primary-nav {
     overflow: visible;
     padding: 0;
-
-    /*
-
-    li {
-
-        &:hover {
-
-        ul {
-            min-width: 200px;
-            display: none;
-            padding: 0;
-            position: absolute;
-            top: -2px;
-            left: 0px;
-            margin-top:40px;
-            background: lighten(#000000, 15%);
-            z-index: 1000;
-            
-            li {
-                width: 100%;
-                clear: both;
-                
-                @include box-sizing(border-box);
-                
-                ul {
-                position: absolute;
-                left: 100%;
-                margin-top: 0;
-                }
-            }
-          }
-    } */
 
     /* mega menu list */
     .nav-menu {
@@ -148,26 +117,28 @@ div#search-container {
 }
 
 #content {
-     padding: rhythm() $gutter-width;
+     padding: $spacing-unit $gutter-width;
 }
 
 #home #content {
 
     & > div {
-        @include span-columns(8 omega, 12);
+        @include span(8 of 12);
+        margin-right: 0;
     }
 
     #recent-items {
         float:left;
         overflow:hidden;
         padding:.5em 0;
-        @include span-columns(4 alpha, 12, 1em);
+        @include span(4 of 12);
+        margin-left: 0;
         background:#D3D6BD;
     }
 }
 
 .pagination {
-    margin: 0 0 rhythm(.5);
+    margin: 0 0 (.5 * $spacing-unit);
 }
 
 /*Search Results */
@@ -178,7 +149,8 @@ div#search-container {
 
 .featured,
 #featured-exhibit {
-    @include span-columns(8 omega, 12);
+    @include span(8 of 12);
+    margin-right: 0;
     clear: right;
 }
 
@@ -190,17 +162,18 @@ div#search-container {
 
 /* Advanced Search */
 .field {
-    @include trailer();
+    margin-bottom: $spacing-unit;
     overflow: hidden;
 
     label,
     .label {
-        @include span-columns(2 alpha, 8);
-        @include trailer();
+        @include span(2 of 8);
+        margin-bottom: $spacing-unit;
     }
     
     .inputs {
-        @include span-columns(6 omega, 8);
+        @include span(6 of 8);
+        margin-left: 0;
         vertical-align: top;
         
         & > *:only-child {
@@ -210,7 +183,7 @@ div#search-container {
 }
 
 .search-entry {
-    @include trailer();
+    margin-bottom: $spacing-unit;
 }
 
 .pagination-nav {

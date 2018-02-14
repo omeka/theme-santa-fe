@@ -1,10 +1,6 @@
-// ---------------------------------------------------------------------------
-// Imports
-
-@import "compass";
-@import "susyone";
-// @import "mixins";
-
+// Typography
+$base-font-size	: 12px;
+$base-line-height : 18px;
 
 // Grid Units
 $total-columns  : 12;
@@ -13,10 +9,7 @@ $gutter-width   : 1em;
 $grid-padding   : 0em;
 $break          : 50em 16;
 $container-style: fluid;
-
-// Typography
-$base-font-size	: 12px;
-$base-line-height : 18px;
+$spacing-unit   : $base-line-height;
 
 //Colors
 $olive          : #868D4A;

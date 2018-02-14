@@ -1,6 +1,6 @@
 /* == Generic == */
 * {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 }
 
 #wrap {
-    border-top: rhythm(2) solid $olive;
+    border-top: (2 * $spacing-unit) solid $olive;
 }
 
     /* -- Headings -- */
@@ -19,7 +19,7 @@ body {
         width: 100%;
         color: #fafafa;
         text-align: center;
-        padding: rhythm(1, 2 * $base-font-size) 0;
+        padding: $spacing-unit 0;
         padding-left: $gutter-width;
         
         a {
@@ -38,7 +38,7 @@ body {
         font-size: 2.25 * $base-font-size;
         line-height: 2 * $base-line-height;
         color: #868D4A;
-        @include trailer(1, 2.25 * $base-font-size);
+        margin-bottom: $spacing-unit;
         font-weight: normal;
         word-wrap: break-word;
     }
@@ -47,16 +47,16 @@ body {
         font-size: 1.75 * $base-font-size;
         line-height: 2 * $base-line-height;
         font-weight: normal;
-        @include trailer(1, 1.75 * $base-font-size);
+        margin-bottom: $spacing-unit;
     }
 
     h3 {
         font-size: 1.5 * $base-font-size;
-        @include trailer(1, 1.5 * $base-font-size);
+        margin-bottom: $spacing-unit;
     }
     
     p, ul, ol, dl {
-        margin: rhythm(1) 0;
+        margin: (1 * $spacing-unit) 0;
     }
 
     i, em {
@@ -87,7 +87,7 @@ body {
         line-height: $base-line-height;
         padding: 0 5px;
         border: 0;
-        min-height: rhythm(1.5);
+        min-height: (1.5 * $spacing-unit);
     }
     
     input[type="submit"],
@@ -95,8 +95,8 @@ body {
     button {
         background-color: $olive;
         color: #fff;
-        @include appearance(none);
-        line-height: rhythm(1.5);
+        appearance: none;
+        line-height: (1.5 * $spacing-unit);
     }
     
     input[type="text"],
@@ -124,25 +124,25 @@ body {
     }
 
     .field {
-        margin-bottom: rhythm();
+        margin-bottom: $spacing-unit;
     }
 
     /* -- Table -- */
     
     table {
-        margin: rhythm() auto;
+        margin: $spacing-unit auto;
     }
     
     tr:first-of-type > * {
-        border-color: $sand;
-        @include leading-border(1px, .5, $base-font-size, solid);
+        border-top: 1px solid $sand;
+        padding-top: (.5 * $spacing-unit);
     }
     
     th,td {
-        border-color: $sand;
-        border-left: 1px solid $sand;
-        padding: rhythm(.5);
-        @include trailing-border(1px, .5, $base-font-size, solid);
+        border: 1px solid $sand;
+        border-width: 0 0 1px 1px;
+        padding: (.5 * $spacing-unit);
+        padding-bottom: ((.5 * $spacing-unit) - 1px);
         
         &:last-of-type {
             border-right: 1px solid $sand;
@@ -164,16 +164,16 @@ body {
     .even .exhibit-thumbnail {float:right;padding:0 0px 0 10px;}
     
     .image img {
-        height: rhythm(3.5);
+        height: (3.5 * $spacing-unit);
         width: auto;
         float: left;
         border: 1px solid rgba(0,0,0,.2);
-        margin: 0 rhythm(.5) rhythm(.5) 0;
+        margin: 0 (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
     }
     
     .collection .image img,
     .exhibit .image img {
-        @include box-shadow(-3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1));
+        box-shadow: -3px -3px 0 rgba(0,0,0,.2), -6px -6px 0 rgba(0,0,0,.1);
         margin-left: 6px;
     }
 
@@ -206,7 +206,7 @@ body {
     .pagination_next a,
     .pagination_previous a {
         display: block;
-        height: rhythm(2.5);
+        height: (2.5 * $spacing-unit);
     }
     
     .pagination_next a,
@@ -215,7 +215,7 @@ body {
         text-decoration: none;
         text-indent: -9999px;
         position: relative;
-        width: rhythm(2.5);
+        width: (2.5 * $spacing-unit);
         
         &:after {
             font-family: "FontAwesome";
@@ -224,9 +224,9 @@ body {
             left: 0;
             top: 0;
             bottom: 0;
-            width: rhythm(2.5);
+            width: (2.5 * $spacing-unit);
             text-align: center;
-            line-height: rhythm(2.75);
+            line-height: (2.75 * $spacing-unit);
         }
             
     }
@@ -241,7 +241,7 @@ body {
     
     .page-input {
         border: 1px solid $sand;
-        padding: rhythm(.5);
+        padding: (.5 * $spacing-unit);
         
         input[type=text] {
             width: 3em;
@@ -249,9 +249,9 @@ body {
     }
 
     #sort-links {
-        border-color: $sand;
-        @include trailing-border(1px, 0, $base-font-size, solid);
-        @include trailer();
+        border-bottom: 1px solid $sand;
+        margin-bottom: $spacing-unit;
+        line-height: 2 * $base-line-height;
         
         span, ul, li, a {
             display: block;
@@ -261,7 +261,7 @@ body {
         
         span, a {
             margin-right: 1em;
-            padding: rhythm(.5) 0;
+            padding: (.5 * $spacing-unit) 0;
         }
     }
 
@@ -292,39 +292,40 @@ body {
         .item,
         .collection,
         .exhibit {
-            border-color: $sand;
-            @include trailing-border(1px, 1, $base-font-size, solid);
-            @include trailer();
+            border-bottom: 1px solid $sand;
+            padding-bottom: ($spacing-unit - 1px);
+            margin-bottom: $spacing-unit;
+            clear: both;
             overflow: hidden;
             
             p:last-child {
-                @include trailer(0);
+                margin-bottom: 0;
             }
             
             & + .pagination-nav {
-                @include leader(-.5);
+                margin-top: (-.5 * $spacing-unit);
             }
         }
         
         .items.show .element {
-            @include trailer(2);
+            margin-bottom: (2 * $spacing-unit);
         }
     
         .item img, 
         .item-img,
         .item-file img {
             float:left;
-            margin: 0 rhythm(.5) rhythm(.5) 0;
+            margin: 0 (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
             border: 1px solid rgba(0,0,0,.2);
             overflow: hidden;
         }
         
         .item img {
-            height: rhythm(3.5);
+            height: (3.5 * $spacing-unit);
         }
         
         #itemfiles .item-file img {
-            height: rhythm(6);
+            height: (6 * $spacing-unit);
         }
         
         .files .item-file img {
@@ -342,7 +343,7 @@ body {
         /* Tag Clouds */
         .hTagcloud ul {
             padding: 0;
-            margin: rhythm() 0;
+            margin: $spacing-unit 0;
             overflow: visible;
         }
         
@@ -354,7 +355,7 @@ body {
             a {
                 display: inline-block;
                 background-color: $sand;
-                padding: rhythm(.5);
+                padding: (.5 * $spacing-unit);
             }
         }
 
@@ -370,16 +371,15 @@ body {
 
 /* == Header == */
 #header {
-    border-color: #fff;
-    @include horizontal-borders(2px, 0, $base-font-size, solid);
+    border: 1px solid #fff;
+    border-width: 1px 0;
     background:#444;
 }
 
 #header .center-div {
     background-color:#333;
-    border-color: #fff;
-    @include apply-side-rhythm-border('left', 2px, 0, $base-font-size, solid);
-    @include apply-side-rhythm-border('right', 2px, 0, $base-font-size, solid);
+    border: 1px solid #fff;
+    border-width: 0 1px;
 
     &:after {
         content: "";
@@ -397,7 +397,7 @@ body {
 }
 
 #search-container {
-    padding: 0 $gutter-width rhythm();
+    padding: 0 $gutter-width $spacing-unit;
 }
 
 #search-form {
@@ -409,9 +409,9 @@ body {
     .show-advanced.button,
     button {
         display: block;
-        width: rhythm(1.5);
+        width: (1.5 * $spacing-unit);
         position: absolute;
-        height: rhythm(1.5);
+        height: (1.5 * $spacing-unit);
         top: 0;
         bottom: 0;
         text-indent: -9999px;
@@ -420,8 +420,8 @@ body {
             font-family: "FontAwesome";
             text-indent: 0;
             position: absolute;
-            width: rhythm(1.5);
-            height: rhythm(1.5);
+            width: (1.5 * $spacing-unit);
+            height: (1.5 * $spacing-unit);
             left: 0;
             top: 0;
             bottom: 0;
@@ -436,12 +436,12 @@ body {
 
 #query {
     width: 100%;
-    padding-right: rhythm(1.5);
-    height: rhythm(1.5);
+    padding-right: (1.5 * $spacing-unit);
+    height: (1.5 * $spacing-unit);
 }
 
 .show-advanced.button {
-    right: rhythm(1.5);
+    right: (1.5 * $spacing-unit);
 
     &:after {
         content: "\2026";
@@ -464,14 +464,14 @@ body {
     margin: 0;
     width: 100%;
     text-align: left;
-    padding: rhythm(.5);
+    padding: (.5 * $spacing-unit);
     
     &.closed {
         display: none;
     }
     
     fieldset {
-        padding: 0 0 rhythm(.5);
+        padding: 0 0 (.5 * $spacing-unit);
     }
     
     #query-types *:first-child {
@@ -484,9 +484,9 @@ body {
     }
     
     p {
-        margin: rhythm(.5) 0;
+        margin: (.5 * $spacing-unit) 0;
         
-        &:last-of-type { @include trailer(0); }
+        &:last-of-type { margin-bottom: (0 * $spacing-unit); }
     }
 }
 
@@ -522,13 +522,8 @@ body {
     /* Structure */
     #content {
         background:#fff;
-        padding: rhythm() $gutter-width;
+        padding: $spacing-unit $gutter-width;
         overflow:hidden;
-        @include pie-clearfix();
-
-        & > div, nav {
-            @include pie-clearfix();
-        }
     }
     .center-div {
         @include container;
@@ -541,11 +536,9 @@ body {
     /* Navigation */
     #primary-nav {
         clear:both;
-        @include pie-clearfix;
         overflow: hidden;
-        border-color: #fff;
-        padding: rhythm() $gutter-width;
-        @include trailing-border(2px, 0, $base-font-size, solid);
+        border-bottom: 2px solid #fff;
+        padding: $spacing-unit $gutter-width 0;
         
         ul {
             display:none
@@ -558,10 +551,10 @@ body {
 
     .secondary-nav,
     #secondary-nav {
-        border-color: $sand;
-        @include trailing-border(1px, .5, $base-font-size, solid);
+        border-bottom: 1px solid $sand;
+        padding-bottom: ((.5 * $spacing-unit) - 1px);
         width:100%;
-        margin: rhythm(-.5) 0 rhythm(.5);
+        margin: (-.5 * $spacing-unit) 0 (.5 * $spacing-unit);
         overflow: hidden;
         
         li {
@@ -584,18 +577,18 @@ body {
 
     .featured,
     #featured-exhibit {
-        border-color: $sand;
-        @include trailing-border(1px, 1, $base-font-size, solid);
-        @include trailer();
+        border-bottom: 1px solid $sand;
+        padding-bottom: ($spacing-unit - 1px);
+        margin-bottom: $spacing-unit;
         
         *:last-child {
-            @include trailer(0);
+            margin-bottom: (0 * $spacing-unit);
         }
     }
     
     .featured .record,
     #featured-exhibit .exhibit {
-        @include trailing-border(0px, 0, $base-font-size, solid);
+        border-bottom: 0;
         padding: 0;
         overflow: visible;
     }
@@ -603,7 +596,7 @@ body {
     #recent-items {
         border:none;
         background-color: $sand;
-        padding: rhythm(1) gutter();
+        padding: (1 * $spacing-unit) gutter();
         
         .item, .item img {
             border-color: $olive;
@@ -618,7 +611,7 @@ body {
     /* Advanced Search */
 
     #advanced-search-form {
-        padding: rhythm() 0;
+        padding: $spacing-unit 0;
     }
 
     #submit_search_advanced {
@@ -630,8 +623,8 @@ body {
     /* Search Results */
     #item-filters,
     #search-filters {
-        border-color: $sand;
-        @include trailing-border(1px, .5, $base-font-size, solid);
+        border-bottom: 1px solid $sand;
+        padding-bottom: (.5 * $spacing-unit);
 
         ul {
             margin: 0;
@@ -642,7 +635,7 @@ body {
         li {
             display: inline-block;
             background-color: $sand;
-            padding: rhythm(.25);
+            padding: (.25 * $spacing-unit);
         }
         
         ul ul {
@@ -655,7 +648,7 @@ body {
     }
 
     .search-entry {
-        @include trailer(.5);
+        margin-bottom: (.5 * $spacing-unit);
     }
 
     .search-entry:first-child .advanced-search-joiner {
@@ -713,9 +706,9 @@ body {
         }
         
         .image img {
-            height: rhythm(4);
+            height: (4 * $spacing-unit);
             width: auto;
-            margin: 0 rhythm(.5) 0 0;
+            margin: 0 (.5 * $spacing-unit) 0 0;
         }
     }
 
@@ -730,7 +723,8 @@ body {
     .exhibits #content > h1:first-of-type,
     #exhibit-blocks,
     #exhibit-page-navigation {
-        @include span-columns(9 omega);
+        @include span(9 of 12);
+        margin-right: 0;
     }
 
     #exhibit-pages {
@@ -738,14 +732,14 @@ body {
         overflow: hidden;
         background-color: lighten($sand, 15%);
         margin: 0;
-        border-color: $olive;
-        padding: 0 gutter(16);
-        @include leading-border(5px, 1, $base-font-size, solid);
-        @include trailing-border(1px, 1, $base-font-size, solid);
+        border: 1px solid $olive;
+        border-width: 1px 0;
+        padding: ($spacing-unit - 1px) gutter(16);
         
         
         & ~ * {
-            @include span-columns(9 omega);
+            @include span(9 of 12);
+            margin-right: 0;
             clear: right;
         }
         
@@ -764,15 +758,15 @@ body {
         li {
             list-style-type: none;
             float: none;
-            @include padding-leader(.5);
+            padding-top: (.5 * $spacing-unit);
         }
 
         & > h4 {
             font-size: 1.25 * $base-font-size;
-            @include trailer(1, 1.25 * $base-font-size);
+            margin-bottom: $spacing-unit;
             @include bleed(1 of 16);
-            @include trailing-border(1px, .75, 1.25 * $base-font-size, solid);
-            border-color: $olive;
+            border-bottom: 1px solid $olive;
+            padding-bottom: ((.75 * $spacing-unit) - 1px);
         }
         
         & > ul {
@@ -792,7 +786,7 @@ body {
     .exhibits.browse .secondary-nav + nav.pagination-nav {
         width: 100%;
         position: relative;
-        @include trailer();
+        margin-bottom: $spacing-unit;
     }
     
     .exhibits.browse .secondary-nav + nav.pagination-nav:after {
@@ -816,7 +810,7 @@ body {
     /* Collections Pages */    
     
     .show.collections .element {
-        @include trailer();
+        margin-bottom: $spacing-unit;
     }
     
     .browse.collections .element {
@@ -827,8 +821,7 @@ body {
 #footer {
     margin: 0 gutter();
     clear:both;
-    border-color: #fff;
-    @include rhythm-borders(2px, .25, $base-font-size, solid);
+    border: 1px solid #fff;
     background-color: $olive;
     overflow:hidden;
     padding: 0 gutter();
