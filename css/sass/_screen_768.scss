@@ -6,8 +6,7 @@
 }
 
 div#search-container {
-    @include span(3 of 12);
-    margin-right: 0;
+    @include span(last 3 of 12);
     clear: none;
     margin-top: 1.25 * $spacing-unit;
     padding-right: $gutter-width;
@@ -70,7 +69,7 @@ div#search-container {
     .sub-nav {
         position: absolute;
         display: none;
-        top: rhythm(2.125);
+        top: (2.125 * $spacing-unit);
         margin-top: -1px;
         padding: 0.5em 1em;
         border: 1px solid #dedede;
@@ -101,7 +100,7 @@ div#search-container {
     }
 
     .sub-nav a {
-        padding: rhythm(.5);
+        padding: (.5 * $spacing-unit);
         display: block;
         position: relative;
         z-index: 2;
@@ -149,13 +148,12 @@ div#search-container {
 
 .featured,
 #featured-exhibit {
-    @include span(8 of 12);
-    margin-right: 0;
-    clear: right;
+    @include span(first 8 of 12);
 }
 
 #recent-items {
-    width: columns(4);
+    width: span(last 4 of 12);
+    display: inline-block;
 }
 
 #intro {width:800px/968px * 100%;}
@@ -167,18 +165,22 @@ div#search-container {
 
     label,
     .label {
-        @include span(2 of 8);
+        @include span(first 2 of 8);
         margin-bottom: $spacing-unit;
     }
     
     .inputs {
-        @include span(6 of 8);
+        @include span(last 6 of 8);
         margin-left: 0;
         vertical-align: top;
         
         & > *:only-child {
             width: 100%;
         }
+    }
+
+    .add_search {
+        margin-left: calc(#{span(2 of 8)} + #{gutter(8)});
     }
 }
 
@@ -200,10 +202,25 @@ div#search-container {
     }
     
     span, a {
-        padding: rhythm(.75) 0;
+        padding: (.75 * $spacing-unit) 0;
         margin: 0 0 0 1em;
     }
 }
 /* Items */
 
 .item-description {clear:none}
+
+/* Exhibits */
+
+.exhibits.summary #primary,
+.exhibits #content > h1:first-of-type,
+#exhibit-blocks,
+#exhibit-page-navigation {
+    @include span(9 of 12);
+}
+
+
+#exhibit-pages {
+    width: span(3 of 12);
+    display: inline-block;
+}

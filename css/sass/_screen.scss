@@ -596,7 +596,7 @@ body {
     #recent-items {
         border:none;
         background-color: $sand;
-        padding: (1 * $spacing-unit) gutter();
+        padding: (1 * $spacing-unit) gutter(12);
         
         .item, .item img {
             border-color: $olive;
@@ -723,17 +723,7 @@ body {
         clear: both;
     }
     
-    
-    .exhibits.summary #primary,
-    .exhibits #content > h1:first-of-type,
-    #exhibit-blocks,
-    #exhibit-page-navigation {
-        @include span(9 of 12);
-        margin-right: 0;
-    }
-
     #exhibit-pages {
-        width: columns(3);
         overflow: hidden;
         background-color: lighten($sand, 15%);
         margin: 0;
@@ -768,8 +758,8 @@ body {
 
         & > h4 {
             font-size: 1.25 * $base-font-size;
-            margin-bottom: $spacing-unit;
-            @include bleed(1 of 16);
+            margin-bottom: (.5 * $spacing-unit);
+            @include bleed-x(1 of 16);
             border-bottom: 1px solid $olive;
             padding-bottom: ((.75 * $spacing-unit) - 1px);
         }
