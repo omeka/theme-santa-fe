@@ -1124,8 +1124,8 @@ th {
   #exhibit-blocks,
   #exhibit-page-navigation {
     width: 74.57627%;
-    float: left;
-    margin-right: 1.69492%; }
+    float: right;
+    margin-right: 0; }
   #exhibit-pages {
     width: 23.72881%;
     display: inline-block; } }

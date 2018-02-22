@@ -216,11 +216,11 @@ div#search-container {
 .exhibits #content > h1:first-of-type,
 #exhibit-blocks,
 #exhibit-page-navigation {
-    @include span(9 of 12);
+    @include span(last 9 of 12);
 }
 
 
 #exhibit-pages {
-    width: span(3 of 12);
+    width: span(first 3 of 12);
     display: inline-block;
 }
