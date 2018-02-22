@@ -530,7 +530,7 @@ th {
   #sort-links {
     border-bottom: 1px solid #d3d6bc;
     margin-bottom: 18px;
-    line-height: 36px; }
+    line-height: 45px; }
     #sort-links span, #sort-links ul, #sort-links li, #sort-links a {
       display: block;
       float: left;
@@ -762,7 +762,7 @@ th {
     border-bottom: 1px solid #d3d6bc;
     padding-bottom: 8px;
     width: 100%;
-    margin: -9px 0 9px;
+    margin: -9px 0 0;
     overflow: hidden; }
     .secondary-nav li,
     #secondary-nav li {
@@ -810,18 +810,22 @@ th {
   /* Search Results */
   #item-filters,
   #search-filters {
-    border-bottom: 1px solid #d3d6bc;
-    padding-bottom: 9px; }
+    border-bottom: 1px solid #d3d6bc; }
     #item-filters ul,
     #search-filters ul {
       margin: 0;
       padding: 0;
       list-style-type: none; }
+    #item-filters > ul > li,
+    #search-filters > ul > li {
+      margin: 9px 9px 9px 0; }
     #item-filters li,
     #search-filters li {
       display: inline-block;
       background-color: #d3d6bc;
-      padding: 4.5px; }
+      padding: 4.5px;
+      border: 0;
+      overflow: visible; }
     #item-filters ul ul,
     #search-filters ul ul {
       display: inline; }
@@ -1072,7 +1076,7 @@ th {
     margin-left: 0;
     background: #D3D6BD; }
   .pagination {
-    margin: 0 0 9px; }
+    margin: 9px 0; }
   /*Search Results */
   #footer {
     min-height: 30px; }

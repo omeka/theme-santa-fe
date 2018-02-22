@@ -251,7 +251,7 @@ body {
     #sort-links {
         border-bottom: 1px solid $sand;
         margin-bottom: $spacing-unit;
-        line-height: 2 * $base-line-height;
+        line-height: 2.5 * $base-line-height;
         
         span, ul, li, a {
             display: block;
@@ -554,7 +554,7 @@ body {
         border-bottom: 1px solid $sand;
         padding-bottom: ((.5 * $spacing-unit) - 1px);
         width:100%;
-        margin: (-.5 * $spacing-unit) 0 (.5 * $spacing-unit);
+        margin: (-.5 * $spacing-unit) 0 0;
         overflow: hidden;
         
         li {
@@ -624,18 +624,23 @@ body {
     #item-filters,
     #search-filters {
         border-bottom: 1px solid $sand;
-        padding-bottom: (.5 * $spacing-unit);
 
         ul {
             margin: 0;
             padding: 0;
             list-style-type: none;
         }
-        
+
+        & > ul > li {
+            margin: (.5 * $spacing-unit) (.5 * $spacing-unit) (.5 * $spacing-unit) 0;
+        }
+
         li {
             display: inline-block;
             background-color: $sand;
             padding: (.25 * $spacing-unit);
+            border: 0;
+            overflow: visible;
         }
         
         ul ul {
