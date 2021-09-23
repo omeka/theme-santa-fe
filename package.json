@@ -1,6 +1,6 @@
 {
   "name": "santa-fe",
-  "version": "2.5.1",
+  "version": "2.5.2",
   "description": "\"Theme based on the Bracero History Archive.\"",
   "main": "gulpfile.js",
   "devDependencies": {
@@ -31,5 +31,9 @@
   "bugs": {
     "url": "https://github.com/omeka/theme-santa-fe/issues"
   },
-  "homepage": "https://github.com/omeka/theme-santa-fe#readme"
+  "homepage": "https://github.com/omeka/theme-santa-fe#readme",
+  "browserslist": [
+    "> 5%",
+    "> 1% in US"
+  ]
 }
