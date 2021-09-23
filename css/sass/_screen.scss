@@ -218,7 +218,8 @@ body {
         width: (2.5 * $spacing-unit);
         
         &:after {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             text-indent: 0;
             position: absolute;
             left: 0;
@@ -267,7 +268,8 @@ body {
 
     .asc a:after,
     .desc a:after {
-        font-family: "FontAwesome";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
     }
     
     .asc a:after {
@@ -417,7 +419,8 @@ body {
         text-indent: -9999px;
         
         &:after {
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             text-indent: 0;
             position: absolute;
             width: (1.5 * $spacing-unit);
@@ -682,7 +685,8 @@ body {
         
         &:after {
             content: "\f00d";
-            font-family: "FontAwesome";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
             text-indent: 0;
             text-align: center;
             width: 100%;
