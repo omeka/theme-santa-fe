@@ -51,7 +51,6 @@
                 </div><!-- end primary-nav -->
 
                 <div id="site-title"><?php echo link_to_home_page(theme_logo()); ?></div>
-                <?php echo theme_header_image(); ?>
 
                 <div id="search-container" role="search">
                     <?php if (get_theme_option('use_advanced_search') === null || get_theme_option('use_advanced_search')): ?>
@@ -61,6 +60,7 @@
                     <?php endif; ?>
                 </div>
 
+                <?php echo theme_header_image(); ?>
             </div>
         </div><!-- end header -->
         <div id="content" class="center-div" role="main" tabindex="-1">

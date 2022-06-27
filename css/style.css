@@ -416,8 +416,7 @@ th {
     width: 100%;
     color: #fafafa;
     text-align: center;
-    padding: 18px 0;
-    padding-left: 1em;
+    padding: 18px;
   }
   #site-title a {
     color: #fafafa;
@@ -798,6 +797,12 @@ ul.pagination,
   }
 
   /* == Header == */
+  #site-title img,
+#header-image img {
+    max-width: 100%;
+    vertical-align: bottom;
+  }
+
   #header {
     border: 1px solid #fff;
     border-width: 1px 0;
@@ -855,6 +860,11 @@ ul.pagination,
   }
   #search-form button {
     right: 0;
+  }
+
+  #header-image,
+#header-image img {
+    width: 100%;
   }
 
   #query {
@@ -984,6 +994,7 @@ ul.pagination,
   #primary-nav select {
     width: 100%;
     display: block;
+    margin-bottom: 18px;
   }
 
   .secondary-nav,
@@ -1026,7 +1037,6 @@ ul.pagination,
 #featured-exhibit .exhibit {
     border-bottom: 0;
     padding: 0;
-    overflow: visible;
   }
 
   #recent-items {
@@ -1250,7 +1260,8 @@ ul.pagination,
 
   /* == Footer == */
   #footer {
-    margin: 0 5.2631578947%;
+    margin: 0 auto;
+    max-width: 1100px;
     clear: both;
     border: 1px solid #fff;
     background-color: #868D4A;
@@ -1284,7 +1295,7 @@ ul.pagination,
     width: 50%;
     float: left;
     text-align: left;
-    padding: 18px 0 18px 1em;
+    padding: 18px;
   }
 
   div#search-container {
@@ -1292,22 +1303,27 @@ ul.pagination,
     float: right;
     margin-right: 0;
     clear: none;
-    margin-top: 22.5px;
-    padding-right: 1em;
+    margin: 22.5px 0 0 auto;
+    padding-right: 18px;
   }
 
   .center-div {
-    margin: 0 11.1111111111%;
+    margin: 0 auto;
+    max-width: 1100px;
   }
 
   #header .center-div {
     position: relative;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   #primary-nav {
     overflow: visible;
     padding: 0;
+    width: 100%;
     /* mega menu list */
     /* a top level navigation item in the mega menu */
     /* first descendant link within a top level navigation item */
@@ -1385,12 +1401,8 @@ ul.pagination,
     display: none;
   }
 
-  #footer {
-    margin: 0 11.1111111111%;
-  }
-
   #content {
-    padding: 18px 1em;
+    padding: 18px;
   }
 
   #home #content > div {
@@ -1489,7 +1501,7 @@ ul.pagination,
 
   /* Exhibits */
   .exhibits.summary #primary,
-.exhibits #content > h1:first-of-type,
+.exhibits.show #content > h1:first-of-type,
 #exhibit-blocks,
 #exhibit-page-navigation {
     width: 74.5762711864%;

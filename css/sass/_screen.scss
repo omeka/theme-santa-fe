@@ -19,8 +19,7 @@ body {
         width: 100%;
         color: #fafafa;
         text-align: center;
-        padding: $spacing-unit 0;
-        padding-left: $gutter-width;
+        padding: $spacing-unit;
         
         a {
             color: #fafafa;
@@ -372,6 +371,13 @@ body {
         .vvvvvvvv-popular a {font-size:360%;}
 
 /* == Header == */
+
+#site-title img,
+#header-image img {
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
 #header {
     border: 1px solid #fff;
     border-width: 1px 0;
@@ -435,6 +441,11 @@ body {
     button {
         right: 0;
     }
+}
+
+#header-image,
+#header-image img {
+    width: 100%;
 }
 
 #query {
@@ -549,6 +560,7 @@ body {
         select {
             width: 100%;
             display:block;
+            margin-bottom: $spacing-unit;
         }
     }
 
@@ -593,7 +605,6 @@ body {
     #featured-exhibit .exhibit {
         border-bottom: 0;
         padding: 0;
-        overflow: visible;
     }
 
     #recent-items {
@@ -827,7 +838,8 @@ body {
 
 /* == Footer == */
 #footer {
-    margin: 0 gutter();
+    margin: 0 auto;
+    max-width: 1100px;
     clear:both;
     border: 1px solid #fff;
     background-color: $olive;
