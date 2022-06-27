@@ -6,7 +6,7 @@
 }
 
 div#search-container {
-    @include span(last 3 of 12);
+    width: 25%;
     clear: none;
     margin: 1.25 * $spacing-unit 0 0 auto;
     padding-right: $spacing-unit;
@@ -123,7 +123,7 @@ div#search-container {
 #home #content {
 
     & > div {
-        @include span(8 of 12);
+        width: 66.66%;
         margin-right: 0;
     }
 
@@ -131,7 +131,7 @@ div#search-container {
         float:left;
         overflow:hidden;
         padding:.5em 0;
-        @include span(4 of 12);
+        width: 33.33%;
         margin-left: 0;
         background:#D3D6BD;
     }
@@ -149,7 +149,7 @@ div#search-container {
 
 .featured,
 #featured-exhibit {
-    @include span(first 8 of 12);
+    width: 66.66%;
 }
 
 #recent-items {
@@ -163,15 +163,19 @@ div#search-container {
 .field {
     margin-bottom: $spacing-unit;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
 
     label,
-    .label {
-        @include span(first 2 of 8);
+    .label,
+    .two.columns {
+        width: 25%;
         margin-bottom: $spacing-unit;
     }
     
-    .inputs {
-        @include span(last 6 of 8);
+    .inputs,
+    .five.columns {
+        width: 75%;
         margin-left: 0;
         vertical-align: top;
         
@@ -181,12 +185,13 @@ div#search-container {
     }
 
     .add_search {
-        margin-left: calc(#{span(2 of 8)} + #{gutter(8)});
+        margin-left: 25%;
     }
 }
 
 .search-entry {
     margin-bottom: $spacing-unit;
+    flex-wrap: nowrap;
 }
 
 .pagination-nav {
@@ -217,11 +222,13 @@ div#search-container {
 .exhibits.show #content > h1:first-of-type,
 #exhibit-blocks,
 #exhibit-page-navigation {
-    @include span(last 9 of 12);
+    width: 75%;
+    float: right;
+    padding-left: $spacing-unit;
 }
 
 
 #exhibit-pages {
-    width: span(first 3 of 12);
+    width: 25%;
     display: inline-block;
 }

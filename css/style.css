@@ -829,7 +829,7 @@ ul.pagination,
   }
 
   #search-container {
-    padding: 0 1em 18px;
+    padding: 0 18px 18px;
   }
 
   #search-form input[type=text] {
@@ -958,20 +958,12 @@ ul.pagination,
   /* Structure */
   #content {
     background: #fff;
-    padding: 18px 1em;
+    padding: 18px;
     overflow: hidden;
   }
 
   .center-div {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin: 0 1em;
-  }
-  .center-div:after {
-    content: " ";
-    display: block;
-    clear: both;
+    margin: 0 18px;
   }
 
   /* General */
@@ -986,7 +978,7 @@ ul.pagination,
     clear: both;
     overflow: hidden;
     border-bottom: 2px solid #fff;
-    padding: 18px 1em 0;
+    padding: 18px 18px 0;
   }
   #primary-nav ul {
     display: none;
@@ -1042,7 +1034,7 @@ ul.pagination,
   #recent-items {
     border: none;
     background-color: #d3d6bc;
-    padding: 18px 1.6949152542%;
+    padding: 18px gutter(12);
   }
   #recent-items .item, #recent-items .item img {
     border-color: #868D4A;
@@ -1101,6 +1093,8 @@ ul.pagination,
 
   .search-entry {
     margin-bottom: 9px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .search-entry:first-child .advanced-search-joiner {
@@ -1171,12 +1165,10 @@ ul.pagination,
     margin: 0;
     border: 1px solid #868D4A;
     border-width: 1px 0;
-    padding: 17px 1.2658227848%;
+    padding: 17px 18px;
   }
   #exhibit-pages ~ * {
-    width: 74.5762711864%;
-    float: left;
-    margin-right: 1.6949152542%;
+    width: 75%;
     margin-right: 0;
     clear: right;
   }
@@ -1184,7 +1176,7 @@ ul.pagination,
 #exhibit-pages .child-pages {
     margin: 0;
     overflow: hidden;
-    padding: 0 0 0 11.1111111111%;
+    padding: 0 0 0 gutter(2);
     border-left: 1px solid #686C42;
   }
   #exhibit-pages .current ul {
@@ -1197,11 +1189,7 @@ ul.pagination,
   }
   #exhibit-pages > h4 {
     font-size: 15px;
-    margin-bottom: 9px;
-    margin-right: -6.3291139241%;
-    margin-left: -6.3291139241%;
-    padding-right: 6.3291139241%;
-    padding-left: 6.3291139241%;
+    margin: 0 -6.25% 9px;
     border-bottom: 1px solid #868D4A;
     padding-bottom: 12.5px;
   }
@@ -1266,7 +1254,7 @@ ul.pagination,
     border: 1px solid #fff;
     background-color: #868D4A;
     overflow: hidden;
-    padding: 0 5.2631578947%;
+    padding: 0 18px;
   }
 
   #footer li {
@@ -1299,9 +1287,7 @@ ul.pagination,
   }
 
   div#search-container {
-    width: 23.7288135593%;
-    float: right;
-    margin-right: 0;
+    width: 25%;
     clear: none;
     margin: 22.5px 0 0 auto;
     padding-right: 18px;
@@ -1406,18 +1392,14 @@ ul.pagination,
   }
 
   #home #content > div {
-    width: 66.1016949153%;
-    float: left;
-    margin-right: 1.6949152542%;
+    width: 66.66%;
     margin-right: 0;
   }
   #home #content #recent-items {
     float: left;
     overflow: hidden;
     padding: 0.5em 0;
-    width: 32.2033898305%;
-    float: left;
-    margin-right: 1.6949152542%;
+    width: 33.33%;
     margin-left: 0;
     background: #D3D6BD;
   }
@@ -1433,13 +1415,11 @@ ul.pagination,
 
   .featured,
 #featured-exhibit {
-    width: 66.1016949153%;
-    float: left;
-    margin-right: 1.6949152542%;
+    width: 66.66%;
   }
 
   #recent-items {
-    width: 32.2033898305%;
+    width: span(last 4 of 12);
     display: inline-block;
   }
 
@@ -1451,30 +1431,32 @@ ul.pagination,
   .field {
     margin-bottom: 18px;
     overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
   }
   .field label,
-.field .label {
-    width: 23.0769230769%;
-    float: left;
-    margin-right: 2.5641025641%;
+.field .label,
+.field .two.columns {
+    width: 25%;
     margin-bottom: 18px;
   }
-  .field .inputs {
-    width: 74.358974359%;
-    float: right;
-    margin-right: 0;
+  .field .inputs,
+.field .five.columns {
+    width: 75%;
     margin-left: 0;
     vertical-align: top;
   }
-  .field .inputs > *:only-child {
+  .field .inputs > *:only-child,
+.field .five.columns > *:only-child {
     width: 100%;
   }
   .field .add_search {
-    margin-left: calc(23.0769230769% + 2.5641025641%);
+    margin-left: 25%;
   }
 
   .search-entry {
     margin-bottom: 18px;
+    flex-wrap: nowrap;
   }
 
   .pagination-nav {
@@ -1504,13 +1486,13 @@ ul.pagination,
 .exhibits.show #content > h1:first-of-type,
 #exhibit-blocks,
 #exhibit-page-navigation {
-    width: 74.5762711864%;
+    width: 75%;
     float: right;
-    margin-right: 0;
+    padding-left: 18px;
   }
 
   #exhibit-pages {
-    width: 23.7288135593%;
+    width: 25%;
     display: inline-block;
   }
 }
