@@ -1,5 +1,5 @@
 # Santa Fe
-Omek Classic theme based on the Bracero History Archive.
+Omeka Classic theme based on the Bracero History Archive.
 
 Santa Fe is Copyright © 2018-present Corporation for Digital Scholarship, Vienna, Virginia, USA http://digitalscholar.org
 
