@@ -194,6 +194,10 @@ div#search-container {
     flex-wrap: nowrap;
 }
 
+#search-narrow-by-fields .advanced-search-joiner {
+    width: 5em;
+}
+
 .pagination-nav {
     float: left;
 }

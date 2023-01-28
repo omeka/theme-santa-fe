@@ -675,18 +675,23 @@ body {
         display: none;
     }
 
-    .search-entry .advanced-search-joiner {
-        width: 5em;
+    #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
+        width: calc(100% - #{1.5 * $spacing-unit});
     }
 
     .search-entry select,
     .search-entry input[type="text"] {
-        width: calc(33% - 2.75em);
-        margin-right: .5%;
+        width: 100%;
     }
     
-    .search-entry input {
+    .search-entry input[type=text] {
         vertical-align: top;
+        margin-bottom: 0;
+    }
+
+    .search-entry .input {
+        margin-bottom: 0;
+        padding-right: .25 * $spacing-unit;
     }
     
     .remove_search {
@@ -694,6 +699,7 @@ body {
         width: 1.5 * $base-line-height;
         position: relative;
         height: $base-line-height;
+        align-self: flex-end;
         
         &:after {
             content: "\f00d";
