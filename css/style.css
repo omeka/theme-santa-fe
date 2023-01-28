@@ -873,10 +873,10 @@ ul.pagination,
     height: 27px;
   }
 
-  .show-advanced.button {
+  #search-form .show-advanced.button {
     right: 27px;
   }
-  .show-advanced.button:after {
+  #search-form .show-advanced.button:after {
     content: "…";
     border-left: 1px solid rgba(0, 0, 0, 0.2);
   }
