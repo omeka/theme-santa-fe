@@ -1106,8 +1106,11 @@ ul.pagination,
     display: none;
   }
 
-  #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-    width: calc(100% - 27px);
+  #search-narrow-by-fields .search-entry .advanced-search-terms {
+    flex-grow: 1;
+  }
+  #search-narrow-by-fields .search-entry .advanced-search-terms input {
+    width: 100%;
   }
 
   .search-entry select,

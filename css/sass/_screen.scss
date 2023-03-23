@@ -680,8 +680,12 @@ body {
         display: none;
     }
 
-    #search-narrow-by-fields .search-entry:not(:only-child) .advanced-search-terms {
-        width: calc(100% - #{1.5 * $spacing-unit});
+    #search-narrow-by-fields .search-entry .advanced-search-terms {
+        flex-grow: 1;
+
+        input {
+            width: 100%;
+        }
     }
 
     .search-entry select,
