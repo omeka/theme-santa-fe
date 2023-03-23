@@ -1097,6 +1097,11 @@ ul.pagination,
     flex-wrap: wrap;
   }
 
+  .search-entry select,
+.search-entry input[type=text] {
+    width: 100%;
+  }
+
   .search-entry:first-child .advanced-search-joiner {
     display: none;
   }
