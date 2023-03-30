@@ -489,8 +489,7 @@ button {
 button {
     background-color: #868D4A;
     color: #fff;
-    -webkit-appearance: none;
-            appearance: none;
+    appearance: none;
     line-height: 27px;
   }
 
@@ -1361,8 +1360,6 @@ ul.pagination,
   }
   #primary-nav .nav-item > a.open {
     background-color: #fff;
-    border: 1px solid #dedede;
-    border-bottom: none;
     z-index: 1;
   }
   #primary-nav .sub-nav {
