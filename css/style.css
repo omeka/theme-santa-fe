@@ -481,12 +481,12 @@ button {
     line-height: 18px;
     padding: 0 5px;
     border: 0;
-    min-height: 27px;
   }
 
   input[type=submit],
 .button,
 button {
+    min-height: 27px;
     background-color: #868D4A;
     color: #fff;
     appearance: none;
@@ -495,7 +495,12 @@ button {
 
   input[type=text],
 input[type=password],
+input[type=email],
+input[type=number],
+input[type=search],
+input[type=phone],
 textarea {
+    min-height: 27px;
     border: 1px solid #d3d6bc;
   }
 
@@ -859,6 +864,10 @@ ul.pagination,
   }
   #search-form button {
     right: 0;
+  }
+
+  .with-advanced #query {
+    padding-right: 58.5px;
   }
 
   #header-image,

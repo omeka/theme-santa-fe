@@ -86,12 +86,12 @@ body {
         line-height: $base-line-height;
         padding: 0 5px;
         border: 0;
-        min-height: (1.5 * $spacing-unit);
     }
     
     input[type="submit"],
     .button,
     button {
+        min-height: (1.5 * $spacing-unit);
         background-color: $olive;
         color: #fff;
         appearance: none;
@@ -100,7 +100,12 @@ body {
     
     input[type="text"],
     input[type="password"],
+    input[type="email"],
+    input[type="number"],
+    input[type="search"],
+    input[type="phone"],
     textarea {
+        min-height: (1.5 * $spacing-unit);
         border: 1px solid $sand;
     }
     
@@ -409,7 +414,6 @@ body {
 }
 
 #search-form {
-    
     input[type="text"] {
         border-color: #fff;
     }
@@ -441,6 +445,10 @@ body {
     button {
         right: 0;
     }
+}
+
+.with-advanced #query {
+    padding-right: (3.25 * $spacing-unit);
 }
 
 #header-image,
@@ -496,7 +504,7 @@ body {
         margin: 0;
         padding: 0;
     }
-    
+
     p {
         margin: (.5 * $spacing-unit) 0;
         
