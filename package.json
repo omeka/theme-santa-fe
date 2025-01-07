@@ -1,6 +1,6 @@
 {
   "name": "santa-fe",
-  "version": "2.6.1",
+  "version": "2.6.2",
   "description": "\"Theme based on the Bracero History Archive.\"",
   "main": "gulpfile.js",
   "devDependencies": {
