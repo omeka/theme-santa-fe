@@ -650,6 +650,7 @@ ul.pagination,
   }
   .page-input input[type=text] {
     width: 3em;
+    margin-left: 4.5px;
   }
 
   #sort-links {
