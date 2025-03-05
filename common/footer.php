@@ -1,6 +1,6 @@
 </div><!-- end content -->
 
-<div id="footer" role="contentinfo">
+<footer>
 
 
     <div id="custom-footer-text">
@@ -17,7 +17,7 @@
     <?php fire_plugin_hook('public_footer', array('view' => $this)); ?>
 
 
-</div><!-- end footer -->
+</footer><!-- end footer -->
 
 
 
