@@ -55,15 +55,20 @@ div#search-container {
     .nav-item > a {
         position: relative;
         margin: 0 0 -1px 0;
-        color:#868D4A;
+        color: $sand;
         display:block;
         float:left;
         padding:10px;
     }
 
+    .open a {
+        color: $olive;
+    }
+
     /* open state of first descendant link within a top level 
        navigation item */
     .nav-item > a.open {
+        color: $olive;
         background-color: #fff;
         z-index: 1;
     }
