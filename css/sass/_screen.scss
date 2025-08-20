@@ -600,7 +600,7 @@ body {
 
     .featured,
     #featured-exhibit {
-        border-bottom: 1px solid $sand;
+        border-bottom: 1px solid $olive;
         padding-bottom: ($spacing-unit - 1px);
         margin-bottom: $spacing-unit;
         
@@ -868,7 +868,7 @@ footer {
     border: 1px solid #fff;
     background-color: $olive;
     overflow:hidden;
-    padding: 0 $spacing-unit;
+    padding: $spacing-unit;
     color: $sand;
 }
 

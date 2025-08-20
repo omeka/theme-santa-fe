@@ -152,12 +152,15 @@ div#search-container {
 
 .featured,
 #featured-exhibit {
-    width: 66.66%;
+    width: calc(66.66% - #{$spacing-unit});
+    margin-right: $spacing-unit;
+    float: left;
 }
 
 #recent-items {
-    width: span(last 4 of 12);
+    width: 33.33%;
     display: inline-block;
+    padding: $spacing-unit;
 }
 
 #intro {width:800px/968px * 100%;}

@@ -1025,7 +1025,7 @@ ul.pagination,
   /* Home Page */
   .featured,
 #featured-exhibit {
-    border-bottom: 1px solid #FDFAE2;
+    border-bottom: 1px solid #717739;
     padding-bottom: 17px;
     margin-bottom: 18px;
   }
@@ -1277,7 +1277,7 @@ ul.pagination,
     border: 1px solid #fff;
     background-color: #717739;
     overflow: hidden;
-    padding: 0 18px;
+    padding: 18px;
     color: #FDFAE2;
   }
 
@@ -1438,12 +1438,15 @@ ul.pagination,
 
   .featured,
 #featured-exhibit {
-    width: 66.66%;
+    width: calc(66.66% - 18px);
+    margin-right: 18px;
+    float: left;
   }
 
   #recent-items {
-    width: span(last 4 of 12);
+    width: 33.33%;
     display: inline-block;
+    padding: 18px;
   }
 
   #intro {
