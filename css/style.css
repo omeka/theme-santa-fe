@@ -501,7 +501,7 @@ input[type=search],
 input[type=phone],
 textarea {
     min-height: 27px;
-    border: 1px solid #FDFAE2;
+    border: 1px solid #717739;
   }
 
   input[type=radio] {
