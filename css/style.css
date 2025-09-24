@@ -1465,6 +1465,7 @@ ul.pagination,
 .field .two.columns {
     width: 25%;
     margin-bottom: 18px;
+    margin-right: 0;
   }
   .field .inputs,
 .field .five.columns {
