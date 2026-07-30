@@ -237,11 +237,11 @@ body {
     }
     
     .pagination_next a:after {
-        content: "\f054";
+        content: "\f054" / "";
     }
 
     .pagination_previous a:after {
-        content: "\f053";
+        content: "\f053" / "";
     }
     
     .page-input {
@@ -278,11 +278,11 @@ body {
     }
     
     .asc a:after {
-        content: "\20\f0d8";
+        content: "\20\f0d8" / "";
     }
     
     .desc a:after {
-        content: "\20\f0d7";
+        content: "\20\f0d7" / "";
     }
 
         
@@ -487,13 +487,13 @@ body {
     right: (1.5 * $spacing-unit);
 
     &:after {
-        content: "\2026";
+        content: "\2026" / "";
         border-left: 1px solid rgba(0,0,0,.2);
     }
 }
 
 #search-form button:after {
-    content: "\f002";
+    content: "\f002" / "";
 }
 
 #advanced-form {
@@ -740,7 +740,7 @@ body {
         align-self: flex-end;
         
         &:after {
-            content: "\f00d";
+            content: "\f00d" / "";
             font-family: "Font Awesome 5 Free";
             font-weight: 900;
             text-indent: 0;
