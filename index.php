@@ -1,5 +1,7 @@
 <?php echo head(array('bodyclass'=>'home')); ?>
 
+<h1 class="sr-only"><?php echo __('Home'); ?></h1>
+
 <?php if (get_theme_option('Homepage Text')): ?>
     <aside id="intro" role="introduction">
 <p><?php echo get_theme_option('Homepage Text'); ?></p>
