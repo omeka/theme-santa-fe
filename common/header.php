@@ -63,5 +63,5 @@
                 <?php echo theme_header_image(); ?>
             </div>
         </div><!-- end header -->
-        <div id="content" class="center-div" role="main" tabindex="-1">
+        <main id="content" class="center-div" tabindex="-1">
             <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>
