@@ -964,7 +964,7 @@ ul.pagination,
     height: auto;
     width: auto;
     padding: 0.5em;
-    border: 1px blue dashed;
+    background-color: #fff;
   }
 
   /* == Content == */
